@@ -6,7 +6,7 @@
 		"editor.defaultFormatter": "vscode.html-language-features"
 	},
 	"[scss]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
+		"editor.formatOnSave": false
 	},
 	"editor.insertSpaces": true,
 	"editor.tabSize": 4

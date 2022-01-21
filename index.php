@@ -24,8 +24,19 @@
         <div class="headerProducts hiddenS">
             <h2>Tees für Körper und Seele</h2>
             <div class="productContainer">
+<<<<<<< HEAD
                 <?php foreach ($result as $key => $product) : ?>
                     <?php include "./product.php"; ?>
+=======
+                <?php foreach (array_slice($result, 0, 4) as $key => $product) : ?>
+                    <div class="product">
+                        <div class="image-wrapper">
+                            <img class="image" src="<?php echo $product->getImage() ?>">
+                        </div>
+                        <h3><?php echo $product->name; ?></h3>
+                        <p><?php echo $product->getPrice(); ?></p>
+                    </div>
+>>>>>>> 970a24103f3da443e460d03f4d9e11ca23a34c9c
                 <?php endforeach; ?>
             </div>
         </div>
