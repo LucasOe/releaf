@@ -7,7 +7,7 @@
     <title>Releaf - Für Körper und Seele</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico">
+    <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
 </head>
 
 <body>
@@ -50,14 +50,15 @@
     <main>
         <section class="textured">
             <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
+            <div class="circle">
+                <h3>Mehr als nur Tee</h3>
+                <p>
+                    Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
+                    mit unseren Tees kannst du dir eine Auszeitgönnen.
+                    <br>
+                    Entdecke jetzt unser vielseitiges Angebot!
+                </p>
+            </div>
         </section>
         <section class="green">
             <div class="spacerL"></div>

@@ -7,7 +7,7 @@
 html {
   margin: 0;
   font-weight: 700;
-  font-size: 100%;
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
@@ -67,6 +67,57 @@ h6 {
   font-weight: 700;
 }
 
+nav {
+  background-color: white;
+  padding: 0 50px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+nav .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -35px;
+}
+nav ul.navigation {
+  display: inline-block;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  justify-content: start;
+  margin: 0;
+  align-items: center;
+  flex-direction: row;
+}
+nav ul.navigation li {
+  display: inline-block;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 15px;
+  z-index: 2;
+}
+nav a {
+  color: black;
+}
+nav ul.icons {
+  float: right;
+  flex-direction: row;
+}
+nav ul.icons li {
+  display: inline-block;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 15px;
+  z-index: 2;
+}
+nav .waveTop {
+  z-index: -1;
+}
+
+footer {
+  display: block;
+  position: relative;
+}
+
 header {
   max-height: calc(100vh - 100px);
   overflow: hidden;
@@ -81,7 +132,6 @@ header img.hero a {
   color: #008e39;
 }
 header .logoWrap {
-  width: fit-content;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -130,19 +180,19 @@ header .textbox p {
   margin: 0px;
 }
 
-nav {
+section {
   background-color: white;
   padding: 0 50px;
   position: relative;
   width: 100%;
   z-index: 100;
 }
-nav .logo {
+section .logo {
   display: inline-block;
   vertical-align: middle;
   margin-top: -35px;
 }
-nav ul.navigation {
+section ul.navigation {
   display: inline-block;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
@@ -151,29 +201,63 @@ nav ul.navigation {
   align-items: center;
   flex-direction: row;
 }
-nav ul.navigation li {
+section ul.navigation li {
   display: inline-block;
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
   z-index: 2;
 }
-nav a {
+section a {
   color: black;
 }
-nav ul.icons {
+section ul.icons {
   float: right;
   flex-direction: row;
 }
-nav ul.icons li {
+section ul.icons li {
   display: inline-block;
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
   z-index: 2;
 }
-nav .waveTop {
+section .waveTop {
   z-index: -1;
+}
+section .circle {
+  align-items: center;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 575px;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 15px;
+  padding: 70px;
+  width: 575px;
+}
+section .circle h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+section .circle p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.textured {
+  background: #fff4df url("../img/leaf_texture.png");
+  height: 800px;
+}
+
+.green {
+  background-color: #dce9cc;
+}
+
+.textured.green {
+  background: #dce9cc url("../img/leaf_texture.png");
 }
 
 .imageWrap {
@@ -195,7 +279,7 @@ nav .waveTop {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -203,6 +287,7 @@ nav .waveTop {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .product p {
+  font-size: 2.4rem;
   color: #ffffff;
   font-family: "Amatic SC", sans-serif;
   font-size: 2.4rem;
@@ -226,24 +311,6 @@ nav .waveTop {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-main section {
-  background-color: white;
-}
-main .textured {
-  background: #fff4df url("../img/leaf_texture.png");
-}
-main .green {
-  background-color: #dce9cc;
-}
-main .textured.green {
-  background: #dce9cc url("../img/leaf_texture.png");
-}
-
-footer {
-  display: block;
-  position: relative;
 }
 
 .waveTop {

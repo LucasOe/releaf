@@ -12,7 +12,7 @@ $beige: #fff4df;
 html {
     margin: 0;
     font-weight: 700;
-    font-size: 100%;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -73,6 +73,61 @@ h6 {
     font-weight: 700;
 }
 
+nav {
+    background-color: white;
+    padding: 0 50px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -35px;
+    }
+    ul.navigation {
+        display: inline-block;
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        justify-content: start;
+        margin: 0;
+        align-items: center;
+        flex-direction: row;
+        li {
+            display: inline-block;
+            font-size: 2.4rem;
+            list-style: none;
+            padding: 15px;
+            z-index: 2;
+        }
+    }
+    a {
+        color: black;
+    }
+    ul.icons {
+        float: right;
+        flex-direction: row;
+        li {
+            display: inline-block;
+            font-size: 2.4rem;
+            list-style: none;
+            padding: 15px;
+            z-index: 2;
+        }
+    }
+    .waveTop {
+        z-index: -1;
+    }
+}
+
+//Footer
+
+footer {
+    display: block;
+    position: relative;
+}
+
+//Home Page
+
 header {
     max-height: calc(100vh - 100px);
     overflow: hidden;
@@ -82,13 +137,13 @@ header {
         filter: blur(8px) brightness(110%);
         margin-left: -15px;
         width: calc(100% + 30px);
+
         a {
             color: $primary-color;
         }
     }
 
     .logoWrap {
-        width: fit-content;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -99,7 +154,6 @@ header {
         right: 0;
         top: 25%;
         transform: translateY(-50%);
-
         button {
             font-size: 2.4rem;
         }
@@ -145,7 +199,9 @@ header {
     }
 }
 
-nav {
+//Sections
+
+section {
     background-color: white;
     padding: 0 50px;
     position: relative;
@@ -196,7 +252,43 @@ nav {
     .waveTop {
         z-index: -1;
     }
+
+    .circle {
+        align-items: center;
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 575px;
+        justify-content: center;
+        margin-bottom: 5px;
+        padding: 15px;
+        padding: 70px;
+        width: 575px;
+
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
 }
+.textured {
+    background: $beige url("../img/leaf_texture.png");
+    height: 800px;
+}
+.green {
+    background-color: $soft-green;
+}
+.textured.green {
+    background: $soft-green url("../img/leaf_texture.png");
+}
+
+//Products
 
 .imageWrap {
     height: 100px;
@@ -217,7 +309,7 @@ nav {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -226,6 +318,7 @@ nav {
     }
 
     p {
+        font-size: 2.4rem;
         color: #ffffff;
         font-family: "Amatic SC", sans-serif;
         font-size: 2.4rem;
@@ -252,26 +345,6 @@ nav {
             transform: translateY(-50%);
         }
     }
-}
-
-main {
-    section {
-        background-color: white;
-    }
-    .textured {
-        background: $beige url("../img/leaf_texture.png");
-    }
-    .green {
-        background-color: $soft-green;
-    }
-    .textured.green {
-        background: $soft-green url("../img/leaf_texture.png");
-    }
-}
-
-footer {
-    display: block;
-    position: relative;
 }
 
 .waveTop {
