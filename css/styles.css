@@ -67,44 +67,44 @@ h6 {
 }
 
 #nav {
+  height: 60px;
   background-color: white;
+  display: flex;
+  align-items: center;
   padding: 0 50px;
   position: relative;
   width: 100%;
   z-index: 2;
 }
 #nav .logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -35px;
+  height: inherit;
+  padding: 8px;
 }
 #nav ul.navigation {
-  display: inline-block;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
-  justify-content: start;
-  margin: 0;
-  align-items: center;
-  flex-direction: row;
+  margin: 0px;
+  margin-right: auto;
+  padding: 0px 50px;
 }
 #nav ul.navigation li {
   display: inline-block;
   font-size: 3.8rem;
   list-style: none;
-  padding: 15px;
+  padding: 0px 15px;
 }
 #nav a {
   color: black;
 }
 #nav ul.icons {
-  float: right;
-  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
 }
 #nav ul.icons li {
   display: inline-block;
   font-size: 2.4rem;
   list-style: none;
-  padding: 15px;
+  padding: 0px 15px;
 }
 #nav.sticky {
   position: sticky;
@@ -119,6 +119,12 @@ h6 {
   z-index: -1;
   transform-origin: top;
 }
+.wave.top {
+  bottom: 100%;
+}
+.wave.bottom {
+  top: 100%;
+}
 
 footer {
   display: block;
@@ -130,7 +136,7 @@ footer p {
 }
 
 header {
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 60px);
   overflow: hidden;
   position: relative;
 }

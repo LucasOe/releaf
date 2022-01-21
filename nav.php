@@ -1,7 +1,7 @@
 <div id="mainMenuBarAnchor" />
 <div id="nav">
-    <img class="wave top" src="img/wave_top.svg" style="bottom:100%;" />
-    <img class="logo" src="img/logo.png" title="Releaf" href="index.html" width="100" height="auto">
+    <img class="wave top" src="img/wave_top.svg" />
+    <img class="logo" src="img/logo.png" title="Releaf" href="index.html">
     <ul class="navigation">
         <li>
             <a href="/shop" title="Zum Shop">Shop</a>
@@ -27,7 +27,7 @@
             <img src="img/icons/ic_shopping_cart.svg">
         </li>
     </ul>
-    <img class="wave bottom" src="img/wave_bottom.svg" style="top:100%" />
+    <img class="wave bottom" src="img/wave_bottom.svg" />
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

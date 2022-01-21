@@ -1,4 +1,4 @@
 <footer>
-    <img class="wave" src="img/wave_top.svg" style="bottom:100%;" />
+    <img class="wave top" src="img/wave_top.svg" />
     <p> Footer </p>
 </footer>

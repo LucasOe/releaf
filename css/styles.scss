@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 $primary-color: #008e39;
 $soft-green: #dce9cc;
 $beige: #fff4df;
-
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+$nav-height: 60px;
 
 * {
     box-sizing: border-box;
@@ -73,32 +74,32 @@ h6 {
 }
 
 #nav {
+    height: $nav-height;
     background-color: white;
+    display: flex;
+    align-items: center;
     padding: 0 50px;
     position: relative;
     width: 100%;
     z-index: 2;
 
     .logo {
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: -35px;
+        height: inherit;
+        padding: 8px;
     }
 
     ul.navigation {
-        display: inline-block;
         font-family: "Amatic SC", sans-serif;
         font-weight: 700;
-        justify-content: start;
-        margin: 0;
-        align-items: center;
-        flex-direction: row;
+        margin: 0px;
+        margin-right: auto;
+        padding: 0px 50px;
 
         li {
             display: inline-block;
             font-size: 3.8rem;
             list-style: none;
-            padding: 15px;
+            padding: 0px 15px;
         }
     }
 
@@ -107,14 +108,14 @@ h6 {
     }
 
     ul.icons {
-        float: right;
-        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
 
         li {
             display: inline-block;
             font-size: 2.4rem;
             list-style: none;
-            padding: 15px;
+            padding: 0px 15px;
         }
     }
 
@@ -133,6 +134,14 @@ h6 {
     width: 100%;
     z-index: -1;
     transform-origin: top;
+
+    &.top {
+        bottom: 100%;
+    }
+
+    &.bottom {
+        top: 100%;
+    }
 }
 
 //Footer
@@ -150,7 +159,7 @@ footer {
 //Home Page
 
 header {
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - $nav-height);
     overflow: hidden;
     position: relative;
 
