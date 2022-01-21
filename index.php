@@ -16,7 +16,6 @@
         <img class="hero" src="img/header_image.jpg" />
         <div class="logoWrap">
             <img class="heroLogo" src="img/logo.png" href="index.html" width="300">
-            <div class="spacerM"></div>
             <button>Shop Now</button>
         </div>
 
