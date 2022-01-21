@@ -13,6 +13,7 @@
             <img class="heroLogo" src="img/logo.png" title="Releaf" href="index.html" width="300">
             <div class="spacerM"></div>
             <button>Shop Now</button>
+            <?php echo "test"; ?>
         </div>
         <div class="headerProducts">
             <h2>Tees für Körper und Seele</h2>

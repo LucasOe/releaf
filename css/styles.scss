@@ -107,7 +107,7 @@ header {
 
 nav {
     background-color: white;
-    padding: 0 15px;
+    padding: 0 50px;
     position: relative;
     width: 100%;
     z-index: 100;
@@ -136,7 +136,6 @@ nav {
         color: black;
     }
     ul.icons {
-        display: inline-block;
         float: right;
         flex-direction: row;
         li {
@@ -154,7 +153,7 @@ nav {
 
 main {
     section {
-        background: $beige url("/img/leaf_texture.png");
+        background: $beige url("../img/leaf_texture.png");
     }
 }
 
@@ -170,6 +169,7 @@ footer {
     position: absolute;
     width: 100%;
 }
+
 .waveBottom {
     content: " ";
     left: 0;

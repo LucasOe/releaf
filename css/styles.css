@@ -125,7 +125,7 @@ header .headerProducts h2 {
 
 nav {
   background-color: white;
-  padding: 0 15px;
+  padding: 0 50px;
   position: relative;
   width: 100%;
   z-index: 100;
@@ -167,7 +167,6 @@ nav a {
 }
 
 nav ul.icons {
-  display: inline-block;
   float: right;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -188,7 +187,7 @@ nav .waveTop {
 }
 
 main section {
-  background: #fff4df url("/img/leaf_texture.png");
+  background: #fff4df url("../img/leaf_texture.png");
 }
 
 footer {
