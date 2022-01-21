@@ -1,5 +1,5 @@
 $primary-color: #008e39;
-$soft-green: #DCE9CC;
+$soft-green: #dce9cc;
 $beige: #fff4df;
 
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
@@ -62,7 +62,12 @@ a {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
 }
@@ -103,7 +108,7 @@ header {
         h2 {
             color: #ffffff;
             font-size: 3.5rem;
-            text-shadow: 0 0 5px rgba(0,0,0,0.3);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
 }
@@ -154,7 +159,6 @@ nav {
     }
 }
 
-
 .imageWrap {
     height: 100px;
     width: 100px;
@@ -180,9 +184,9 @@ nav {
         white-space: nowrap;
         margin-bottom: 5px;
         padding: 15px;
-        text-shadow: 0 0 5px rgba(0,0,0,0.3);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
-    
+
     p {
         font-size: 1.2rem;
         color: #ffffff;
@@ -243,7 +247,6 @@ footer {
     width: 100%;
     top: 100%;
 }
-
 
 // Media Queries
 

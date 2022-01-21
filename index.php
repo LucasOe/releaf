@@ -7,7 +7,7 @@
     <title>Releaf - Für Körper und Seele</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                         <h3><?php echo $product->name; ?></h3>
                         <p><?php echo $product->getPrice(); ?></p>
                     </div>
-                                        <?php endforeach; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </header>

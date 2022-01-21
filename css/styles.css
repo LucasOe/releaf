@@ -57,7 +57,12 @@ a {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
 }
@@ -204,10 +209,10 @@ main .textured {
   background: #fff4df url("../img/leaf_texture.png");
 }
 main .green {
-  background-color: #DCE9CC;
+  background-color: #dce9cc;
 }
 main .textured.green {
-  background: #DCE9CC url("../img/leaf_texture.png");
+  background: #dce9cc url("../img/leaf_texture.png");
 }
 
 footer {
