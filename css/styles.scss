@@ -33,6 +33,7 @@ button {
     font-weight: 700;
     padding: 15px;
     transition-duration: 0.3s;
+
     &:hover {
         background-color: darken($color: $primary-color, $amount: 10);
         transition-duration: 0.3s;
@@ -76,6 +77,7 @@ header {
     max-height: calc(100vh - 100px);
     overflow: hidden;
     position: relative;
+
     img.hero {
         filter: blur(8px) brightness(110%);
         margin-left: -15px;
@@ -84,6 +86,7 @@ header {
             color: $primary-color;
         }
     }
+
     .logoWrap {
         width: fit-content;
         align-items: center;
@@ -105,17 +108,39 @@ header {
             margin-bottom: 30px;
         }
     }
+
+    h2 {
+        color: #ffffff;
+        font-size: 3.5rem;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .headerAbout {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        margin-left: 10vw;
+    }
+
     .headerProducts {
         position: absolute;
         top: 40%;
         right: 0;
         margin-right: 10vw;
+    }
 
-        h2 {
-            color: #ffffff;
-            font-size: 3.5rem;
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            text-align: center;
+    .textbox {
+        width: 30vw;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        opacity: 80%;
+
+        p {
+            margin: 0px;
         }
     }
 }
@@ -126,11 +151,13 @@ nav {
     position: relative;
     width: 100%;
     z-index: 100;
+
     .logo {
         display: inline-block;
         vertical-align: middle;
         margin-top: -35px;
     }
+
     ul.navigation {
         display: inline-block;
         font-family: "Amatic SC", sans-serif;
@@ -139,6 +166,7 @@ nav {
         margin: 0;
         align-items: center;
         flex-direction: row;
+
         li {
             display: inline-block;
             font-size: 2.4rem;
@@ -147,12 +175,15 @@ nav {
             z-index: 2;
         }
     }
+
     a {
         color: black;
     }
+
     ul.icons {
         float: right;
         flex-direction: row;
+
         li {
             display: inline-block;
             font-size: 2.4rem;
@@ -161,6 +192,7 @@ nav {
             z-index: 2;
         }
     }
+
     .waveTop {
         z-index: -1;
     }
@@ -208,6 +240,7 @@ nav {
         border-radius: 50%;
         background-color: #ffffff;
         overflow: hidden;
+        opacity: 80%;
 
         .image {
             width: 80%;

@@ -99,17 +99,35 @@ header .logoWrap button {
 header .logoWrap .heroLogo {
   margin-bottom: 30px;
 }
+header h2 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 30px;
+}
+header .headerAbout {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-left: 10vw;
+}
 header .headerProducts {
   position: absolute;
   top: 40%;
   right: 0;
   margin-right: 10vw;
 }
-header .headerProducts h2 {
-  color: #ffffff;
-  font-size: 3.5rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  text-align: center;
+header .textbox {
+  width: 30vw;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  opacity: 80%;
+}
+header .textbox p {
+  margin: 0px;
 }
 
 nav {
@@ -198,6 +216,7 @@ nav .waveTop {
   border-radius: 50%;
   background-color: #ffffff;
   overflow: hidden;
+  opacity: 80%;
 }
 .product .image-wrapper .image {
   width: 80%;

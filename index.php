@@ -18,6 +18,13 @@
             <img class="heroLogo" src="img/logo.png" href="index.html" width="300">
             <button>Shop Now</button>
         </div>
+        <!--About Us-->
+        <div class="headerAbout hiddenS">
+            <h2>Das sind wir</h2>
+            <div class="textbox">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergre. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invid</p>
+            </div>
+        </div>
 
         <!--Products Preview-->
         <div class="headerProducts hiddenS">
