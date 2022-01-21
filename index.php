@@ -18,7 +18,7 @@
         </div>
 
         <!--Products Preview-->
-        <div class="headerProducts">
+        <div class="headerProducts hiddenS">
             <h2>Tees für Körper und Seele</h2>
             <div class="productContainer">
                 <?php
