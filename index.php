@@ -1,3 +1,5 @@
+<?php include "database/connection.php" ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -21,11 +23,13 @@
         <div class="headerProducts hiddenS">
             <h2>Tees für Körper und Seele</h2>
             <div class="productContainer">
-                <?php
-                for ($i = 0; $i <= 3; $i++) {
-                    include "./product.php";
-                }
-                ?>
+                <?php foreach ($result as $key => $product) : ?>
+                    <div class="product">
+                        <img class="productImage" src="<?php echo $product->getImage() ?>" height="auto" width="100">
+                        <h3><?php echo $product->name; ?></h3>
+                        <p><?php echo $product->getPrice(); ?></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </header>
