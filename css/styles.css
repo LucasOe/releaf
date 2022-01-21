@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -27,11 +28,14 @@ button {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 15px;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
+
 button:hover {
   background-color: #005b25;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 a {
@@ -62,46 +66,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-header {
-  max-height: calc(100vh - 100px);
-  overflow: hidden;
-  position: relative;
-}
-header img.hero {
-  filter: blur(8px) brightness(110%);
-  margin-left: -15px;
-  width: calc(100% + 30px);
-}
-header img.hero a {
-  color: #008e39;
-}
-header .logoWrap {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 0;
-  margin: 0% auto;
-  position: absolute;
-  right: 0;
-  top: 25%;
-  transform: translateY(-50%);
-}
-header .logoWrap button {
-  font-size: 2.4rem;
-}
-header .headerProducts {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  width: 40vw;
-}
-header .headerProducts h2 {
-  color: #ffffff;
-  font-size: 3rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
 nav {
   background-color: white;
   padding: 0 50px;
@@ -109,20 +73,30 @@ nav {
   width: 100%;
   z-index: 100;
 }
+
 nav .logo {
   display: inline-block;
   vertical-align: middle;
   margin-top: -35px;
 }
+
 nav ul.navigation {
   display: inline-block;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin: 0;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav ul.navigation li {
   display: inline-block;
   font-size: 2.4rem;
@@ -130,13 +104,19 @@ nav ul.navigation li {
   padding: 15px;
   z-index: 2;
 }
+
 nav a {
   color: black;
 }
+
 nav ul.icons {
   float: right;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav ul.icons li {
   display: inline-block;
   font-size: 2.4rem;
@@ -144,8 +124,95 @@ nav ul.icons li {
   padding: 15px;
   z-index: 2;
 }
+
 nav .waveTop {
   z-index: -1;
+}
+
+footer {
+  display: block;
+  position: relative;
+}
+
+header {
+  max-height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+}
+
+header img.hero {
+  -webkit-filter: blur(8px) brightness(110%);
+          filter: blur(8px) brightness(110%);
+  margin-left: -15px;
+  width: calc(100% + 30px);
+}
+
+header img.hero a {
+  color: #008e39;
+}
+
+header .logoWrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  margin: 0% auto;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .logoWrap button {
+  font-size: 2.4rem;
+}
+
+header .headerProducts {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 40vw;
+}
+
+header .headerProducts h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  background-color: white;
+}
+
+section .circle {
+  background-color: white;
+  border-radius: 100%;
+  height: 575px;
+  width: 575px;
+}
+
+.textured {
+  background: #fff4df url("../img/leaf_texture.png");
+  height: 800px;
+}
+
+.green {
+  background-color: #DCE9CC;
+}
+
+.textured.green {
+  background: #DCE9CC url("../img/leaf_texture.png");
 }
 
 .imageWrap {
@@ -167,11 +234,13 @@ nav .waveTop {
   padding: 15px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
 .product h3 {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+
 .product p {
   color: #ffffff;
   font-family: "Amatic SC", sans-serif;
@@ -179,6 +248,7 @@ nav .waveTop {
   font-weight: 700;
   margin: 0;
 }
+
 .product .image-wrapper {
   width: 100px;
   height: 100px;
@@ -187,31 +257,12 @@ nav .waveTop {
   background-color: #ffffff;
   overflow: hidden;
 }
+
 .product .image-wrapper .image {
   width: 100%;
   height: auto;
-  transform: translateY(25%);
-}
-
-main section {
-  background-color: white;
-}
-
-main .textured {
-  background: #fff4df url("../img/leaf_texture.png");
-}
-
-main .green {
-  background-color: #DCE9CC;
-}
-
-main .textured.green {
-  background: #DCE9CC url("../img/leaf_texture.png");
-}
-
-footer {
-  display: block;
-  position: relative;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
 }
 
 .waveTop {
@@ -235,5 +286,4 @@ footer {
     display: none;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
