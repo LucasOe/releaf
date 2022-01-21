@@ -9,10 +9,16 @@ class Product
     public $id;
     public $name;
     private $price;
+    private $image;
 
     public function getPrice()
     {
         return sprintf('%01.2f', $this->price) . "€";
+    }
+
+    public function getImage()
+    {
+        return "img/products/" . $this->image . ".jpg";
     }
 };
 
