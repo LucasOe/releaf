@@ -1,21 +1,27 @@
 {
-	// See https://go.microsoft.com/fwlink/?LinkId=733558
-	// for the documentation about the tasks.json format
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "Compile Sass",
-			"type": "shell",
-			"command": "sass css/styles.scss css/styles.css",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		},
-		{
-			"label": "Watch Sass",
-			"type": "shell",
-			"command": "sass --watch css/styles.scss css/styles.css"
-		}
-	]
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Sass",
+            "type": "shell",
+            "command": "sass css/styles.scss css/styles.css",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Watch Sass",
+            "type": "shell",
+            "command": "sass --watch css/styles.scss css/styles.css",
+            "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 1,
+                "runOn": "folderOpen"
+            }
+        }
+    ]
 }
