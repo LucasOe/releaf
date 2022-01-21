@@ -1,5 +1,7 @@
 $primary-color: #008e39;
+$soft-green: #DCE9CC;
 $beige: #fff4df;
+
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 0;
 }
@@ -60,7 +62,7 @@ a {
     width: 100%;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
 }
@@ -151,19 +153,46 @@ nav {
     }
 }
 
+
+.imageWrap {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 .product {
     display: inline-block;
+    padding: 15px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
     h3 {
         color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
     }
     p {
         color: #ffffff;
+        font-family: "Amatic SC", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0;
     }
 }
 
 main {
     section {
+        background-color: white;
+    }
+    .textured {
         background: $beige url("../img/leaf_texture.png");
+    }
+    .green {
+        background-color: $soft-green;
+    }
+    .textured.green {
+        background: $soft-green url("../img/leaf_texture.png");
     }
 }
 

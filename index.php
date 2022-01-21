@@ -4,9 +4,10 @@
 <html>
 
 <head>
-    <title>Releaf Teas</title>
+    <title>Releaf - Für Körper und Seele</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico"/>
 </head>
 
 <body>
@@ -24,11 +25,7 @@
             <h2>Tees für Körper und Seele</h2>
             <div class="productContainer">
                 <?php foreach ($result as $key => $product) : ?>
-                    <div class="product">
-                        <img class="productImage" src="<?php echo $product->getImage() ?>" height="auto" width="100">
-                        <h3><?php echo $product->name; ?></h3>
-                        <p><?php echo $product->getPrice(); ?></p>
-                    </div>
+                    <?php include "./product.php"; ?>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -39,7 +36,40 @@
 
     <!--Main Content-->
     <main>
+        <section class="textured">
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+        </section>
+        <section class="green">
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+        </section>
         <section>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+        </section>
+        <section class="textured green">
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>

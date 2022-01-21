@@ -1,5 +1,7 @@
 <div class="product">
-    <img class="productImage" src="" height="100" width="100">
-    <h3>Tee</h3>
-    <p>0,00€</p>
+    <div class="imageWrap">
+        <img class="productImage" src="<?php echo $product->getImage() ?>" height="auto" width="100">
+    </div>
+    <h3><?php echo $product->name; ?></h3>
+    <p><?php echo $product->getPrice(); ?></p>
 </div>
