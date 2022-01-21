@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   margin: 0;
   font-weight: 700;
@@ -8,20 +13,29 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   margin: 0;
 }
 
 button {
-  background-color: #008E39;
+  background-color: #008e39;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #ffffff;
+  cursor: pointer;
   font-family: "Amatic SC", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   padding: 15px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #005b25;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .spacerS {
@@ -42,26 +56,26 @@ button {
   width: 100%;
 }
 
-header {
-  height: 100%;
-  margin: -5px;
-  max-height: 1080px;
+h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
 }
 
 header {
-  max-height: 100%;
+  height: calc(100vh - 100px);
   overflow: hidden;
   position: relative;
 }
 
 header img.hero {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  width: 100%;
+  -webkit-filter: blur(8px) brightness(110%);
+          filter: blur(8px) brightness(110%);
+  margin-left: -15px;
+  width: calc(100% + 30px);
 }
 
 header img.hero a {
-  color: #008E39;
+  color: #008e39;
 }
 
 header .logoWrap {
@@ -91,27 +105,39 @@ header .logoWrap button {
   font-size: 2.4rem;
 }
 
+header .headerProducts {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+header .headerProducts h2 {
+  text-shadow: 0 0 5px black;
+  color: #ffffff;
+}
+
 nav {
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 0 15px;
   position: relative;
-  top: -30px;
   width: 100%;
+  z-index: 100;
+}
+
+nav .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -35px;
 }
 
 nav ul.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,22 +148,16 @@ nav ul.navigation {
 }
 
 nav ul.navigation li {
+  display: inline-block;
+  font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  font-size: 2.4rem;
   z-index: 2;
 }
 
 nav ul.icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
+  float: right;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -145,10 +165,15 @@ nav ul.icons {
 }
 
 nav ul.icons li {
+  display: inline-block;
+  font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  font-size: 2.4rem;
   z-index: 2;
+}
+
+nav .waveTop {
+  z-index: -1;
 }
 
 main section {
@@ -172,7 +197,7 @@ footer {
   content: " ";
   left: 0;
   position: absolute;
-  margin-top: -50px;
   width: 100%;
+  top: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
