@@ -71,71 +71,6 @@ h6 {
   font-weight: 700;
 }
 
-header {
-  max-height: calc(100vh - 100px);
-  overflow: hidden;
-  position: relative;
-}
-
-header img.hero {
-  -webkit-filter: blur(8px) brightness(110%);
-          filter: blur(8px) brightness(110%);
-  margin-left: -15px;
-  width: calc(100% + 30px);
-}
-
-header img.hero a {
-  color: #008e39;
-}
-
-header .logoWrap {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  left: 0;
-  margin: 0% auto;
-  position: absolute;
-  right: 0;
-  top: 25%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-header .logoWrap button {
-  font-size: 2.4rem;
-}
-
-header .logoWrap .heroLogo {
-  margin-bottom: 30px;
-}
-
-header .headerProducts {
-  position: absolute;
-  top: 40%;
-  right: 0;
-  margin-right: 10vw;
-}
-
-header .headerProducts h2 {
-  color: #ffffff;
-  font-size: 3.5rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-
 nav {
   background-color: white;
   padding: 0 50px;
@@ -246,6 +181,10 @@ header .logoWrap {
 
 header .logoWrap button {
   font-size: 2.4rem;
+}
+
+header .logoWrap .heroLogo {
+  margin-bottom: 30px;
 }
 
 header .headerProducts {
