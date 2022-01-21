@@ -12,7 +12,7 @@ $beige: #fff4df;
 html {
     margin: 0;
     font-weight: 700;
-    font-size: 100%;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -166,8 +166,8 @@ header {
         width: 40vw;
         h2 {
             color: #ffffff;
-            font-size: 3rem;
-            text-shadow: 0 0 5px rgba(0,0,0,0.3);
+            font-size: 4rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
 }
@@ -177,10 +177,24 @@ header {
 section {
     background-color: white;
     .circle {
+        align-items: center;
         background-color: white;
         border-radius: 100%;
+        display: flex;
+        flex-direction: column;
         height: 575px;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 70px;
         width: 575px;
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1.8rem;
+            text-align: center;
+        }
     }
 }
 .textured {
@@ -215,7 +229,7 @@ section {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -225,7 +239,7 @@ section {
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 2.4rem;
         color: #ffffff;
         font-family: "Amatic SC", sans-serif;
         font-size: 2.4rem;

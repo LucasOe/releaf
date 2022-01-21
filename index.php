@@ -43,6 +43,7 @@
     <!--Main Content-->
     <main>
         <section class="textured">
+            <div class="spacerL"></div>
             <div class="circle">
                 <h3>Mehr als nur Tee</h3>
                 <p>
