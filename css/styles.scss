@@ -1,5 +1,5 @@
 $primary-color: #008e39;
-$soft-green: #DCE9CC;
+$soft-green: #dce9cc;
 $beige: #fff4df;
 
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
@@ -62,7 +62,12 @@ a {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
 }
@@ -200,16 +205,27 @@ section {
     display: flex;
     align-items: center;
 }
+
 .product {
     display: inline-block;
-    padding: 15px;
-    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width: fit-content;
+    margin: 0px 15px;
+
     h3 {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
+        font-size: 1.3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 5px;
+        padding: 15px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
+
     p {
+        font-size: 1.2rem;
         color: #ffffff;
         font-family: "Amatic SC", sans-serif;
         font-size: 2.4rem;
@@ -218,8 +234,8 @@ section {
     }
 
     .image-wrapper {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: block;
         border-radius: 50%;
         background-color: #ffffff;
@@ -228,7 +244,7 @@ section {
         .image {
             width: 100%;
             height: auto;
-            transform: translateY(25%);
+            transform: translateY(25%) scale(0.8);
         }
     }
 }

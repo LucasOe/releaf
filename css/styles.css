@@ -61,7 +61,12 @@ a {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
 }
@@ -221,27 +226,31 @@ section .circle {
   border-radius: 100%;
   background: white;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .product {
   display: inline-block;
-  padding: 15px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  margin: 0px 15px;
 }
 
 .product h3 {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  padding: 15px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .product p {
+  font-size: 1.2rem;
   color: #ffffff;
   font-family: "Amatic SC", sans-serif;
   font-size: 2.4rem;
@@ -250,8 +259,8 @@ section .circle {
 }
 
 .product .image-wrapper {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: block;
   border-radius: 50%;
   background-color: #ffffff;
