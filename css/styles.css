@@ -107,6 +107,13 @@ nav ul.icons li {
   list-style: none;
   padding: 15px;
 }
+nav .wave {
+  content: " ";
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
 footer {
   display: block;
@@ -176,9 +183,8 @@ header .textbox p {
 }
 
 section {
-  background-color: white;
-  padding: 0 50px;
   position: relative;
+  background-color: white;
   width: 100%;
 }
 section .logo {
@@ -214,7 +220,12 @@ section ul.icons li {
   list-style: none;
   padding: 15px;
 }
-section .circle {
+section .circle-wrapper {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 20%;
+}
+section .circle-wrapper .circle {
   align-items: center;
   background-color: white;
   border-radius: 100%;
@@ -227,11 +238,11 @@ section .circle {
   padding: 70px;
   width: 575px;
 }
-section .circle h3 {
+section .circle-wrapper .circle h3 {
   font-size: 5rem;
   text-align: center;
 }
-section .circle p {
+section .circle-wrapper .circle p {
   font-size: 1.8rem;
   text-align: center;
 }
@@ -300,24 +311,6 @@ section .circle p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.waveTop {
-  content: " ";
-  left: 0;
-  bottom: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-
-.waveBottom {
-  content: " ";
-  left: 0;
-  top: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -49,15 +49,16 @@
     <!--Main Content-->
     <main>
         <section class="textured">
-            <div class="spacerL"></div>
-            <div class="circle">
-                <h3>Mehr als nur Tee</h3>
-                <p>
-                    Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
-                    mit unseren Tees kannst du dir eine Auszeitgönnen.
-                    <br>
-                    Entdecke jetzt unser vielseitiges Angebot!
-                </p>
+            <div class="circle-wrapper">
+                <div class="circle">
+                    <h3>Mehr als nur Tee</h3>
+                    <p>
+                        Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
+                        mit unseren Tees kannst du dir eine Auszeitgönnen.
+                        <br>
+                        Entdecke jetzt unser vielseitiges Angebot!
+                    </p>
+                </div>
             </div>
         </section>
         <section class="green">

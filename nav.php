@@ -1,5 +1,5 @@
 <nav>
-    <img class="waveTop" src="img/wave_top.svg" />
+    <img class="wave" src="img/wave_top.svg" style="bottom:100%;" />
     <img class="logo" src="img/logo.png" title="Releaf" href="index.html" width="100" height="auto">
     <ul class="navigation">
         <li>
@@ -26,5 +26,5 @@
             <img src="img/icons/ic_shopping_cart.svg">
         </li>
     </ul>
-    <img class="waveBottom" src="img/wave_bottom.svg" />
+    <img class="wave" src="img/wave_bottom.svg" style="top:100%" />
 </nav>
