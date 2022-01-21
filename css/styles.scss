@@ -95,11 +95,12 @@ header {
     .headerProducts {
         position: absolute;
         right: 20px;
-        top: 50%;
-        width: 40vw;
+        top: 40%;
+        margin-right: 10vw;
+
         h2 {
             color: #ffffff;
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
     }
@@ -153,16 +154,27 @@ nav {
 
 .product {
     display: inline-block;
+    width: fit-content;
+    margin: 0px 15px;
+
     h3 {
         color: #ffffff;
+        font-weight: 400;
+        font-size: 1.3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 5px;
     }
     p {
+        font-size: 1.2rem;
         color: #ffffff;
+        margin: 0px;
     }
 
     .image-wrapper {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: block;
         border-radius: 50%;
         background-color: #ffffff;
@@ -171,7 +183,7 @@ nav {
         .image {
             width: 100%;
             height: auto;
-            transform: translateY(25%);
+            transform: translateY(25%) scale(0.8);
         }
     }
 }
