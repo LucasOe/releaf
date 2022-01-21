@@ -78,12 +78,14 @@ nav {
     padding: 0 50px;
     position: relative;
     width: 100%;
-    z-index: 100;
+    z-index: 2;
+
     .logo {
         display: inline-block;
         vertical-align: middle;
         margin-top: -35px;
     }
+
     ul.navigation {
         display: inline-block;
         font-family: "Amatic SC", sans-serif;
@@ -92,30 +94,29 @@ nav {
         margin: 0;
         align-items: center;
         flex-direction: row;
+
         li {
             display: inline-block;
             font-size: 2.4rem;
             list-style: none;
             padding: 15px;
-            z-index: 2;
         }
     }
+
     a {
         color: black;
     }
+
     ul.icons {
         float: right;
         flex-direction: row;
+
         li {
             display: inline-block;
             font-size: 2.4rem;
             list-style: none;
             padding: 15px;
-            z-index: 2;
         }
-    }
-    .waveTop {
-        z-index: -1;
     }
 }
 
@@ -206,7 +207,6 @@ section {
     padding: 0 50px;
     position: relative;
     width: 100%;
-    z-index: 100;
 
     .logo {
         display: inline-block;
@@ -228,7 +228,6 @@ section {
             font-size: 2.4rem;
             list-style: none;
             padding: 15px;
-            z-index: 2;
         }
     }
 
@@ -245,12 +244,7 @@ section {
             font-size: 2.4rem;
             list-style: none;
             padding: 15px;
-            z-index: 2;
         }
-    }
-
-    .waveTop {
-        z-index: -1;
     }
 
     .circle {
@@ -277,13 +271,16 @@ section {
         }
     }
 }
+
 .textured {
     background: $beige url("../img/leaf_texture.png");
     height: 800px;
 }
+
 .green {
     background-color: $soft-green;
 }
+
 .textured.green {
     background: $soft-green url("../img/leaf_texture.png");
 }
@@ -348,19 +345,21 @@ section {
 }
 
 .waveTop {
-    bottom: 100%;
     content: " ";
     left: 0;
+    bottom: 100%;
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
 .waveBottom {
     content: " ";
     left: 0;
+    top: 100%;
     position: absolute;
     width: 100%;
-    top: 100%;
+    z-index: -1;
 }
 
 // Media Queries

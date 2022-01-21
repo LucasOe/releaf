@@ -72,7 +72,7 @@ nav {
   padding: 0 50px;
   position: relative;
   width: 100%;
-  z-index: 100;
+  z-index: 2;
 }
 nav .logo {
   display: inline-block;
@@ -93,7 +93,6 @@ nav ul.navigation li {
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  z-index: 2;
 }
 nav a {
   color: black;
@@ -107,10 +106,6 @@ nav ul.icons li {
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  z-index: 2;
-}
-nav .waveTop {
-  z-index: -1;
 }
 
 footer {
@@ -185,7 +180,6 @@ section {
   padding: 0 50px;
   position: relative;
   width: 100%;
-  z-index: 100;
 }
 section .logo {
   display: inline-block;
@@ -206,7 +200,6 @@ section ul.navigation li {
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  z-index: 2;
 }
 section a {
   color: black;
@@ -220,10 +213,6 @@ section ul.icons li {
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
-  z-index: 2;
-}
-section .waveTop {
-  z-index: -1;
 }
 section .circle {
   align-items: center;
@@ -314,19 +303,21 @@ section .circle p {
 }
 
 .waveTop {
-  bottom: 100%;
   content: " ";
   left: 0;
+  bottom: 100%;
   position: absolute;
   width: 100%;
+  z-index: -1;
 }
 
 .waveBottom {
   content: " ";
   left: 0;
+  top: 100%;
   position: absolute;
   width: 100%;
-  top: 100%;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 1000px) {
