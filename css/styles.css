@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -57,7 +57,7 @@ a {
   width: 100%;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
 }
@@ -148,6 +148,16 @@ nav .waveTop {
   z-index: -1;
 }
 
+.imageWrap {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
 .product {
   display: inline-block;
   width: fit-content;
@@ -155,17 +165,23 @@ nav .waveTop {
 }
 .product h3 {
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 5px;
+  padding: 15px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .product p {
   font-size: 1.2rem;
   color: #ffffff;
-  margin: 0px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
 }
 .product .image-wrapper {
   width: 150px;
@@ -182,7 +198,16 @@ nav .waveTop {
 }
 
 main section {
+  background-color: white;
+}
+main .textured {
   background: #fff4df url("../img/leaf_texture.png");
+}
+main .green {
+  background-color: #DCE9CC;
+}
+main .textured.green {
+  background: #DCE9CC url("../img/leaf_texture.png");
 }
 
 footer {
