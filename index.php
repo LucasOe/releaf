@@ -3,6 +3,7 @@
 
 <head>
     <title>Releaf Teas</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
@@ -37,7 +38,7 @@
                 <a href="/zubehoer" title="Zubehör">Zubehör</a>
             </li>
             <li>
-                <a href="/unsere-werte" title="Zubehör">Unsere Werte</a>  
+                <a href="/unsere-werte" title="Zubehör">Unsere Werte</a>
             </li>
         </ul>
         <ul class="icons">
@@ -58,15 +59,15 @@
     </nav>
     <main>
         <section>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
-          <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
+            <div class="spacerL"></div>
         </section>
     </main>
     <footer>

@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		"**/*.css.map": true
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"editor.insertSpaces": true,
+	"editor.tabSize": 4
+}
