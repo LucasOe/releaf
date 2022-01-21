@@ -1,199 +1,205 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  margin: 0;
-  font-weight: 700;
-  font-size: 100%;
-  overflow-x: hidden;
+	margin: 0;
+	font-weight: 700;
+	font-size: 100%;
+	overflow-x: hidden;
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  font-weight: 400;
-  margin: 0;
+	font-family: "Segoe UI", sans-serif;
+	font-weight: 400;
+	margin: 0;
 }
 
 button {
-  background-color: #008e39;
-  border: none;
-  border-radius: 15px;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: "Amatic SC", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 15px;
-  transition-duration: 0.3s;
+	background-color: #008e39;
+	border: none;
+	border-radius: 15px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: "Amatic SC", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 15px;
+	transition-duration: 0.3s;
 }
 button:hover {
-  background-color: #005b25;
-  transition-duration: 0.3s;
+	background-color: #005b25;
+	transition-duration: 0.3s;
 }
 
 a {
-  color: #008e39;
-  text-decoration: none;
+	color: #008e39;
+	text-decoration: none;
 }
 
 .spacerS {
-  display: block;
-  height: 15px;
-  width: 100%;
+	display: block;
+	height: 15px;
+	width: 100%;
 }
 
 .spacerM {
-  display: block;
-  height: 30px;
-  width: 100%;
+	display: block;
+	height: 30px;
+	width: 100%;
 }
 
 .spacerL {
-  display: block;
-  height: 50px;
-  width: 100%;
+	display: block;
+	height: 50px;
+	width: 100%;
 }
 
 h2 {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 700;
 }
 
 header {
-  max-height: calc(100vh - 100px);
-  overflow: hidden;
-  position: relative;
+	max-height: calc(100vh - 100px);
+	overflow: hidden;
+	position: relative;
 }
 header img.hero {
-  filter: blur(8px) brightness(110%);
-  margin-left: -15px;
-  width: calc(100% + 30px);
+	filter: blur(8px) brightness(110%);
+	margin-left: -15px;
+	width: calc(100% + 30px);
 }
 header img.hero a {
-  color: #008e39;
+	color: #008e39;
 }
 header .logoWrap {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 0;
-  margin: 0% auto;
-  position: absolute;
-  right: 0;
-  top: 25%;
-  transform: translateY(-50%);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	margin: 0% auto;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	transform: translateY(-50%);
 }
 header .logoWrap button {
-  font-size: 2.4rem;
+	font-size: 2.4rem;
 }
 header .headerProducts {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  width: 40vw;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	width: 40vw;
 }
 header .headerProducts h2 {
-  color: #ffffff;
-  font-size: 3rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	font-size: 3rem;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 nav {
-  background-color: white;
-  padding: 0 50px;
-  position: relative;
-  width: 100%;
-  z-index: 100;
+	background-color: white;
+	padding: 0 50px;
+	position: relative;
+	width: 100%;
+	z-index: 100;
 }
 nav .logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -35px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -35px;
 }
 nav ul.navigation {
-  display: inline-block;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  justify-content: start;
-  margin: 0;
-  align-items: center;
-  flex-direction: row;
+	display: inline-block;
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 700;
+	justify-content: start;
+	margin: 0;
+	align-items: center;
+	flex-direction: row;
 }
 nav ul.navigation li {
-  display: inline-block;
-  font-size: 2.4rem;
-  list-style: none;
-  padding: 15px;
-  z-index: 2;
+	display: inline-block;
+	font-size: 2.4rem;
+	list-style: none;
+	padding: 15px;
+	z-index: 2;
 }
 nav a {
-  color: black;
+	color: black;
 }
 nav ul.icons {
-  float: right;
-  flex-direction: row;
+	float: right;
+	flex-direction: row;
 }
 nav ul.icons li {
-  display: inline-block;
-  font-size: 2.4rem;
-  list-style: none;
-  padding: 15px;
-  z-index: 2;
+	display: inline-block;
+	font-size: 2.4rem;
+	list-style: none;
+	padding: 15px;
+	z-index: 2;
 }
 nav .waveTop {
-  z-index: -1;
+	z-index: -1;
 }
 
 .product {
-  display: inline-block;
+	display: inline-block;
 }
 .product h3 {
-  color: #ffffff;
+	color: #ffffff;
 }
 .product p {
-  color: #ffffff;
+	color: #ffffff;
 }
 .product .image-wrapper {
-  width: 100px;
-  height: 100px;
-  display: block;
-  border-radius: 50%;
-  background-color: #ffffff;
-  overflow: hidden;
+	width: 100px;
+	height: 100px;
+	display: block;
+	border-radius: 50%;
+	background-color: #ffffff;
+	overflow: hidden;
 }
 .product .image-wrapper .image {
-  width: 100%;
-  height: auto;
-  transform: translateY(25%);
+	width: 100%;
+	height: auto;
+	transform: translateY(25%);
 }
 
 main section {
-  background: #fff4df url("../img/leaf_texture.png");
+	background: #fff4df url("../img/leaf_texture.png");
 }
 
 footer {
-  display: block;
-  position: relative;
+	display: block;
+	position: relative;
 }
 
 .waveTop {
-  bottom: 100%;
-  content: " ";
-  left: 0;
-  position: absolute;
-  width: 100%;
+	bottom: 100%;
+	content: " ";
+	left: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .waveBottom {
-  content: " ";
-  left: 0;
-  position: absolute;
-  width: 100%;
-  top: 100%;
+	content: " ";
+	left: 0;
+	position: absolute;
+	width: 100%;
+	top: 100%;
 }
 
+/*# sourceMappingURL=styles.css.map */
+@media only screen and (max-width: 1000px) {
+	.hiddenS {
+		display: none;
+	}
+}
 /*# sourceMappingURL=styles.css.map */
