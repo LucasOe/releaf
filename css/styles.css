@@ -106,7 +106,8 @@ nav ul.icons li {
   list-style: none;
   padding: 15px;
 }
-nav .wave {
+
+.wave {
   content: " ";
   left: 0;
   position: absolute;
@@ -117,6 +118,10 @@ nav .wave {
 footer {
   display: block;
   position: relative;
+  font-size: 1.5rem;
+}
+footer p {
+  margin: 10px;
 }
 
 header {
@@ -185,6 +190,7 @@ section {
   position: relative;
   background-color: white;
   width: 100%;
+  z-index: -99;
 }
 section .logo {
   display: inline-block;

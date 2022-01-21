@@ -117,14 +117,14 @@ nav {
             padding: 15px;
         }
     }
+}
 
-    .wave {
-        content: " ";
-        left: 0;
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-    }
+.wave {
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 //Footer
@@ -132,6 +132,11 @@ nav {
 footer {
     display: block;
     position: relative;
+    font-size: 1.5rem;
+
+    p {
+        margin: 10px;
+    }
 }
 
 //Home Page
@@ -214,6 +219,7 @@ section {
     position: relative;
     background-color: white;
     width: 100%;
+    z-index: -99;
 
     .logo {
         display: inline-block;
