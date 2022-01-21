@@ -66,19 +66,19 @@ h6 {
   font-weight: 700;
 }
 
-nav {
+#nav {
   background-color: white;
   padding: 0 50px;
   position: relative;
   width: 100%;
   z-index: 2;
 }
-nav .logo {
+#nav .logo {
   display: inline-block;
   vertical-align: middle;
   margin-top: -35px;
 }
-nav ul.navigation {
+#nav ul.navigation {
   display: inline-block;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
@@ -87,24 +87,28 @@ nav ul.navigation {
   align-items: center;
   flex-direction: row;
 }
-nav ul.navigation li {
+#nav ul.navigation li {
   display: inline-block;
   font-size: 3.8rem;
   list-style: none;
   padding: 15px;
 }
-nav a {
+#nav a {
   color: black;
 }
-nav ul.icons {
+#nav ul.icons {
   float: right;
   flex-direction: row;
 }
-nav ul.icons li {
+#nav ul.icons li {
   display: inline-block;
   font-size: 2.4rem;
   list-style: none;
   padding: 15px;
+}
+#nav.sticky {
+  position: sticky;
+  top: 0px;
 }
 
 .wave {
@@ -113,6 +117,7 @@ nav ul.icons li {
   position: absolute;
   width: 100%;
   z-index: -1;
+  transform-origin: top;
 }
 
 footer {

@@ -1,5 +1,6 @@
-<nav>
-    <img class="wave" src="img/wave_top.svg" style="bottom:100%;" />
+<div id="mainMenuBarAnchor" />
+<div id="nav">
+    <img class="wave top" src="img/wave_top.svg" style="bottom:100%;" />
     <img class="logo" src="img/logo.png" title="Releaf" href="index.html" width="100" height="auto">
     <ul class="navigation">
         <li>
@@ -26,5 +27,35 @@
             <img src="img/icons/ic_shopping_cart.svg">
         </li>
     </ul>
-    <img class="wave" src="img/wave_bottom.svg" style="top:100%" />
-</nav>
+    <img class="wave bottom" src="img/wave_bottom.svg" style="top:100%" />
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var $window = $(window);
+        var $mainMenuBar = $('#nav');
+        var $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+
+        // Run this on scroll events.
+        $window.scroll(function() {
+            var windowTop = $window.scrollTop();
+            var divTop = $mainMenuBarAnchor.offset().top;
+            var animationSpeed = 5; // the bigger, the slower
+
+            if (windowTop > divTop) {
+                // Make the div sticky.
+                $mainMenuBar.addClass('sticky');
+            } else {
+                // Unstick the div.
+                $mainMenuBar.removeClass('sticky');
+            }
+
+            // Clamp number between two values
+            const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+            animationAmount = clamp(100 - (windowTop - divTop) / animationSpeed, 0, 100);
+
+            $("#nav > .wave.bottom").css("transform", "scaleY(" + animationAmount + "%)");
+        });
+    });
+</script>
