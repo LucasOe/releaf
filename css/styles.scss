@@ -109,6 +109,7 @@ header {
             color: #ffffff;
             font-size: 3.5rem;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
     }
 }
@@ -182,13 +183,11 @@ nav {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin-bottom: 5px;
-        padding: 15px;
+        margin-bottom: 0px;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 
     p {
-        font-size: 1.2rem;
         color: #ffffff;
         font-family: "Amatic SC", sans-serif;
         font-size: 2.4rem;
@@ -205,9 +204,13 @@ nav {
         overflow: hidden;
 
         .image {
-            width: 100%;
+            width: 80%;
             height: auto;
-            transform: translateY(25%) scale(0.8);
+            margin: auto;
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
