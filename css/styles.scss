@@ -159,6 +159,21 @@ nav {
     p {
         color: #ffffff;
     }
+
+    .image-wrapper {
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+        background-color: #ffffff;
+        overflow: hidden;
+
+        .image {
+            width: 100%;
+            height: auto;
+            transform: translateY(25%);
+        }
+    }
 }
 
 main {

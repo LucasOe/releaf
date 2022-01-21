@@ -25,7 +25,9 @@
             <div class="productContainer">
                 <?php foreach ($result as $key => $product) : ?>
                     <div class="product">
-                        <img class="productImage" src="<?php echo $product->getImage() ?>" height="auto" width="100">
+                        <div class="image-wrapper">
+                            <img class="image" src="<?php echo $product->getImage() ?>">
+                        </div>
                         <h3><?php echo $product->name; ?></h3>
                         <p><?php echo $product->getPrice(); ?></p>
                     </div>
