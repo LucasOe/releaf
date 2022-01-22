@@ -13,6 +13,21 @@ header {
         }
     }
 
+    .leaf {
+        position: absolute;
+        filter: blur(5px);
+        &:nth-of-type(2) {
+            top: 0
+        }
+        &:nth-of-type(3) {
+            top: 0
+        }
+        &:nth-of-type(4) {
+            top: 40vh;
+            left: 40vw;
+        }
+    }
+
     .logoWrap {
         align-items: center;
         display: flex;

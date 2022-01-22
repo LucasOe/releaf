@@ -14,6 +14,13 @@
     <!--Header-->
     <header>
         <img class="hero" src="img/header_image.jpg" />
+
+        <!--Blätter-->
+        <img class="leaf" src="img/leaf2.png" />
+        <img class="leaf" src="img/leaf2.png" />
+        <img class="leaf" src="img/leaf.png" />
+
+
         <div class="logoWrap">
             <img class="heroLogo" src="img/logo.png" href="index.html" width="300">
             <button>Shop Now</button>
@@ -103,6 +110,7 @@
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 
