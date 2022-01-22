@@ -70,6 +70,7 @@ footer p {
 #nav .logo {
   height: inherit;
   padding: 8px;
+  z-index: 99;
 }
 #nav ul.navigation {
   font-family: "Amatic SC", sans-serif;
@@ -125,7 +126,6 @@ footer p {
   left: 0;
   position: absolute;
   width: 100%;
-  z-index: -1;
   transform-origin: top;
 }
 .wave.top {
@@ -286,7 +286,6 @@ section {
   position: relative;
   background-color: white;
   width: 100%;
-  z-index: -99;
 }
 section .logo {
   display: inline-block;
