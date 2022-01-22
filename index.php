@@ -16,7 +16,7 @@
         <img class="hero" src="img/header_image.jpg" />
         <div class="logoWrap">
             <img class="heroLogo" src="img/logo.png" href="index.html" width="300">
-            <button>Shop Now</button>
+            <button>Shop now</button>
         </div>
         <!--About Us-->
         <div class="header about-wrapper">
@@ -41,8 +41,11 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-            <button>Shop now</button>
+            <button>Unsere Empfehlungen</button>
         </div>
+
+        <!--Scrolldown button-->
+        <button class="scrollDown"></button>
     </header>
 
     <!--Navigation-->
