@@ -173,37 +173,27 @@ header h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-header .headerAbout {
+header .header {
   position: absolute;
   top: 40%;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  header .header {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .header {
+    display: none;
+  }
+}
+header .about-wrapper {
   left: 0;
   margin-left: 10vw;
 }
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
-  header .headerAbout {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  header .headerAbout {
-    display: none;
-  }
-}
-header .headerProducts {
-  position: absolute;
-  top: 40%;
+header .product-wrapper {
   right: 0;
   margin-right: 10vw;
-}
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
-  header .headerProducts {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  header .headerProducts {
-    display: none;
-  }
 }
 header .textbox {
   width: 30vw;
