@@ -16,15 +16,17 @@ $(document).ready(function () {
             // Unstick the div.
             $mainMenuBar.removeClass("sticky");
         }
+
         // Clamp number between two values
         const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-        animationAmount = clamp(
+        var percentage = clamp(
             100 - (windowTop - divTop) / animationSpeed,
             0,
             100
         );
-        logoAnimation = clamp(2 - (windowTop - divTop) / animationSpeed, 0, 1);
-        console.log(windowTop - divTop);
+
+        animationAmount = percentage;
+        logoAnimation = 1 + percentage / 100;
 
         $("#nav > .wave.bottom").css(
             "transform",
