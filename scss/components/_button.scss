@@ -1,0 +1,16 @@
+button {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    padding: 15px;
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+        transition-duration: 0.3s;
+    }
+}

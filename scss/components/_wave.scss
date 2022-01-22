@@ -1,0 +1,16 @@
+.wave {
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top;
+
+    &.top {
+        bottom: 100%;
+    }
+
+    &.bottom {
+        top: 100%;
+    }
+}
