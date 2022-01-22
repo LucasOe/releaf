@@ -148,6 +148,20 @@ header img.hero {
 header img.hero a {
   color: #008e39;
 }
+header .leaf {
+  position: absolute;
+  filter: blur(5px);
+}
+header .leaf:nth-of-type(2) {
+  top: 0;
+}
+header .leaf:nth-of-type(3) {
+  top: 0;
+}
+header .leaf:nth-of-type(4) {
+  top: 40vh;
+  left: 40vw;
+}
 header .logoWrap {
   align-items: center;
   display: flex;
