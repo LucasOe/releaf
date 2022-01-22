@@ -103,6 +103,10 @@ footer p {
   top: 0px;
 }
 
+.roundedImage {
+  border-radius: 100%;
+}
+
 .spacerS {
   display: block;
   height: 15px;
@@ -341,12 +345,12 @@ section ul.icons li {
   list-style: none;
   padding: 15px;
 }
-section .circle-wrapper {
+section #imgDrinkingTea {
   position: absolute;
-  margin-top: 150px;
-  margin-left: 20%;
+  right: 62%;
+  top: 20%;
 }
-section .circle-wrapper .circle {
+section .circle {
   align-items: center;
   background-color: white;
   border-radius: 100%;
@@ -354,16 +358,16 @@ section .circle-wrapper .circle {
   flex-direction: column;
   height: 575px;
   justify-content: center;
-  margin-bottom: 5px;
-  padding: 15px;
+  margin: 0 auto;
   padding: 70px;
+  position: relative;
   width: 575px;
 }
-section .circle-wrapper .circle h3 {
+section .circle h3 {
   font-size: 5rem;
   text-align: center;
 }
-section .circle-wrapper .circle p {
+section .circle p {
   font-size: 1.8rem;
   text-align: center;
 }
@@ -371,6 +375,7 @@ section .circle-wrapper .circle p {
 .textured {
   background: #fff4df url("../img/leaf_texture.png");
   height: 800px;
+  padding-top: 85px;
 }
 
 .green {
