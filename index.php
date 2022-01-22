@@ -1,4 +1,4 @@
-<?php include "database/connection.php" ?>
+<?php include "components/connection.php" ?>
 
 <!DOCTYPE html>
 <html>
@@ -6,7 +6,7 @@
 <head>
     <title>Releaf - Für Körper und Seele</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
 </head>
 
@@ -44,7 +44,10 @@
     </header>
 
     <!--Navigation-->
-    <?php include "./nav.php"; ?>
+    <div id="mainMenuBarAnchor"></div>
+    <?php include "components/nav.php"; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
 
     <!--Main Content-->
     <main>
@@ -97,7 +100,7 @@
     </main>
 
     <!--Footer-->
-    <?php include "./footer.php"; ?>
+    <?php include "components/footer.php"; ?>
 </body>
 
 </html>

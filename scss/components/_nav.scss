@@ -1,0 +1,51 @@
+#nav {
+    height: $nav-height;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    .logo {
+        height: inherit;
+        padding: 8px;
+    }
+
+    ul.navigation {
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        margin: 0px;
+        margin-right: auto;
+        padding: 0px 50px;
+
+        li {
+            display: inline-block;
+            font-size: 3.8rem;
+            list-style: none;
+            padding: 0px 15px;
+        }
+    }
+
+    a {
+        color: black;
+    }
+
+    ul.icons {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            display: inline-block;
+            font-size: 2.4rem;
+            list-style: none;
+            padding: 0px 15px;
+        }
+    }
+
+    &.sticky {
+        position: sticky;
+        top: 0px;
+    }
+}

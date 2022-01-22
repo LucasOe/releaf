@@ -17,6 +17,16 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+}
+
 button {
   background-color: #008e39;
   border: none;
@@ -33,37 +43,13 @@ button:hover {
   transition-duration: 0.3s;
 }
 
-a {
-  color: #008e39;
-  text-decoration: none;
-}
-
-.spacerS {
+footer {
   display: block;
-  height: 15px;
-  width: 100%;
+  position: relative;
+  font-size: 1.5rem;
 }
-
-.spacerM {
-  display: block;
-  height: 30px;
-  width: 100%;
-}
-
-.spacerL {
-  display: block;
-  height: 50px;
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+footer p {
+  margin: 10px;
 }
 
 #nav {
@@ -111,6 +97,24 @@ h6 {
   top: 0px;
 }
 
+.spacerS {
+  display: block;
+  height: 15px;
+  width: 100%;
+}
+
+.spacerM {
+  display: block;
+  height: 30px;
+  width: 100%;
+}
+
+.spacerL {
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
 .wave {
   content: " ";
   left: 0;
@@ -124,15 +128,6 @@ h6 {
 }
 .wave.bottom {
   top: 100%;
-}
-
-footer {
-  display: block;
-  position: relative;
-  font-size: 1.5rem;
-}
-footer p {
-  margin: 10px;
 }
 
 header {
@@ -179,11 +174,31 @@ header .headerAbout {
   left: 0;
   margin-left: 10vw;
 }
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  header .headerAbout {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .headerAbout {
+    display: none;
+  }
+}
 header .headerProducts {
   position: absolute;
   top: 40%;
   right: 0;
   margin-right: 10vw;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  header .headerProducts {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .headerProducts {
+    display: none;
+  }
 }
 header .textbox {
   width: 30vw;
@@ -195,6 +210,71 @@ header .textbox {
 }
 header .textbox p {
   margin: 0px;
+}
+
+.imageWrap {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.productContainer {
+  width: fit-content;
+}
+.productContainer .product {
+  display: inline-block;
+  width: fit-content;
+  margin: 0px 15px;
+}
+.productContainer .product h3 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.productContainer .product p {
+  color: #ffffff;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+.productContainer .product .image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  overflow: hidden;
+  opacity: 80%;
+}
+.productContainer .product .image-wrapper .image {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .productContainer .product:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .productContainer .product:nth-child(2) {
+    display: none;
+  }
 }
 
 section {
@@ -276,96 +356,4 @@ section .circle-wrapper .circle p {
   background: #dce9cc url("../img/leaf_texture.png");
 }
 
-.imageWrap {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  background: white;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.productContainer {
-  width: fit-content;
-}
-.productContainer .product {
-  display: inline-block;
-  width: fit-content;
-  margin: 0px 15px;
-}
-.productContainer .product h3 {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 0px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-.productContainer .product p {
-  color: #ffffff;
-  font-family: "Amatic SC", sans-serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 0;
-}
-.productContainer .product .image-wrapper {
-  width: 150px;
-  height: 150px;
-  display: block;
-  border-radius: 50%;
-  background-color: #ffffff;
-  overflow: hidden;
-  opacity: 80%;
-}
-.productContainer .product .image-wrapper .image {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  display: block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-@media only screen and (max-width: 1920px) {
-  .productContainer .product:nth-child(4) {
-    display: none;
-  }
-
-  .headerProducts h2,
-.headerAbout h2 {
-    font-size: 4.5rem;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .productContainer .product:nth-child(3) {
-    display: none;
-  }
-
-  .headerProducts h2,
-.headerAbout h2 {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .productContainer .product:nth-child(2) {
-    display: none;
-  }
-
-  .headerProducts h2,
-.headerAbout h2 {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .headerProducts,
-.headerAbout {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */
