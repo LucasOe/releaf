@@ -239,40 +239,40 @@ section {
         }
     }
 
-    .circle-wrapper {
+    #imgDrinkingTea {
         position: absolute;
-        margin-top: 150px;
-        margin-left: 20%;
+        right: 62%;
+        top: 20%;
+    }
+    .circle {
+        align-items: center;
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 575px;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 70px;
+        position: relative;
+        width: 575px;
 
-        .circle {
-            align-items: center;
-            background-color: white;
-            border-radius: 100%;
-            display: flex;
-            flex-direction: column;
-            height: 575px;
-            justify-content: center;
-            margin-bottom: 5px;
-            padding: 15px;
-            padding: 70px;
-            width: 575px;
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+        }
 
-            h3 {
-                font-size: 5rem;
-                text-align: center;
-            }
-
-            p {
-                font-size: 1.8rem;
-                text-align: center;
-            }
+        p {
+            font-size: 1.8rem;
+            text-align: center;
         }
     }
 }
 
 .textured {
     background: $beige url("../img/leaf_texture.png");
-    height: 800px;
+    height: 800px;   
+    padding-top: 85px;
 }
 
 .green {
