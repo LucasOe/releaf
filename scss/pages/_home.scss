@@ -57,11 +57,9 @@ header {
         margin-bottom: 30px;
     }
 
-    .headerAbout {
+    .header {
         position: absolute;
         top: 40%;
-        left: 0;
-        margin-left: 10vw;
 
         @include responsive_tablet() {
             font-size: 3.5rem;
@@ -72,19 +70,14 @@ header {
         }
     }
 
-    .headerProducts {
-        position: absolute;
-        top: 40%;
+    .about-wrapper {
+        left: 0;
+        margin-left: 10vw;
+    }
+
+    .product-wrapper {
         right: 0;
         margin-right: 10vw;
-
-        @include responsive_tablet() {
-            font-size: 3.5rem;
-        }
-
-        @include responsive_mobile() {
-            display: none;
-        }
     }
 
     .textbox {
@@ -177,7 +170,6 @@ section {
     position: relative;
     background-color: white;
     width: 100%;
-    z-index: -99;
 
     .logo {
         display: inline-block;

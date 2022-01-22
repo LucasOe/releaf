@@ -26,7 +26,7 @@
             <button>Shop Now</button>
         </div>
         <!--About Us-->
-        <div class="headerAbout">
+        <div class="header about-wrapper">
             <h2>Das sind wir</h2>
             <div class="textbox">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergre. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invid</p>
@@ -34,7 +34,7 @@
         </div>
 
         <!--Products Preview-->
-        <div class="headerProducts">
+        <div class="header product-wrapper">
             <h2>Tees für Körper und Seele</h2>
             <div class="productContainer">
                 <?php foreach (array_slice($result, 0, 4) as $key => $product) : ?>
