@@ -65,7 +65,6 @@ footer p {
 #nav .logo {
   height: inherit;
   padding: 8px;
-  transform: scale(2);
 }
 #nav ul.navigation {
   font-family: "Amatic SC", sans-serif;
