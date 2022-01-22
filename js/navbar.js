@@ -3,8 +3,17 @@ $(document).ready(function () {
     var $mainMenuBar = $("#nav");
     var $mainMenuBarAnchor = $("#mainMenuBarAnchor");
 
+    // Run this on load events.
+    $window.ready(function () {
+        sticky();
+    });
     // Run this on scroll events.
     $window.scroll(function () {
+        sticky();
+    });
+
+    // Make navbar sticky
+    function sticky() {
         var windowTop = $window.scrollTop();
         var divTop = $mainMenuBarAnchor.offset().top;
         var animationSpeed = 5; // the bigger, the slower
@@ -33,5 +42,5 @@ $(document).ready(function () {
             "scaleY(" + animationAmount + "%)"
         );
         $("#nav > .logo").css("transform", "scale(" + logoAnimation + ")");
-    });
+    }
 });
