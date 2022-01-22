@@ -27,6 +27,11 @@ h6 {
   font-weight: 700;
 }
 
+a {
+  color: #008e39;
+  text-decoration: none;
+}
+
 button {
   background-color: #008e39;
   border: none;
