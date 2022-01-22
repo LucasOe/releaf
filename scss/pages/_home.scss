@@ -42,7 +42,7 @@ header {
         transform: translateY(-50%);
 
         button {
-            font-size: 3rem;
+            font-size: 4rem;
         }
 
         .heroLogo {
@@ -55,12 +55,20 @@ header {
         font-size: 5.5rem;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .header {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 40%;
+        top: 45%;
+
+        button {
+            font-size: 2.5rem;
+            margin: auto;
+            margin-top: 20px;
+        }
 
         @include responsive_tablet() {
             font-size: 3.5rem;
@@ -83,15 +91,25 @@ header {
 
     .textbox {
         width: 30vw;
+        height: 232px; // Same height as product view
         background-color: #ffffff;
         padding: 20px;
         border-radius: 20px;
         font-size: 2rem;
         opacity: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         p {
             margin: 0px;
         }
+    }
+
+    .scrollDown {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        display: block;
     }
 }
 

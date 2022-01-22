@@ -23,7 +23,7 @@
 
         <div class="logoWrap">
             <img class="heroLogo" src="img/logo.png" href="index.html" width="300">
-            <button>Shop Now</button>
+            <button>Shop now</button>
         </div>
         <!--About Us-->
         <div class="header about-wrapper">
@@ -31,6 +31,7 @@
             <div class="textbox">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergre. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invid</p>
             </div>
+            <button>Unsere Werte</button>
         </div>
 
         <!--Products Preview-->
@@ -47,7 +48,11 @@
                     </div>
                 <?php endforeach; ?>
             </div>
+            <button>Unsere Empfehlungen</button>
         </div>
+
+        <!--Scrolldown button-->
+        <button class="scrollDown"></button>
     </header>
 
     <!--Navigation-->

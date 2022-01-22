@@ -35,7 +35,7 @@ a {
 button {
   background-color: #008e39;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   color: #ffffff;
   cursor: pointer;
   font-family: "Amatic SC", sans-serif;
@@ -176,7 +176,7 @@ header .logoWrap {
   transform: translateY(-50%);
 }
 header .logoWrap button {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 header .logoWrap .heroLogo {
   margin-bottom: 30px;
@@ -186,11 +186,18 @@ header h2 {
   font-size: 5.5rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 header .header {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 40%;
+  top: 45%;
+}
+header .header button {
+  font-size: 2.5rem;
+  margin: auto;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   header .header {
@@ -212,14 +219,23 @@ header .product-wrapper {
 }
 header .textbox {
   width: 30vw;
+  height: 232px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 20px;
   font-size: 2rem;
   opacity: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 header .textbox p {
   margin: 0px;
+}
+header .scrollDown {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: block;
 }
 
 .imageWrap {
