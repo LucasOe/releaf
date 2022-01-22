@@ -54,8 +54,11 @@
             // Clamp number between two values
             const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
             animationAmount = clamp(100 - (windowTop - divTop) / animationSpeed, 0, 100);
+            logoAnimation = clamp(2 - (windowTop - divTop) / animationSpeed, 0, 1);
+            console.log(windowTop - divTop);
 
             $("#nav > .wave.bottom").css("transform", "scaleY(" + animationAmount + "%)");
+            $("#nav > .logo").css("transform", "scale(" + logoAnimation + ")");
         });
     });
 </script>

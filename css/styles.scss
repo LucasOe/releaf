@@ -73,6 +73,7 @@ h6 {
     font-weight: 700;
 }
 
+
 #nav {
     height: $nav-height;
     background-color: white;
@@ -86,6 +87,7 @@ h6 {
     .logo {
         height: inherit;
         padding: 8px;
+        transform: scale(2);
     }
 
     ul.navigation {
@@ -159,7 +161,7 @@ footer {
 //Home Page
 
 header {
-    max-height: calc(100vh - $nav-height);
+    max-height: calc(100vh - #{$nav-height});
     overflow: hidden;
     position: relative;
 
