@@ -156,7 +156,8 @@ header .leaf:nth-of-type(2) {
   top: 0;
 }
 header .leaf:nth-of-type(3) {
-  top: 0;
+  top: 20vh;
+  left: 80vw;
 }
 header .leaf:nth-of-type(4) {
   top: 40vh;
