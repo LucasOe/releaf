@@ -13,7 +13,10 @@
 <body>
     <!--Header-->
     <header>
-        <img class="hero" src="img/header_image.jpg" />
+    <picture>
+        <source srcset="img/header_image.jpg" media="(min-width: 700px)">
+        <img class="hero" src="img/header_image_mobile.jpg" />
+        </picture>
 
         <!--Blätter-->
         <img class="leaf" src="img/leaf2.png" />
