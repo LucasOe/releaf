@@ -3,13 +3,32 @@
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 0 50px;
     position: relative;
     width: 100%;
     z-index: 2;
 
+    #hamburger {
+        align-items: center;
+        display: none;
+        float: right;
+        flex-direction: column;
+        height: 50px;
+        justify-content: center;
+        margin-top: 5px;
+        margin-right: 50px;
+        width: 50px;
+        span {
+            height: 4px;
+            background-color: black;
+            width: 100%;
+            border-radius: 9px;
+            margin-top: 11px;
+        }
+    }
+
     .logo {
-        height: inherit;
+        width: 70px;
+        margin-left: 50px;
         padding: 8px;
         z-index: 99;
     }
@@ -49,5 +68,36 @@
     &.sticky {
         position: sticky;
         top: 0px;
+    }
+
+    &.open {
+        .navigation {
+            border-top: 2px solid #eee;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        .icons {
+            border-top: 2px solid #eee;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+    }
+
+    @include responsive_tablet() {
+        height: auto;
+        display: block;
+        #hamburger {
+            display: flex;
+        }
+        .navigation {
+            background-color: white;
+            display: none;
+        }
+        .icons {
+            background-color: white;
+            display: none;
+        }
     }
 }

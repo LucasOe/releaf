@@ -68,13 +68,31 @@ footer p {
   background-color: white;
   display: flex;
   align-items: center;
-  padding: 0 50px;
   position: relative;
   width: 100%;
   z-index: 2;
 }
+#nav #hamburger {
+  align-items: center;
+  display: none;
+  float: right;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+  margin-top: 5px;
+  margin-right: 50px;
+  width: 50px;
+}
+#nav #hamburger span {
+  height: 4px;
+  background-color: black;
+  width: 100%;
+  border-radius: 9px;
+  margin-top: 11px;
+}
 #nav .logo {
-  height: inherit;
+  width: 70px;
+  margin-left: 50px;
   padding: 8px;
   z-index: 99;
 }
@@ -109,6 +127,35 @@ footer p {
   position: sticky;
   top: 0px;
 }
+#nav.open .navigation {
+  border-top: 2px solid #eee;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+#nav.open .icons {
+  border-top: 2px solid #eee;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  #nav {
+    height: auto;
+    display: block;
+  }
+  #nav #hamburger {
+    display: flex;
+  }
+  #nav .navigation {
+    background-color: white;
+    display: none;
+  }
+  #nav .icons {
+    background-color: white;
+    display: none;
+  }
+}
 
 .roundedImage {
   border-radius: 100%;
@@ -138,7 +185,6 @@ footer p {
   position: absolute;
   width: 100%;
   transform-origin: top;
-  z-index: 1;
 }
 .wave.top {
   bottom: 100%;
@@ -214,7 +260,7 @@ header .header button {
   margin: auto;
   margin-top: 20px;
 }
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   header .header {
     font-size: 3.5rem;
   }
@@ -329,7 +375,7 @@ header .scrollDown:hover {
   top: 50%;
   transform: translateY(-50%);
 }
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .productContainer .product:nth-child(3) {
     display: none;
   }

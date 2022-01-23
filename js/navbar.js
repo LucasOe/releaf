@@ -6,6 +6,7 @@ $(document).ready(function () {
     // Run this on load events.
     $window.ready(function () {
         sticky();
+        mobileMenu();
     });
     // Run this on scroll events.
     $window.scroll(function () {
@@ -24,16 +25,28 @@ $(document).ready(function () {
         if (windowTop > divTop) {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
-            $("#nav > .logo").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
-            $(".navigation").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
-            $("#nav > .icons").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
+            if ($(window).width() > 700) {
+                $("#nav > .logo").css(
+                    "margin-top",
+                    clamp((windowTop - divTop) / 2, 0, 30)
+                );
+                $(".navigation").css(
+                    "margin-top",
+                    clamp((windowTop - divTop) / 2, 0, 30)
+                );
+                $("#nav > .icons").css(
+                    "margin-top",
+                    clamp((windowTop - divTop) / 2, 0, 30)
+                );
+            }
         } else {
             // Unstick the div.
             $mainMenuBar.removeClass("sticky");
         }
 
+        // Animate logo and navigation bar
         var percentage = clamp(
-            100 - ((windowTop - divTop) / animationSpeed),
+            100 - (windowTop - divTop) / animationSpeed,
             40,
             100
         );
@@ -46,5 +59,12 @@ $(document).ready(function () {
             "scaleY(" + animationAmount + "%)"
         );
         $("#nav > .logo").css("transform", "scale(" + logoAnimation + ")");
+    }
+
+    //Open or close hamburger menu
+    function mobileMenu() {
+        $("#hamburger").click((e) => {
+            $("#nav").toggleClass("open");
+        });
     }
 });
