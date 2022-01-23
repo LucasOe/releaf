@@ -103,6 +103,7 @@ footer p {
   font-size: 2.4rem;
   list-style: none;
   padding: 0px 15px;
+  height: 34px;
 }
 #nav.sticky {
   position: sticky;
