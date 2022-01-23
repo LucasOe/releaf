@@ -94,7 +94,7 @@
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>
-    <img class="wave bottom" src="img/wave_bottom_green.svg" />
+    <img class="wave bottom" src="img/wave_bottom_green.svg" style="z-index: 1" />
         </section>
         <section>
             <div class="spacerL"></div>
@@ -106,7 +106,7 @@
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>
-    <img class="wave bottom" src="img/wave_bottom.svg" />
+    <img class="wave bottom" src="img/wave_bottom.svg" style="z-index: 1" />
         </section>
         <section class="textured green">
             <div class="spacerL"></div>

@@ -295,13 +295,14 @@ section {
         width: 50px;
         &:nth-child(2) {
             background-color: $soft-green;
-            right: 20vw;
-            bottom: 150px;
+            right: 30vw;
+            bottom: 250px;
         }
         &:nth-child(3) {
             background-color: $soft-green;
-            right: 15vw;
+            right: 26vw;
             transform: scale(2);
+            bottom: 180px;
         }
     }
 }

@@ -463,13 +463,14 @@ section .bubble {
 }
 section .bubble:nth-child(2) {
   background-color: #dce9cc;
-  right: 20vw;
-  bottom: 150px;
+  right: 30vw;
+  bottom: 250px;
 }
 section .bubble:nth-child(3) {
   background-color: #dce9cc;
-  right: 15vw;
+  right: 26vw;
   transform: scale(2);
+  bottom: 180px;
 }
 
 .textured {
