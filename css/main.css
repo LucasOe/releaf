@@ -138,6 +138,7 @@ footer p {
   position: absolute;
   width: 100%;
   transform-origin: top;
+  z-index: 1;
 }
 .wave.top {
   bottom: 100%;

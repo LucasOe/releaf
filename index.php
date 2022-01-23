@@ -81,6 +81,7 @@
                 <div class="bubble green"></div>
         </section>
         <section class="green">
+    <img class="wave top" src="img/wave_top_green.svg" />
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>
@@ -90,6 +91,7 @@
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>
+    <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
         <section>
             <div class="spacerL"></div>
@@ -101,6 +103,7 @@
             <div class="spacerL"></div>
             <div class="spacerL"></div>
             <div class="spacerL"></div>
+    <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="textured green">
             <div class="spacerL"></div>
