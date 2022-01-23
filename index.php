@@ -62,16 +62,23 @@
     <!--Main Content-->
     <main id="main">
         <section class="textured">
-            <div class="circle">
-                <h3>Mehr als nur Tee</h3>
-                <p>
-                    Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
-                    mit unseren Tees kannst du dir eine Auszeitgönnen.
-                    <br>
-                    Entdecke jetzt unser vielseitiges Angebot!
-                </p>
+            <div class="circleWrap">
+                <div class="bubble"></div>
+                <div class="circle">
+                    <h3>Mehr als nur Tee</h3>
+                    <p>
+                        Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
+                        mit unseren Tees kannst du dir eine Auszeitgönnen.
+                    </p>
+                    <p>
+                        Entdecke jetzt unser vielseitiges Angebot!
+                    </p>
+                    <button href="/shop">Shop Now</button>
+                </div>
+                <img src="img/woman_drinking_tea.jpg" alt="Frau trinkt Tee" class="roundedImage" id="imgDrinkingTea" />
             </div>
-            <img src="img/woman_drinking_tea.jpg" alt="Frau trinkt Tee" class="roundedImage" id="imgDrinkingTea" />
+                <div class="bubble green"></div>
+                <div class="bubble green"></div>
         </section>
         <section class="green">
             <div class="spacerL"></div>
