@@ -18,19 +18,23 @@ $(document).ready(function () {
         var divTop = $mainMenuBarAnchor.offset().top;
         var animationSpeed = 5; // the bigger, the slower
 
+        // Clamp number between two values
+        const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
         if (windowTop > divTop) {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
+            $("#nav > .logo").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
+            $(".navigation").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
+            $("#nav > .icons").css("margin-top", clamp(((windowTop - divTop)/2), 0, 30));
         } else {
             // Unstick the div.
             $mainMenuBar.removeClass("sticky");
         }
 
-        // Clamp number between two values
-        const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
         var percentage = clamp(
-            100 - (windowTop - divTop) / animationSpeed,
-            0,
+            100 - ((windowTop - divTop) / animationSpeed),
+            40,
             100
         );
 
