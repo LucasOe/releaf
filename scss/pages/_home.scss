@@ -105,6 +105,16 @@ header {
         }
     }
 
+    .socials {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px;
+        img {
+            padding: 15px;
+        }
+    }
+
     .scrollDown {
         width: 100px;
         height: 100px;
@@ -239,39 +249,47 @@ section {
         }
     }
 
-    #imgDrinkingTea {
-        position: absolute;
-        right: 62%;
-        top: 20%;
-    }
-    .circle {
-        align-items: center;
-        background-color: white;
-        border-radius: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 575px;
-        justify-content: center;
+    .circleWrap {
         margin: 0 auto;
-        padding: 70px;
         position: relative;
-        width: 575px;
-
-        h3 {
-            font-size: 5rem;
-            text-align: center;
+        width: 500px;
+        #imgDrinkingTea {
+            position: absolute;
+            top: 10%;
+            right: 450px;
         }
+        .circle {
+            background-color: white;
+            border-radius: 100%;
+            flex-direction: column;
+            height: 575px;
+            padding: 70px;
+            position: relative;
+            width: 575px;
 
-        p {
-            font-size: 1.8rem;
-            text-align: center;
+            h3 {
+                font-size: 5rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+        .bubble {
+            background: #ffffff;
+            border-radius: 100%;
+            height: 50px;
+            position: absolute;
+            width: 50px;
         }
     }
 }
 
 .textured {
     background: $beige url("../img/leaf_texture.png");
-    height: 800px;   
+    height: 800px;
     padding-top: 85px;
 }
 
