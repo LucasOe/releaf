@@ -16,14 +16,14 @@ header {
     .leaf {
         position: absolute;
         filter: blur(5px);
-        &:nth-of-type(2) {
+        &:nth-of-type(1) {
             top: 0;
         }
-        &:nth-of-type(3) {
+        &:nth-of-type(2) {
             top: 20vh;
             left: 80vw;
         }
-        &:nth-of-type(4) {
+        &:nth-of-type(3) {
             top: 40vh;
             left: 40vw;
         }

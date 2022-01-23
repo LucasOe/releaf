@@ -210,14 +210,14 @@ header .leaf {
   position: absolute;
   filter: blur(5px);
 }
-header .leaf:nth-of-type(2) {
+header .leaf:nth-of-type(1) {
   top: 0;
 }
-header .leaf:nth-of-type(3) {
+header .leaf:nth-of-type(2) {
   top: 20vh;
   left: 80vw;
 }
-header .leaf:nth-of-type(4) {
+header .leaf:nth-of-type(3) {
   top: 40vh;
   left: 40vw;
 }
