@@ -1,18 +1,416 @@
-/* Error: expected "{".
- *     ,
- * 123 |         width: 100px;
- *     |                     ^
- *     '
- *   scss\pages\_home.scss 123:21  @import
- *   scss\main.scss 14:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 123 \2502          width: 100px;\d\a     \2502                      ^\a     \2575 \a   scss\\pages\\_home.scss 123:21  @import\a   scss\\main.scss 14:9           root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+html {
+  margin: 0;
+  font-weight: 700;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #008e39;
+  text-decoration: none;
+}
+
+button {
+  background-color: #008e39;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  padding: 15px;
+  transition-duration: 0.3s;
+}
+button:hover {
+  background-color: #005b25;
+  transition-duration: 0.3s;
+}
+
+footer {
+  display: block;
+  position: relative;
+  font-size: 1.5rem;
+}
+footer p {
+  margin: 10px;
+}
+
+#nav {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+#nav .logo {
+  height: inherit;
+  padding: 8px;
+  z-index: 99;
+}
+#nav ul.navigation {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  margin: 0px;
+  margin-right: auto;
+  padding: 0px 50px;
+}
+#nav ul.navigation li {
+  display: inline-block;
+  font-size: 3.8rem;
+  list-style: none;
+  padding: 0px 15px;
+}
+#nav a {
+  color: black;
+}
+#nav ul.icons {
+  margin: 0px;
+  padding: 0px;
+}
+#nav ul.icons li {
+  display: inline-block;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 0px 15px;
+}
+#nav.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.roundedImage {
+  border-radius: 100%;
+}
+
+.spacerS {
+  display: block;
+  height: 15px;
+  width: 100%;
+}
+
+.spacerM {
+  display: block;
+  height: 30px;
+  width: 100%;
+}
+
+.spacerL {
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+.wave {
+  content: " ";
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+}
+.wave.top {
+  bottom: 100%;
+}
+.wave.bottom {
+  top: 100%;
+}
+
+header {
+  max-height: calc(100vh - 80px);
+  overflow: hidden;
+  position: relative;
+}
+header img.hero {
+  filter: blur(8px) brightness(110%);
+  margin-left: -15px;
+  width: calc(100% + 30px);
+}
+header img.hero a {
+  color: #008e39;
+}
+header .leaf {
+  position: absolute;
+  filter: blur(5px);
+}
+header .leaf:nth-of-type(2) {
+  top: 0;
+}
+header .leaf:nth-of-type(3) {
+  top: 20vh;
+  left: 80vw;
+}
+header .leaf:nth-of-type(4) {
+  top: 40vh;
+  left: 40vw;
+}
+header .logoWrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin: 0% auto;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  transform: translateY(-50%);
+}
+header .logoWrap button {
+  font-size: 4rem;
+}
+header .logoWrap .heroLogo {
+  margin-bottom: 30px;
+}
+header h2 {
+  color: #ffffff;
+  font-size: 5.5rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 40px;
+}
+header .header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+}
+header .header button {
+  font-size: 2.5rem;
+  margin: auto;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  header .header {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .header {
+    display: none;
+  }
+}
+header .about-wrapper {
+  left: 0;
+  margin-left: 10vw;
+}
+header .product-wrapper {
+  right: 0;
+  margin-right: 10vw;
+}
+header .textbox {
+  width: 30vw;
+  height: 232px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 2rem;
+  opacity: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+header .textbox p {
+  margin: 0px;
+}
+header .socials {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+header .socials img {
+  padding: 15px;
+}
+header .scrollDown {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 25%;
+}
+header .scrollDown:hover {
+  opacity: 50%;
+}
+
+.imageWrap {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.productContainer {
+  width: fit-content;
+}
+.productContainer .product {
+  display: inline-block;
+  width: fit-content;
+  margin: 0px 15px;
+}
+.productContainer .product h3 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.productContainer .product p {
+  color: #ffffff;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+.productContainer .product .image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  overflow: hidden;
+  opacity: 80%;
+}
+.productContainer .product .image-wrapper .image {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .productContainer .product:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .productContainer .product:nth-child(2) {
+    display: none;
+  }
+}
+
+section {
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+section .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -35px;
+}
+section ul.navigation {
+  display: inline-block;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  justify-content: start;
+  margin: 0;
+  align-items: center;
+  flex-direction: row;
+}
+section ul.navigation li {
+  display: inline-block;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 15px;
+}
+section a {
+  color: black;
+}
+section ul.icons {
+  float: right;
+  flex-direction: row;
+}
+section ul.icons li {
+  display: inline-block;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 15px;
+}
+section .circleWrap {
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+}
+section .circleWrap #imgDrinkingTea {
+  position: absolute;
+  top: 10%;
+  right: 450px;
+}
+section .circleWrap .circle {
+  background-color: white;
+  border-radius: 100%;
+  flex-direction: column;
+  height: 575px;
+  padding: 70px;
+  position: relative;
+  width: 575px;
+}
+section .circleWrap .circle h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+section .circleWrap .circle p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+section .circleWrap .bubble {
+  background: #ffffff;
+  border-radius: 100%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.textured {
+  background: #fff4df url("../img/leaf_texture.png");
+  height: 800px;
+  padding-top: 85px;
+}
+
+.green {
+  background-color: #dce9cc;
+}
+
+.textured.green {
+  background: #dce9cc url("../img/leaf_texture.png");
+}
+
+/*# sourceMappingURL=main.css.map */
