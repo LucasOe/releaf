@@ -25,7 +25,7 @@ $(document).ready(function () {
         if (windowTop > divTop) {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
-            if ($(window).width() > 700) {
+            if ($window.width() > 700) {
                 $("#nav > .logo").css(
                     "margin-top",
                     clamp((windowTop - divTop) / 2, 0, 30)
@@ -65,6 +65,12 @@ $(document).ready(function () {
     function mobileMenu() {
         $("#hamburger").click((e) => {
             $("#nav").toggleClass("open");
+        });
+        
+        $window.on('resize', function(){
+            if ($window.width() > 700) {
+                $("#nav").removeClass("open");
+             }
         });
     }
 });
