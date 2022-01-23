@@ -14,7 +14,7 @@ $(document).ready(function () {
             .css(
                 "transform",
                 "translateY(" + leafTransl + "px) rotate(" + leafRot + "deg)"
-            )
+            );
         $(".leaf")
             .eq(1)
             .css(

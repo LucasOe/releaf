@@ -52,7 +52,7 @@
         </div>
 
         <!--Scrolldown button-->
-        <button class="scrollDown"></button>
+        <a href="#main" id="scrollDown"></a>
     </header>
 
     <!--Navigation-->
@@ -60,7 +60,7 @@
     <?php include "components/nav.php"; ?>
 
     <!--Main Content-->
-    <main>
+    <main id="main">
         <section class="textured">
             <div class="circle">
                 <h3>Mehr als nur Tee</h3>
