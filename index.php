@@ -52,7 +52,7 @@
         </div>
 
         <!--Scrolldown button-->
-        <a href="#main" id="scrollDown"></a>
+        <a href="#main" class="scrollDown"></a>
     </header>
 
     <!--Navigation-->

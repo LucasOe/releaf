@@ -262,8 +262,12 @@ header .scrollDown {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #ffffff;
-  opacity: 25%;
+  background: url("../img/icons/ic_arrow.svg") rgba(255, 255, 255, 0.2);
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  transform: rotate(270deg);
+  transition-duration: 0.3s;
 }
 header .scrollDown:hover {
   opacity: 50%;
