@@ -33,6 +33,7 @@
         z-index: 99;
         cursor: pointer;
         display: inline-flex;
+        transition-duration: .3s;
     }
 
     .logo {
@@ -97,7 +98,8 @@
 
         .icons {
             display: flex;
-            justify-content: center;
+            justify-content: center;    
+            height: 85px;
             padding: 20px;
             padding-bottom: 30px;
         }
