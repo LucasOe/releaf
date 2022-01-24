@@ -23,7 +23,7 @@ class Product
 };
 
 if ($stmt->execute()) {
-    $result = $stmt->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_UNIQUE, 'Product');
+    $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');
     if (count($result) <= 0) {
         echo "Error: No results";
     }

@@ -43,7 +43,7 @@
             <div class="productContainer">
                 <?php foreach (array_slice($result, 0, 4) as $key => $product) : ?>
                     <form action="./product.php">
-                        <button type="submit" name="id" value="<?php echo 1 ?>">
+                        <button type="submit" name="id" value="<?php echo $product->id ?>">
                             <div class="product">
                                 <div class="image-wrapper">
                                     <img class="image" src="<?php echo $product->getImage() ?>">
