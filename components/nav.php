@@ -19,23 +19,33 @@
 </ul>
 <ul class="icons">
     <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_search.svg">
+        <a href="/search.php">
+            <svg>
+                <use xlink:href="#search" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/">
+            <svg>
+                <use xlink:href="#heart" />
+            </svg>
         </a>
     </li>
     <li>
         <a href="/shop.php">
-            <img src="img/icons/ic_heart.svg">
+            <svg>
+                <use xlink:href="#shopping_cart" />
+            </svg>
         </a>
     </li>
     <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_shopping_cart.svg">
-        </a>
-    </li>
-    <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_head.svg">
+        <a href="/">
+            <svg>
+                <use xlink:href="#head" />
+            </svg>
         </a>
     </li>
 </ul>
+
+<?php include "components/svg_icons.php" ?>
