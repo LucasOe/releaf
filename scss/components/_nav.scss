@@ -60,6 +60,7 @@
     }
 
     ul.icons {
+        height: 34px;
         margin: 0px;
         padding: 0px;
 
@@ -68,7 +69,14 @@
             font-size: 2.4rem;
             list-style: none;
             padding: 0px 15px;
-            height: 34px;
+            svg { 
+                width: 50px;
+                transition-duration: .3s;
+                &:hover {
+                    fill: $primary-color;
+                }
+
+            }
 
             img:hover {
                 opacity: 80%;
