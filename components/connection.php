@@ -85,5 +85,8 @@ function isSelected($id)
     if ($category == $id) {
         return " class=\"selected\"";
     }
+    if ($id == 0 and $category == null) {
+        return " class=\"selected\"";
+    }
     return "";
 }

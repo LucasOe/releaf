@@ -125,6 +125,7 @@ footer p {
   margin: 0px;
   margin-right: auto;
   padding: 0px 50px;
+  z-index: 2;
 }
 #nav ul.navigation li {
   display: inline-block;
