@@ -16,6 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0;
+  background-color: #dce9cc;
 }
 
 h1,
@@ -58,9 +59,11 @@ footer {
   display: block;
   position: relative;
   font-size: 1.5rem;
+  background-color: #ffffff;
 }
 footer p {
-  margin: 10px;
+  margin: 0px;
+  padding: 10px;
 }
 
 #nav {
