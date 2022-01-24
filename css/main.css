@@ -634,6 +634,9 @@ section .bubble:nth-child(3) {
   display: inline-block;
   margin: 0px 20px;
 }
+.categoryContainer form.selected button {
+  opacity: 100%;
+}
 .categoryContainer button {
   width: 10vw;
   border: none;
@@ -645,6 +648,7 @@ section .bubble:nth-child(3) {
 }
 .categoryContainer button:hover {
   transform: scale(1.1);
+  opacity: 100%;
 }
 .categoryContainer .category {
   display: flex;

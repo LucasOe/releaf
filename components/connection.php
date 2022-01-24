@@ -78,3 +78,11 @@ function getCategories()
         return $categories;
     }
 }
+
+function isSelected($category, $id)
+{
+    if ($category == $id) {
+        return " class=\"selected\"";
+    }
+    return "";
+}

@@ -38,6 +38,12 @@
     form {
         display: inline-block;
         margin: 0px 20px;
+
+        &.selected {
+            button {
+                opacity: 100%;
+            }
+        }
     }
 
     button {
@@ -51,6 +57,7 @@
 
         &:hover {
             transform: scale(1.1);
+            opacity: 100%;
         }
     }
 

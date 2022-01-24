@@ -25,7 +25,7 @@
 
         <div class="categoryContainer">
             <?php foreach (getCategories() as $key => $category) : ?>
-                <form action="./shop.php">
+                <form action="./shop.php" <?php echo isSelected($_GET["category"], $category->id) ?>>
                     <button type="submit" name="category" value="<?php echo $category->id ?>">
                         <div class="category">
                             <div class="image-wrapper">
