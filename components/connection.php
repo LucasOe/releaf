@@ -79,8 +79,9 @@ function getCategories()
     }
 }
 
-function isSelected($category, $id)
+function isSelected($id)
 {
+    $category = $_GET["category"] ?? null;
     if ($category == $id) {
         return " class=\"selected\"";
     }

@@ -24,7 +24,7 @@
         </form>
 
         <div class="categoryContainer">
-            <form action="./shop.php" <?php echo isSelected($_GET["category"], 0) ?>>
+            <form action="./shop.php" <?php echo isSelected(0) ?>>
                 <button type="submit" name="category" value="0">
                     <div class="category">
                         <div class="image-wrapper">
@@ -35,7 +35,7 @@
                 </button>
             </form>
             <?php foreach (getCategories() as $key => $category) : ?>
-                <form action="./shop.php" <?php echo isSelected($_GET["category"], $category->id) ?>>
+                <form action="./shop.php" <?php echo isSelected($category->id) ?>>
                     <button type="submit" name="category" value="<?php echo $category->id ?>">
                         <div class="category">
                             <div class="image-wrapper">
