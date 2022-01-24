@@ -32,19 +32,16 @@ h5,
 h6 {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
-  color: #ffffff;
 }
 
 .amatic {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
-  color: #ffffff;
 }
 
 .opensans {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #ffffff;
 }
 
 .text-shadow {
@@ -267,6 +264,7 @@ header .logoWrap .heroLogo {
   margin-bottom: 30px;
 }
 header h2 {
+  color: #ffffff;
   font-size: 5.5rem;
   text-align: center;
   margin-bottom: 40px;
@@ -379,6 +377,7 @@ header .scrollDown:hover {
   cursor: pointer;
 }
 .productContainer .product h3 {
+  color: #ffffff;
   font-size: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -386,6 +385,7 @@ header .scrollDown:hover {
   margin-bottom: 0px;
 }
 .productContainer .product p {
+  color: #ffffff;
   font-size: 2.8rem;
   margin: 0;
 }
