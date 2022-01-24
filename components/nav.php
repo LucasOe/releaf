@@ -8,13 +8,13 @@
 </div>
 <ul class="navigation">
     <li>
-        <a href="/shop">Shop</a>
+        <a href="/shop.php">Shop</a>
     </li>
     <li>
-        <a href="/zubehoer">Zubehör</a>
+        <a href="/shop.php">Zubehör</a>
     </li>
     <li>
-        <a href="/unsere-werte">Unsere Werte</a>
+        <a href="/unsere-werte.php">Unsere Werte</a>
     </li>
 </ul>
 <ul class="icons">
