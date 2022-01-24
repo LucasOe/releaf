@@ -113,6 +113,7 @@ footer p {
   z-index: 99;
   cursor: pointer;
   display: inline-flex;
+  transition-duration: 0.3s;
 }
 #nav .logo {
   width: 70px;
@@ -166,6 +167,7 @@ footer p {
 #nav.open .icons {
   display: flex;
   justify-content: center;
+  height: 85px;
   padding: 20px;
   padding-bottom: 30px;
 }
@@ -218,10 +220,10 @@ footer p {
   z-index: 1;
 }
 .wave.top {
-  bottom: 100%;
+  bottom: 99%;
 }
 .wave.bottom {
-  top: 100%;
+  top: 99%;
 }
 
 header {
@@ -283,7 +285,12 @@ header .header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 45%;
+  top: 20%;
+}
+@media only screen and (min-width: 2000px) {
+  header .header {
+    top: 45%;
+  }
 }
 header .header form {
   margin: auto;
@@ -379,9 +386,6 @@ header .scrollDown:hover {
 .productContainer button:hover {
   transform: scale(1.1);
 }
-.productContainer button:hover .image-wrapper {
-  opacity: 100%;
-}
 .productContainer .product {
   display: inline-block;
   width: fit-content;
@@ -408,7 +412,6 @@ header .scrollDown:hover {
   border-radius: 50%;
   background-color: #ffffff;
   overflow: hidden;
-  opacity: 80%;
 }
 .productContainer .product .image-wrapper .image {
   width: 80%;
@@ -433,6 +436,7 @@ header .scrollDown:hover {
 section {
   position: relative;
   background-color: white;
+  padding-top: 85px;
   width: 100%;
 }
 section .logo {
@@ -471,12 +475,22 @@ section ul.icons li {
 section .circleWrap {
   margin: 0 auto;
   position: relative;
-  width: 500px;
+  width: 575px;
+}
+@media only screen and (max-width: 767px) {
+  section .circleWrap {
+    width: 450px;
+  }
 }
 section .circleWrap #imgDrinkingTea {
   position: absolute;
   top: 10%;
-  right: 450px;
+  right: 510px;
+}
+@media only screen and (max-width: 767px) {
+  section .circleWrap #imgDrinkingTea {
+    display: none;
+  }
 }
 section .circleWrap .circle {
   align-items: center;
@@ -490,9 +504,20 @@ section .circleWrap .circle {
   position: relative;
   width: 575px;
 }
+@media only screen and (max-width: 767px) {
+  section .circleWrap .circle {
+    height: 450px;
+    width: 450px;
+  }
+}
 section .circleWrap .circle h3 {
   font-size: 5rem;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  section .circleWrap .circle h3 {
+    margin: 10px;
+  }
 }
 section .circleWrap .circle p {
   font-size: 1.8rem;
@@ -510,11 +535,23 @@ section .bubble:nth-child(2) {
   right: 30vw;
   bottom: 250px;
 }
+@media only screen and (max-width: 1024px) {
+  section .bubble:nth-child(2) {
+    right: 30vw;
+    bottom: 120px;
+  }
+}
 section .bubble:nth-child(3) {
   background-color: #dce9cc;
   right: 26vw;
   transform: scale(2);
   bottom: 180px;
+}
+@media only screen and (max-width: 1024px) {
+  section .bubble:nth-child(3) {
+    right: 13vw;
+    bottom: 80px;
+  }
 }
 
 .textured {
@@ -526,7 +563,6 @@ section .bubble:nth-child(3) {
 .green {
   background-color: #dce9cc;
   height: 800px;
-  padding-top: 85px;
 }
 .green h1 {
   text-align: center;

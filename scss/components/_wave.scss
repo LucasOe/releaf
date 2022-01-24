@@ -7,10 +7,10 @@
     z-index: 1;
 
     &.top {
-        bottom: 100%;
+        bottom: 99%; // not 100% to avoid line in wave in certain resolutions 
     }
 
     &.bottom {
-        top: 100%;
+        top: 99%; // not 100% to avoid line in wave in certain resolutions 
     }
 }

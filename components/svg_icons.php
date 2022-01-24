@@ -28,7 +28,7 @@
         </g>
     </symbol>
 
-    <symbol width="34" height="34" viewBox="0 0 35 34" id="shopping_cart">
+    <symbol width="34"  width="35" height="34.534" viewBox="0 0 35 34.534" id="shopping_cart">
         <g id="ic_shopping_cart" transform="translate(0 0.534)">
             <rect id="Area" width="35" height="34" opacity="0" />
             <g id="Icon" transform="translate(1.871 1.299)">

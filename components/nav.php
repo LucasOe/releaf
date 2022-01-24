@@ -11,7 +11,7 @@
         <a class="amatic" href="/shop.php">Shop</a>
     </li>
     <li>
-        <a class="amatic" href="/shop.php">Zubehör</a>
+        <a class="amatic" href="/contact.php">Kontakt</a>
     </li>
     <li>
         <a class="amatic" href="/unsere-werte.php">Unsere Werte</a>
@@ -26,7 +26,7 @@
         </a>
     </li>
     <li>
-        <a href="/">
+        <a href="">
             <svg>
                 <use xlink:href="#heart" />
             </svg>
@@ -40,7 +40,7 @@
         </a>
     </li>
     <li>
-        <a href="/">
+        <a href="">
             <svg>
                 <use xlink:href="#head" />
             </svg>
