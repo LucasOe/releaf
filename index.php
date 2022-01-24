@@ -30,7 +30,7 @@
         </div>
         <!--About Us-->
         <div class="header about-wrapper">
-            <h2>Das sind wir</h2>
+            <h2 class="amatic text-shadow">Das sind wir</h2>
             <div class="textbox">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergre. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invid</p>
             </div>
@@ -39,7 +39,7 @@
 
         <!--Products Preview-->
         <div class="header product-wrapper">
-            <h2>Tees für Körper und Seele</h2>
+            <h2 class="amatic text-shadow">Tees für Körper und Seele</h2>
             <div class="productContainer">
                 <?php foreach (array_slice($result, 0, 4) as $key => $product) : ?>
                     <form action="./product.php">
@@ -48,8 +48,8 @@
                                 <div class="image-wrapper">
                                     <img class="image" src="<?php echo $product->getImage() ?>">
                                 </div>
-                                <h3><?php echo $product->name; ?></h3>
-                                <p><?php echo $product->getPrice(); ?></p>
+                                <h3 class="opensans text-shadow"><?php echo $product->name; ?></h3>
+                                <p class="amatic text-shadow"><?php echo $product->getPrice(); ?></p>
                             </div>
                         </button>
                     </form>
