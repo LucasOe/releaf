@@ -336,8 +336,36 @@ section {
 
 .green {
     background-color: $soft-green;
+    height: 800px;
+    padding-top: 85px;
+
+    h1 {
+        text-align: center;
+        font-size: 5.5rem;
+    }
 }
 
-.textured.green {
+.white {
+    background-color: white;
+    height: 800px;
+    padding-top: 85px;
+
+    h1 {
+        text-align: center;
+        font-size: 5.5rem;
+        color: black;
+    }
+}
+
+.texturedGreen {
     background: $soft-green url("../img/leaf_texture.png");
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
 }

@@ -101,39 +101,15 @@
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <img class="wave bottom" src="img/wave_bottom_green.svg" style="z-index: 1" />
+            <h1>Unsere Werte</h1>
+            <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
-        <section>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <img class="wave bottom" src="img/wave_bottom.svg" style="z-index: 1" />
+        <section class="white">
+            <h1>Entdecke deinen Lieblingstee</h1>
+            <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
-        <section class="textured green">
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
-            <div class="spacerL"></div>
+        <section class="texturedGreen">
+            <p>Der Grüne Tee war so lecker! Und endlich bin ich meine Magenschmerzen los! 5/5</p>
         </section>
     </main>
 
