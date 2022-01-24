@@ -33,7 +33,7 @@
         z-index: 99;
         cursor: pointer;
         display: inline-flex;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
 
     .logo {
@@ -47,6 +47,7 @@
         margin: 0px;
         margin-right: auto;
         padding: 0px 50px;
+        z-index: 2;
 
         li {
             display: inline-block;
@@ -70,13 +71,12 @@
             font-size: 2.4rem;
             list-style: none;
             padding: 0px 15px;
-            svg { 
+            svg {
                 width: 50px;
-                transition-duration: .3s;
+                transition-duration: 0.3s;
                 &:hover {
                     fill: $primary-color;
                 }
-
             }
 
             img:hover {
@@ -98,7 +98,7 @@
 
         .icons {
             display: flex;
-            justify-content: center;    
+            justify-content: center;
             height: 85px;
             padding: 20px;
             padding-bottom: 30px;
