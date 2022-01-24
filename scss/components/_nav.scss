@@ -28,14 +28,17 @@
     }
 
     a {
+        color: black;
         z-index: 99;
         cursor: pointer;
+        display: inline-flex;
     }
 
     .logo {
         width: 70px;
         margin-left: 50px;
         padding: 8px;
+        z-index: 2;
     }
 
     ul.navigation {
@@ -48,11 +51,11 @@
             font-size: 3.8rem;
             list-style: none;
             padding: 0px 15px;
-        }
-    }
 
-    a {
-        color: black;
+            a:hover {
+                color: $primary-color;
+            }
+        }
     }
 
     ul.icons {
@@ -65,6 +68,10 @@
             list-style: none;
             padding: 0px 15px;
             height: 34px;
+
+            img:hover {
+                opacity: 80%;
+            }
         }
     }
 
@@ -75,16 +82,15 @@
 
     &.open {
         .navigation {
-            border-top: 2px solid #eee;
             display: flex;
             justify-content: center;
-            padding: 30px;
         }
+
         .icons {
-            border-top: 2px solid #eee;
             display: flex;
             justify-content: center;
-            padding: 30px;
+            padding: 20px;
+            padding-bottom: 30px;
         }
     }
 

@@ -96,8 +96,8 @@
                 </div>
                 <img src="img/woman_drinking_tea.jpg" alt="Frau trinkt Tee" class="roundedImage" id="imgDrinkingTea" />
             </div>
-            <div class="bubble green"></div>
-            <div class="bubble green"></div>
+            <div class="bubble color-green"></div>
+            <div class="bubble color-green"></div>
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />

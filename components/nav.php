@@ -19,15 +19,23 @@
 </ul>
 <ul class="icons">
     <li>
-        <img src="img/icons/ic_search.svg">
+        <a href="/shop.php">
+            <img src="img/icons/ic_search.svg">
+        </a>
     </li>
     <li>
-        <img src="img/icons/ic_heart.svg">
+        <a href="/shop.php">
+            <img src="img/icons/ic_heart.svg">
+        </a>
     </li>
     <li>
-        <img src="img/icons/ic_shopping_cart.svg">
+        <a href="/shop.php">
+            <img src="img/icons/ic_shopping_cart.svg">
+        </a>
     </li>
     <li>
-        <img src="img/icons/ic_head.svg">
+        <a href="/shop.php">
+            <img src="img/icons/ic_head.svg">
+        </a>
     </li>
 </ul>
