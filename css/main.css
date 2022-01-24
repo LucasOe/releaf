@@ -630,6 +630,7 @@ section .bubble:nth-child(3) {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .categoryContainer form {
   display: inline-block;
@@ -674,6 +675,37 @@ section .bubble:nth-child(3) {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.productsContainer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20vw);
+  justify-content: center;
+}
+.productsContainer form {
+  margin: 10px;
+}
+.productsContainer button {
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.productsContainer .product h3 {
+  font-size: 3rem;
+  margin: 0px;
+  padding: 20px;
+}
+.productsContainer .product .image-wrapper {
+  width: 100%;
+}
+.productsContainer .product .image-wrapper .image {
+  width: 100%;
+  transform: scale(0.8);
 }
 
 /*# sourceMappingURL=main.css.map */

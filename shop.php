@@ -47,6 +47,21 @@
                 </form>
             <?php endforeach; ?>
         </div>
+
+        <div class="productsContainer">
+            <?php foreach (getProducts() as $key => $product) : ?>
+                <form action="./product.php">
+                    <button type="submit" name="id" value="<?php echo $product->id ?>">
+                        <div class="product">
+                            <div class="image-wrapper">
+                                <img class="image" src="<?php echo $product->getImage() ?>">
+                            </div>
+                            <h3 class="amatic"><?php echo $product->name; ?></h3>
+                        </div>
+                    </button>
+                </form>
+            <?php endforeach; ?>
+        </div>
     </main>
 </body>
 
