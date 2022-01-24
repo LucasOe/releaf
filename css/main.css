@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   align-items: center;
   background-color: #008e39;
   border: none;
@@ -49,7 +49,7 @@ button {
   padding: 15px;
   transition-duration: 0.3s;
 }
-button:hover {
+.button:hover {
   background-color: #005b25;
   transition-duration: 0.3s;
 }
@@ -95,6 +95,7 @@ footer p {
   margin-left: 50px;
   padding: 8px;
   z-index: 99;
+  cursor: pointer;
 }
 #nav ul.navigation {
   font-family: "Amatic SC", sans-serif;
@@ -185,6 +186,7 @@ footer p {
   position: absolute;
   width: 100%;
   transform-origin: top;
+  z-index: 1;
 }
 .wave.top {
   bottom: 100%;
@@ -233,7 +235,7 @@ header .logoWrap {
   top: 25%;
   transform: translateY(-50%);
 }
-header .logoWrap button {
+header .logoWrap .button {
   border-radius: 25px;
   font-size: 4rem;
   height: 100px;
@@ -255,7 +257,7 @@ header .header {
   position: absolute;
   top: 45%;
 }
-header .header button {
+header .header .button {
   font-size: 2.5rem;
   margin: auto;
   margin-top: 20px;
@@ -333,6 +335,15 @@ header .scrollDown:hover {
 
 .productContainer {
   width: fit-content;
+}
+.productContainer form {
+  display: inline-block;
+}
+.productContainer button {
+  height: fit-content;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
 }
 .productContainer .product {
   display: inline-block;

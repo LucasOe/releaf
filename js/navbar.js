@@ -66,11 +66,11 @@ $(document).ready(function () {
         $("#hamburger").click((e) => {
             $("#nav").toggleClass("open");
         });
-        
-        $window.on('resize', function(){
+
+        $window.on("resize", function () {
             if ($window.width() > 700) {
                 $("#nav").removeClass("open");
-             }
+            }
         });
     }
 });

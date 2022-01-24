@@ -17,6 +17,7 @@
         margin-top: 5px;
         margin-right: 50px;
         width: 50px;
+
         span {
             height: 4px;
             background-color: black;
@@ -31,6 +32,7 @@
         margin-left: 50px;
         padding: 8px;
         z-index: 99;
+        cursor: pointer;
     }
 
     ul.navigation {
@@ -88,13 +90,16 @@
     @include responsive_tablet() {
         height: auto;
         display: block;
+
         #hamburger {
             display: flex;
         }
+
         .navigation {
             background-color: white;
             display: none;
         }
+
         .icons {
             background-color: white;
             display: none;

@@ -41,7 +41,7 @@ header {
         top: 25%;
         transform: translateY(-50%);
 
-        button {
+        .button {
             border-radius: 25px;
             font-size: 4rem;
             height: 100px;
@@ -67,7 +67,7 @@ header {
         position: absolute;
         top: 45%;
 
-        button {
+        .button {
             font-size: 2.5rem;
             margin: auto;
             margin-top: 20px;
@@ -132,7 +132,7 @@ header {
         background-size: 32px;
         background-position: center;
         transform: rotate(270deg);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         &:hover {
             opacity: 50%;
         }
@@ -151,6 +151,17 @@ header {
 
 .productContainer {
     width: fit-content;
+
+    form {
+        display: inline-block;
+    }
+
+    button {
+        height: fit-content;
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+    }
 
     .product {
         display: inline-block;
@@ -259,11 +270,13 @@ section {
         margin: 0 auto;
         position: relative;
         width: 500px;
+
         #imgDrinkingTea {
             position: absolute;
             top: 10%;
             right: 450px;
         }
+
         .circle {
             align-items: center;
             background-color: white;
