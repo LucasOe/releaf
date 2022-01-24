@@ -90,12 +90,14 @@ footer p {
   border-radius: 9px;
   margin-top: 11px;
 }
+#nav a {
+  z-index: 99;
+  cursor: pointer;
+}
 #nav .logo {
   width: 70px;
   margin-left: 50px;
   padding: 8px;
-  z-index: 99;
-  cursor: pointer;
 }
 #nav ul.navigation {
   font-family: "Amatic SC", sans-serif;

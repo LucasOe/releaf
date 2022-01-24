@@ -27,12 +27,15 @@
         }
     }
 
+    a {
+        z-index: 99;
+        cursor: pointer;
+    }
+
     .logo {
         width: 70px;
         margin-left: 50px;
         padding: 8px;
-        z-index: 99;
-        cursor: pointer;
     }
 
     ul.navigation {

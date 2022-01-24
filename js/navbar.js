@@ -25,9 +25,8 @@ $(document).ready(function () {
         if (windowTop > divTop) {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
-            /*
             if ($window.width() > 700) {
-                $("#nav > .logo").css(
+                $("#nav > a > .logo").css(
                     "margin-top",
                     clamp((windowTop - divTop) / 2, 0, 30)
                 );
@@ -40,7 +39,6 @@ $(document).ready(function () {
                     clamp((windowTop - divTop) / 2, 0, 30)
                 );
             }
-            */
         } else {
             // Unstick the div.
             $mainMenuBar.removeClass("sticky");
@@ -60,7 +58,7 @@ $(document).ready(function () {
             "transform",
             "scaleY(" + animationAmount + "%)"
         );
-        $("#nav > .logo").css("transform", "scale(" + logoAnimation + ")");
+        $("#nav > a > .logo").css("transform", "scale(" + logoAnimation + ")");
     }
 
     //Open or close hamburger menu
