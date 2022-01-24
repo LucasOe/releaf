@@ -2,8 +2,6 @@
 
 $con = new PDO("mysql:host=localhost;dbname=releaf", "root", "");
 
-$stmt = $con->prepare("SELECT * FROM product;");
-
 class Product
 {
     public $id;
@@ -22,6 +20,8 @@ class Product
     }
 };
 
+$stmt = $con->prepare("SELECT * FROM product;");
+
 if ($stmt->execute()) {
     $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');
     if (count($result) <= 0) {
@@ -29,5 +29,15 @@ if ($stmt->execute()) {
     }
 }
 
-// Close connection
-$con = null;
+function getProduct($id)
+{
+    global $con;
+    $stmt = $con->prepare("SELECT * FROM product WHERE id=" . $id . ";");
+    if ($stmt->execute()) {
+        $product = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');
+        if (count($product) <= 0) {
+            echo "Error: No result";
+        }
+        return $product[0];
+    }
+}

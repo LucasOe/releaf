@@ -18,7 +18,8 @@
 
     <!--Main Content-->
     <main>
-        Hello World
+        <?php $product = getProduct($_GET["id"]); ?>
+        <h1> <?php echo $product->name; ?> </h1>
     </main>
 </body>
 
