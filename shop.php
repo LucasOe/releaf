@@ -18,7 +18,10 @@
 
     <!--Main Content-->
     <main>
-        Shop
+        <form class="search" action="./shop.php">
+            <input class="opensans" id="search" name="search" type="text" placeholder="Suche...">
+            <button class="button opensans">Suche</button>
+        </form>
     </main>
 </body>
 
