@@ -25,6 +25,7 @@ $(document).ready(function () {
         if (windowTop > divTop) {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
+            /*
             if ($window.width() > 700) {
                 $("#nav > .logo").css(
                     "margin-top",
@@ -39,6 +40,7 @@ $(document).ready(function () {
                     clamp((windowTop - divTop) / 2, 0, 30)
                 );
             }
+            */
         } else {
             // Unstick the div.
             $mainMenuBar.removeClass("sticky");
