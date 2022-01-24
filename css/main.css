@@ -600,8 +600,7 @@ section .bubble:nth-child(3) {
   display: flex;
   width: fit-content;
   height: 50px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 .search input {
   min-width: 20vw;
@@ -610,6 +609,7 @@ section .bubble:nth-child(3) {
   padding: 0px 20px;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .search input:focus {
   outline: none;
@@ -622,6 +622,53 @@ section .bubble:nth-child(3) {
   padding: 0px 20px;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.categoryContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.categoryContainer form {
+  display: inline-block;
+  margin: 0px 20px;
+}
+.categoryContainer button {
+  width: 10vw;
+  border: none;
+  border-radius: 40px;
+  background-color: #ffffff;
+  cursor: pointer;
+  opacity: 80%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.categoryContainer button:hover {
+  transform: scale(1.1);
+}
+.categoryContainer .category {
+  display: flex;
+}
+.categoryContainer .category h3 {
+  width: 100%;
+  font-size: 3rem;
+  margin: 5px;
+  text-align: left;
+}
+.categoryContainer .category .image-wrapper {
+  width: 60px;
+  display: block;
+  overflow: hidden;
+  margin-left: 5px;
+}
+.categoryContainer .category .image-wrapper .image {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -20,12 +20,31 @@ class Product
     }
 };
 
-$stmt = $con->prepare("SELECT * FROM product;");
+class Category
+{
+    public $id;
+    public $name;
+    private $image;
 
-if ($stmt->execute()) {
-    $result = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');
-    if (count($result) <= 0) {
-        echo "Error: No results";
+    public function getImage()
+    {
+        return "img/products/" . $this->image . ".jpg";
+    }
+}
+
+
+function getProducts()
+{
+    global $con;
+
+    $stmt = $con->prepare("SELECT * FROM product;");
+
+    if ($stmt->execute()) {
+        $products = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');
+        if (count($products) <= 0) {
+            echo "Error: No results";
+        }
+        return $products;
     }
 }
 
@@ -42,5 +61,20 @@ function getProduct($id)
             echo "Error: No result";
         }
         return $product[0];
+    }
+}
+
+function getCategories()
+{
+    global $con;
+
+    $stmt = $con->prepare("SELECT * FROM category;");
+
+    if ($stmt->execute()) {
+        $categories = $stmt->fetchAll(PDO::FETCH_CLASS, 'Category');
+        if (count($categories) <= 0) {
+            echo "Error: No results";
+        }
+        return $categories;
     }
 }
