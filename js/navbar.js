@@ -26,7 +26,7 @@ $(document).ready(function () {
             // Make the div sticky.
             $mainMenuBar.addClass("sticky");
             if ($window.width() > 700) {
-                $("#nav > .logo").css(
+                $("#nav > a > .logo").css(
                     "margin-top",
                     clamp((windowTop - divTop) / 2, 0, 30)
                 );
@@ -58,7 +58,7 @@ $(document).ready(function () {
             "transform",
             "scaleY(" + animationAmount + "%)"
         );
-        $("#nav > .logo").css("transform", "scale(" + logoAnimation + ")");
+        $("#nav > a > .logo").css("transform", "scale(" + logoAnimation + ")");
     }
 
     //Open or close hamburger menu
@@ -66,11 +66,11 @@ $(document).ready(function () {
         $("#hamburger").click((e) => {
             $("#nav").toggleClass("open");
         });
-        
-        $window.on('resize', function(){
+
+        $window.on("resize", function () {
             if ($window.width() > 700) {
                 $("#nav").removeClass("open");
-             }
+            }
         });
     }
 });

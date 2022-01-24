@@ -41,7 +41,7 @@ header {
         top: 25%;
         transform: translateY(-50%);
 
-        button {
+        .button {
             border-radius: 25px;
             font-size: 4rem;
             height: 100px;
@@ -56,7 +56,6 @@ header {
     h2 {
         color: #ffffff;
         font-size: 5.5rem;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         text-align: center;
         margin-bottom: 40px;
     }
@@ -67,9 +66,12 @@ header {
         position: absolute;
         top: 45%;
 
-        button {
-            font-size: 2.5rem;
+        form {
             margin: auto;
+        }
+
+        .button {
+            font-size: 2.5rem;
             margin-top: 20px;
         }
 
@@ -113,6 +115,7 @@ header {
         top: 0;
         right: 0;
         padding: 30px;
+
         img {
             padding: 15px;
         }
@@ -132,7 +135,7 @@ header {
         background-size: 32px;
         background-position: center;
         transform: rotate(270deg);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         &:hover {
             opacity: 50%;
         }
@@ -152,28 +155,44 @@ header {
 .productContainer {
     width: fit-content;
 
+    form {
+        display: inline-block;
+    }
+
+    button {
+        height: fit-content;
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+
+            .image-wrapper {
+                opacity: 100%;
+            }
+        }
+    }
+
     .product {
         display: inline-block;
         width: fit-content;
         margin: 0px 15px;
+        cursor: pointer;
 
         h3 {
             color: #ffffff;
-            font-family: "Open Sans", sans-serif;
-            font-weight: 400;
             font-size: 2rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             margin-bottom: 0px;
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
 
         p {
             color: #ffffff;
-            font-family: "Amatic SC", sans-serif;
             font-size: 2.8rem;
-            font-weight: 700;
             margin: 0;
         }
 
@@ -259,11 +278,13 @@ section {
         margin: 0 auto;
         position: relative;
         width: 500px;
+
         #imgDrinkingTea {
             position: absolute;
             top: 10%;
             right: 450px;
         }
+
         .circle {
             align-items: center;
             background-color: white;
@@ -315,8 +336,36 @@ section {
 
 .green {
     background-color: $soft-green;
+    height: 800px;
+    padding-top: 85px;
+
+    h1 {
+        text-align: center;
+        font-size: 5.5rem;
+    }
 }
 
-.textured.green {
+.white {
+    background-color: white;
+    height: 800px;
+    padding-top: 85px;
+
+    h1 {
+        text-align: center;
+        font-size: 5.5rem;
+        color: black;
+    }
+}
+
+.texturedGreen {
     background: $soft-green url("../img/leaf_texture.png");
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
 }

@@ -4,6 +4,7 @@
     position: absolute;
     width: 100%;
     transform-origin: top;
+    z-index: 1;
 
     &.top {
         bottom: 100%;

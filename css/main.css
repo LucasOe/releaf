@@ -16,6 +16,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0;
+  background-color: #dce9cc;
+}
+
+a {
+  color: #008e39;
+  text-decoration: none;
 }
 
 h1,
@@ -28,12 +34,21 @@ h6 {
   font-weight: 700;
 }
 
-a {
-  color: #008e39;
-  text-decoration: none;
+.amatic {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
 }
 
-button {
+.opensans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.text-shadow {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.button {
   align-items: center;
   background-color: #008e39;
   border: none;
@@ -49,7 +64,7 @@ button {
   padding: 15px;
   transition-duration: 0.3s;
 }
-button:hover {
+.button:hover {
   background-color: #005b25;
   transition-duration: 0.3s;
 }
@@ -58,9 +73,11 @@ footer {
   display: block;
   position: relative;
   font-size: 1.5rem;
+  background-color: #ffffff;
 }
 footer p {
-  margin: 10px;
+  margin: 0px;
+  padding: 10px;
 }
 
 #nav {
@@ -91,15 +108,16 @@ footer p {
   border-radius: 9px;
   margin-top: 11px;
 }
+#nav a {
+  z-index: 99;
+  cursor: pointer;
+}
 #nav .logo {
   width: 70px;
   margin-left: 50px;
   padding: 8px;
-  z-index: 99;
 }
 #nav ul.navigation {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
   margin: 0px;
   margin-right: auto;
   padding: 0px 50px;
@@ -186,6 +204,7 @@ footer p {
   position: absolute;
   width: 100%;
   transform-origin: top;
+  z-index: 1;
 }
 .wave.top {
   bottom: 100%;
@@ -234,7 +253,7 @@ header .logoWrap {
   top: 25%;
   transform: translateY(-50%);
 }
-header .logoWrap button {
+header .logoWrap .button {
   border-radius: 25px;
   font-size: 4rem;
   height: 100px;
@@ -246,7 +265,6 @@ header .logoWrap .heroLogo {
 header h2 {
   color: #ffffff;
   font-size: 5.5rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-bottom: 40px;
 }
@@ -256,9 +274,11 @@ header .header {
   position: absolute;
   top: 45%;
 }
-header .header button {
-  font-size: 2.5rem;
+header .header form {
   margin: auto;
+}
+header .header .button {
+  font-size: 2.5rem;
   margin-top: 20px;
 }
 @media only screen and (max-width: 1024px) {
@@ -335,27 +355,39 @@ header .scrollDown:hover {
 .productContainer {
   width: fit-content;
 }
+.productContainer form {
+  display: inline-block;
+}
+.productContainer button {
+  height: fit-content;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.productContainer button:hover {
+  transform: scale(1.1);
+}
+.productContainer button:hover .image-wrapper {
+  opacity: 100%;
+}
 .productContainer .product {
   display: inline-block;
   width: fit-content;
   margin: 0px 15px;
+  cursor: pointer;
 }
 .productContainer .product h3 {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   font-size: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 0px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .productContainer .product p {
   color: #ffffff;
-  font-family: "Amatic SC", sans-serif;
   font-size: 2.8rem;
-  font-weight: 700;
   margin: 0;
 }
 .productContainer .product .image-wrapper {
@@ -482,10 +514,35 @@ section .bubble:nth-child(3) {
 
 .green {
   background-color: #dce9cc;
+  height: 800px;
+  padding-top: 85px;
+}
+.green h1 {
+  text-align: center;
+  font-size: 5.5rem;
 }
 
-.textured.green {
+.white {
+  background-color: white;
+  height: 800px;
+  padding-top: 85px;
+}
+.white h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  color: black;
+}
+
+.texturedGreen {
   background: #dce9cc url("../img/leaf_texture.png");
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.texturedGreen p {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

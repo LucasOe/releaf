@@ -18,6 +18,7 @@
         margin-top: 5px;
         margin-right: 50px;
         width: 50px;
+
         span {
             height: 4px;
             background-color: black;
@@ -27,16 +28,18 @@
         }
     }
 
+    a {
+        z-index: 99;
+        cursor: pointer;
+    }
+
     .logo {
         width: 70px;
         margin-left: 50px;
         padding: 8px;
-        z-index: 99;
     }
 
     ul.navigation {
-        font-family: "Amatic SC", sans-serif;
-        font-weight: 700;
         margin: 0px;
         margin-right: auto;
         padding: 0px 50px;
@@ -89,13 +92,16 @@
     @include responsive_tablet() {
         height: auto;
         display: block;
+
         #hamburger {
             display: flex;
         }
+
         .navigation {
             background-color: white;
             display: none;
         }
+
         .icons {
             background-color: white;
             display: none;
