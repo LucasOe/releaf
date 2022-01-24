@@ -8,13 +8,13 @@
 </div>
 <ul class="navigation">
     <li>
-        <a href="/shop.php">Shop</a>
+        <a class="amatic" href="/shop.php">Shop</a>
     </li>
     <li>
-        <a href="/shop.php">Zubehör</a>
+        <a class="amatic" href="/shop.php">Zubehör</a>
     </li>
     <li>
-        <a href="/unsere-werte.php">Unsere Werte</a>
+        <a class="amatic" href="/unsere-werte.php">Unsere Werte</a>
     </li>
 </ul>
 <ul class="icons">
@@ -25,9 +25,9 @@
         <img src="img/icons/ic_heart.svg">
     </li>
     <li>
-        <img src="img/icons/ic_head.svg">
+        <img src="img/icons/ic_shopping_cart.svg">
     </li>
     <li>
-        <img src="img/icons/ic_shopping_cart.svg">
+        <img src="img/icons/ic_head.svg">
     </li>
 </ul>
