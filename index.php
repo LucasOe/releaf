@@ -45,7 +45,7 @@
         <div class="header product-wrapper">
             <h2 class="amatic text-shadow">Tees für Körper und Seele</h2>
             <div class="productContainer">
-                <?php foreach (array_slice(getProducts(), 0, 4) as $key => $product) : ?>
+                <?php foreach (array_slice(getProducts($_GET["category"] ?? null), 0, 4) as $key => $product) : ?>
                     <form action="./product.php">
                         <button type="submit" name="id" value="<?php echo $product->id ?>">
                             <div class="product">

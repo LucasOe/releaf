@@ -33,11 +33,16 @@ class Category
 }
 
 
-function getProducts()
+function getProducts($category)
 {
     global $con;
 
-    $stmt = $con->prepare("SELECT * FROM product;");
+    if ($category == null or $category == 0) {
+        $stmt = $con->prepare("SELECT * FROM product;");
+    } else {
+        $stmt = $con->prepare("SELECT * FROM product WHERE category=:category;");
+        $stmt->bindParam(':category', $category);
+    }
 
     if ($stmt->execute()) {
         $products = $stmt->fetchAll(PDO::FETCH_CLASS, 'Product');

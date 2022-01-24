@@ -49,7 +49,7 @@
         </div>
 
         <div class="productsContainer">
-            <?php foreach (getProducts() as $key => $product) : ?>
+            <?php foreach (getProducts($_GET["category"] ?? null) as $key => $product) : ?>
                 <form action="./product.php">
                     <button type="submit" name="id" value="<?php echo $product->id ?>">
                         <div class="product">
