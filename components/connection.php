@@ -41,13 +41,13 @@ function getProducts($category, $searchTerm)
 
     if ($searchTerm != null) {
         $searchTerm = "%" . $searchTerm . "%";
-        $stmt = $con->prepare("SELECT * FROM product WHERE name LIKE :search");
+        $stmt = $con->prepare("SELECT * FROM product WHERE name LIKE :search ORDER BY name ASC;");
         $stmt->bindParam(":search", $searchTerm, PDO::PARAM_STR);
     } elseif ($category != null and $category > 0 and $category < $categoriesAmount) {
-        $stmt = $con->prepare("SELECT * FROM product WHERE category = :category;");
+        $stmt = $con->prepare("SELECT * FROM product WHERE category = :category ORDER BY name ASC;");
         $stmt->bindParam(":category", $category);
     } else {
-        $stmt = $con->prepare("SELECT * FROM product;");
+        $stmt = $con->prepare("SELECT * FROM product ORDER BY name ASC;");
     }
 
     if ($stmt->execute()) {
