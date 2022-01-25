@@ -8,7 +8,9 @@ $visible-slides: 5;
     .slider {
         position: relative;
         height: 500px;
+        margin: 0 auto;
         overflow: hidden;
+        width: 1500px;
     }
     ul {
         position: relative;
@@ -31,9 +33,12 @@ $visible-slides: 5;
         font-size: 300px;
         flex-shrink: 0;
         flex-direction: column;
-        h3{
+        h3 {
             font-size: 3rem;
             margin-top: -40px;
+        }
+        img {
+            transform: scale(0.8);
         }
     }
 

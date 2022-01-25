@@ -14,13 +14,13 @@
                 </li>
             <?php endforeach; ?>
         </ul>
-        <div class='slider-nav'>
-            <div class='prev'>
-                <img src="img/icons/ic_arrow_grey.svg">
-            </div>
-            <div class='next'>
-                <img src="img/icons/ic_arrow_grey.svg">
-            </div>
+    </div>
+    <div class='slider-nav'>
+        <div class='prev'>
+            <img src="img/icons/ic_arrow_grey.svg">
+        </div>
+        <div class='next'>
+            <img src="img/icons/ic_arrow_grey.svg">
         </div>
     </div>
 </div>

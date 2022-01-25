@@ -19,9 +19,9 @@
         </picture>
 
         <!--Blätter-->
-        <img class="leaf" src="img/leaf2.png" />
-        <img class="leaf" src="img/leaf2.png" />
-        <img class="leaf" src="img/leaf.png" />
+        <img class="headerLeaf" src="img/leaf2.png" />
+        <img class="headerLeaf" src="img/leaf2.png" />
+        <img class="headerLeaf" src="img/leaf.png" />
 
 
         <div class="logoWrap">
@@ -124,7 +124,7 @@
                 <div class="value-block">
                     <img src="img/icons/ic_heart.svg" />
                     <h3>
-                       Gib uns eine Bewertung 
+                        Gib uns eine Bewertung
                     </h3>
                     <p>
                         Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
@@ -134,11 +134,19 @@
             <a>
                 <button class="button">Mehr erfahren</button>
             </a>
+            <!--Blätter-->
+            <img src="img/leaf.png" id="leaf" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf2" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf3" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf4" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf5" width="auto" height="auto">
+
+
             <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
         <section class="white">
             <h2>Entdecke deinen Lieblingstee</h2>
-    <?php include "components/slider.php"; ?>
+            <?php include "components/slider.php"; ?>
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="texturedGreen">
