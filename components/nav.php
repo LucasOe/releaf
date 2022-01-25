@@ -8,10 +8,10 @@
 </div>
 <ul class="navigation">
     <li>
-        <a class="amatic" href="/shop.php">Shop</a>
+        <a class="amatic" href="shop.php">Shop</a>
     </li>
     <li>
-        <a class="amatic" href="/shop.php">Zubehör</a>
+        <a class="amatic" href="/contact.php">Kontakt</a>
     </li>
     <li>
         <a class="amatic" href="/unsere-werte.php">Unsere Werte</a>
@@ -19,23 +19,33 @@
 </ul>
 <ul class="icons">
     <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_search.svg">
+        <a href="/search.php">
+            <svg>
+                <use xlink:href="#search" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <svg>
+                <use xlink:href="#heart" />
+            </svg>
         </a>
     </li>
     <li>
         <a href="/shop.php">
-            <img src="img/icons/ic_heart.svg">
+            <svg>
+                <use xlink:href="#shopping_cart" />
+            </svg>
         </a>
     </li>
     <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_shopping_cart.svg">
-        </a>
-    </li>
-    <li>
-        <a href="/shop.php">
-            <img src="img/icons/ic_head.svg">
+        <a href="">
+            <svg>
+                <use xlink:href="#head" />
+            </svg>
         </a>
     </li>
 </ul>
+
+<?php include "components/svg_icons.php" ?>

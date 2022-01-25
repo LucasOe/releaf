@@ -64,7 +64,10 @@ header {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 45%;
+        top: 20%;
+        @include responsive_largeScreen() {
+            top: 45%;
+        }
 
         form {
             margin: auto;
@@ -168,10 +171,6 @@ header {
 
         &:hover {
             transform: scale(1.1);
-
-            .image-wrapper {
-                opacity: 100%;
-            }
         }
     }
 
@@ -203,7 +202,6 @@ header {
             border-radius: 50%;
             background-color: #ffffff;
             overflow: hidden;
-            opacity: 80%;
 
             .image {
                 width: 80%;
@@ -233,6 +231,7 @@ header {
 section {
     position: relative;
     background-color: white;
+    padding-top: 85px;
     width: 100%;
 
     .logo {
@@ -277,12 +276,18 @@ section {
     .circleWrap {
         margin: 0 auto;
         position: relative;
-        width: 500px;
+        width: 575px;
+        @include responsive_mobile() {
+            width: 450px;
+        }
 
         #imgDrinkingTea {
             position: absolute;
             top: 10%;
-            right: 450px;
+            right: 510px;
+            @include responsive_mobile() {
+                display: none;
+            }
         }
 
         .circle {
@@ -296,10 +301,17 @@ section {
             padding: 70px;
             position: relative;
             width: 575px;
+            @include responsive_mobile() {
+                height: 450px;
+                width: 450px;
+            }
 
             h3 {
                 font-size: 5rem;
                 text-align: center;
+                @include responsive_mobile() {
+                margin: 10px;
+                }
             }
 
             p {
@@ -318,12 +330,21 @@ section {
             background-color: $soft-green;
             right: 30vw;
             bottom: 250px;
+            @include responsive_tablet() {
+                right: 30vw;
+                bottom: 120px;
+            }
+            
         }
         &:nth-child(3) {
             background-color: $soft-green;
             right: 26vw;
             transform: scale(2);
             bottom: 180px;
+            @include responsive_tablet() {
+                right: 13vw;
+                bottom: 80px;
+            }
         }
     }
     .value-wrapper {
@@ -353,7 +374,6 @@ section {
 .green {
     background-color: $soft-green;
     height: 800px;
-    padding-top: 85px;
 
     h1 {
         text-align: center;

@@ -45,7 +45,7 @@
         <div class="header product-wrapper">
             <h2 class="amatic text-shadow">Tees für Körper und Seele</h2>
             <div class="productContainer">
-                <?php foreach (array_slice($result, 0, 4) as $key => $product) : ?>
+                <?php foreach (array_slice(getProducts($_GET["category"] ?? null, null), 0, 4) as $key => $product) : ?>
                     <form action="./product.php">
                         <button type="submit" name="id" value="<?php echo $product->id ?>">
                             <div class="product">
@@ -96,8 +96,8 @@
                 </div>
                 <img src="img/woman_drinking_tea.jpg" alt="Frau trinkt Tee" class="roundedImage" id="imgDrinkingTea" />
             </div>
-            <div class="bubble color-green"></div>
-            <div class="bubble color-green"></div>
+            <div class="bubble green"></div>
+            <div class="bubble green"></div>
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
@@ -138,6 +138,7 @@
         </section>
         <section class="white">
             <h1>Entdecke deinen Lieblingstee</h1>
+    <?php include "components/slider.php"; ?>
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="texturedGreen">
@@ -152,6 +153,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/header.js"></script>
+
+    <!--Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 

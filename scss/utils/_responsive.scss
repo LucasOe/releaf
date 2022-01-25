@@ -10,6 +10,12 @@
     }
 }
 
+@mixin responsive_largeScreen() {
+    @media only screen and (min-width: 2000px) {
+        @content;
+    }
+}
+
 @mixin responsive($minWidth, $maxWidth) {
     @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
         @content;

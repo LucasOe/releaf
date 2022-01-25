@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34.534" viewBox="0 0 35 34.534"><g transform="translate(0 0.534)"><rect width="35" height="34" fill="#fcfcfc" opacity="0"/><g transform="translate(1.871 1.299)"><circle cx="1.422" cy="1.422" r="1.422" transform="translate(9.953 27.014)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.667"/><circle cx="1.422" cy="1.422" r="1.422" transform="translate(25.592 27.014)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.667"/><path d="M1.833,1.833H7.521l3.81,19.038a2.843,2.843,0,0,0,2.844,2.289h13.82a2.843,2.843,0,0,0,2.843-2.289L33.112,8.942H8.942" transform="translate(-1.833 -1.833)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.667"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34.534" viewBox="0 0 35 34.534">
+  <g id="ic_shopping_cart" transform="translate(0 0.534)">
+    <rect id="Area" width="35" height="34" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(1.871 1.299)">
+      <path id="Path" d="M1.422-1.833A3.255,3.255,0,1,1-1.833,1.422,3.259,3.259,0,0,1,1.422-1.833Z" transform="translate(9.953 27.014)" fill="#3d3d3d"/>
+      <path id="Path-2" data-name="Path" d="M1.422-1.833A3.255,3.255,0,1,1-1.833,1.422,3.259,3.259,0,0,1,1.422-1.833Z" transform="translate(25.592 27.014)" fill="#3d3d3d"/>
+      <path id="Path-3" data-name="Path" d="M28.05,24.993H14.19a4.672,4.672,0,0,1-4.658-3.765L7.161,9.378q-.018-.073-.03-.148L6.018,3.666H1.833A1.833,1.833,0,1,1,1.833,0H7.521a1.833,1.833,0,0,1,1.8,1.474l1.128,5.636H33.112a1.833,1.833,0,0,1,1.8,2.177L32.638,21.214l0,.014A4.672,4.672,0,0,1,28.05,24.993ZM11.18,10.775l1.948,9.736a1.01,1.01,0,0,0,1.011.815H28.049a1.009,1.009,0,0,0,.989-.808L30.9,10.775Z" transform="translate(-1.833 -1.833)" fill="#3d3d3d"/>
+    </g>
+  </g>
+</svg>

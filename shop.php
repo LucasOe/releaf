@@ -18,7 +18,50 @@
 
     <!--Main Content-->
     <main>
-        Shop
+        <form class="search" action="./shop.php">
+            <input class="opensans" id="search" name="search" type="text" placeholder="Suche...">
+            <button class="button opensans">Suche</button>
+        </form>
+
+        <div class="categoryContainer">
+            <form action="./shop.php" <?php echo isSelected(0) ?>>
+                <button type="submit" name="category" value="0">
+                    <div class="category">
+                        <div class="image-wrapper">
+                            <img class="image" src="img/products/tasse_000.jpg">
+                        </div>
+                        <h3 class="amatic">Gesamtes Sortiment</h3>
+                    </div>
+                </button>
+            </form>
+            <?php foreach (getCategories() as $key => $category) : ?>
+                <form action="./shop.php" <?php echo isSelected($category->id) ?>>
+                    <button type="submit" name="category" value="<?php echo $category->id ?>">
+                        <div class="category">
+                            <div class="image-wrapper">
+                                <img class="image" src="<?php echo $category->getImage() ?>">
+                            </div>
+                            <h3 class="amatic"><?php echo $category->name; ?></h3>
+                        </div>
+                    </button>
+                </form>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="productsContainer">
+            <?php foreach (getProducts($_GET["category"] ?? null, $_GET["search"] ?? null) as $key => $product) : ?>
+                <form action="./product.php">
+                    <button type="submit" name="id" value="<?php echo $product->id ?>">
+                        <div class="product">
+                            <div class="image-wrapper">
+                                <img class="image" src="<?php echo $product->getImage() ?>">
+                            </div>
+                            <h3 class="amatic"><?php echo $product->name; ?></h3>
+                        </div>
+                    </button>
+                </form>
+            <?php endforeach; ?>
+        </div>
     </main>
 </body>
 

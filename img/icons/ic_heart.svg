@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><rect width="34" height="34" fill="#fcfcfc" opacity="0"/><g transform="translate(1.876 4.141)"><path d="M30.267,7.789a7.82,7.82,0,0,0-11.062,0L17.7,9.3,16.192,7.789A7.822,7.822,0,0,0,5.13,18.85l1.508,1.507L17.7,31.418,28.76,20.357l1.508-1.507A7.819,7.819,0,0,0,30.267,7.789Z" transform="translate(-2.839 -5.497)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.667"/></g></svg>
+<svg id="ic_heart" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <rect id="Area" width="34" height="34" fill="#fcfcfc" opacity="0"/>
+  <g id="Icon" transform="translate(1.876 4.141)">
+    <path id="Path" d="M24.736,3.664a9.655,9.655,0,0,1,6.827,16.483l-1.508,1.507L19,32.715a1.833,1.833,0,0,1-2.593,0L3.834,20.146A9.655,9.655,0,1,1,17.488,6.492l.21.21.21-.21A9.591,9.591,0,0,1,24.736,3.664ZM17.7,28.826,28.971,17.553A5.988,5.988,0,1,0,20.5,9.085L19,10.592a1.833,1.833,0,0,1-2.593,0L14.9,9.085a5.988,5.988,0,1,0-8.469,8.469L7.934,19.06Z" transform="translate(-2.839 -5.497)" fill="#3d3d3d"/>
+  </g>
+</svg>
