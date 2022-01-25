@@ -2,7 +2,7 @@
   <g id="ic_arrow" transform="translate(0 64) rotate(-90)">
     <rect id="Area" width="64" height="64" fill="#fcfcfc" opacity="0"/>
     <g id="Icon" transform="translate(24.375 16.375)">
-      <path id="Path" d="M40,50.667a2.658,2.658,0,0,1-1.886-.781l-16-16a2.667,2.667,0,0,1,0-3.771l16-16a2.667,2.667,0,0,1,3.771,3.771L27.771,32,41.886,46.114A2.667,2.667,0,0,1,40,50.667Z" transform="translate(-24 -16)"/>
+      <path id="Path" d="M40,50.667a2.658,2.658,0,0,1-1.886-.781l-16-16a2.667,2.667,0,0,1,0-3.771l16-16a2.667,2.667,0,0,1,3.771,3.771L27.771,32,41.886,46.114A2.667,2.667,0,0,1,40,50.667Z" fill="#eeeeee" transform="translate(-24 -16)"/>
     </g>
   </g>
 </svg>

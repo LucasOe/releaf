@@ -48,11 +48,14 @@ $visible-slides: 5;
         }
         .prev {
             left: 0;
+            transform: translateY(-50%) rotate(90deg);
+            transform-origin: right;
         }
         .next {
             right: 0;
             transform-origin: center;
-            transform: rotate(180deg);
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: left;
         }
     }
 

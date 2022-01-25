@@ -31,12 +31,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Amatic SC", sans-serif !important;
+  font-family: "Amatic SC", sans-serif;
   font-weight: 700 !important;
 }
 
 h2, h3 {
   font-size: 5.5rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .amatic {
@@ -277,11 +281,14 @@ footer p {
 }
 .categorySlider .slider-nav .prev {
   left: 0;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right;
 }
 .categorySlider .slider-nav .next {
   right: 0;
   transform-origin: center;
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left;
 }
 .categorySlider .transition {
   transition: transform 0.5s ease;
@@ -633,6 +640,17 @@ section .value-wrapper .value-block {
   flex-direction: column;
   align-items: center;
   margin: 0px 150px;
+  margin: 0px 30px;
+  width: 20%;
+}
+section .value-wrapper .value-block h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+section .value-wrapper .value-block p {
+  margin-top: 0;
 }
 section .value-wrapper + a {
   display: flex;
