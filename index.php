@@ -19,9 +19,9 @@
         </picture>
 
         <!--Blätter-->
-        <img class="leaf" src="img/leaf2.png" />
-        <img class="leaf" src="img/leaf2.png" />
-        <img class="leaf" src="img/leaf.png" />
+        <img class="headerLeaf" src="img/leaf2.png" />
+        <img class="headerLeaf" src="img/leaf2.png" />
+        <img class="headerLeaf" src="img/leaf.png" />
 
 
         <div class="logoWrap">
@@ -82,7 +82,7 @@
             <div class="circleWrap">
                 <div class="bubble"></div>
                 <div class="circle">
-                    <h3>Mehr als nur Tee</h3>
+                    <h2>Mehr als nur Tee</h2>
                     <p>
                         Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
                         mit unseren Tees kannst du dir eine Auszeitgönnen.
@@ -101,11 +101,52 @@
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
-            <h1>Unsere Werte</h1>
+            <h2>Unsere Werte</h2>
+            <div class="value-wrapper">
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                        Natürlich Bio
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                        Für deine Gesundheit
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                        Gib uns eine Bewertung
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <a>
+                <button class="button">Mehr erfahren</button>
+            </a>
+            <!--Blätter-->
+            <img src="img/leaf.png" id="leaf" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf2" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf3" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf4" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf5" width="auto" height="auto">
+
+
             <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
         <section class="white">
-            <h1>Entdecke deinen Lieblingstee</h1>
+            <h2>Entdecke deinen Lieblingstee</h2>
+            <?php include "components/slider.php"; ?>
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="texturedGreen">
@@ -120,6 +161,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/header.js"></script>
+
+    <!--Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 

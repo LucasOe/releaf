@@ -31,8 +31,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Amatic SC", sans-serif !important;
+  font-family: "Amatic SC", sans-serif;
   font-weight: 700 !important;
+}
+
+h2, h3 {
+  font-size: 5.5rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .amatic {
@@ -88,7 +96,7 @@ footer p {
   align-items: center;
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
 }
 #nav #hamburger {
   align-items: center;
@@ -228,6 +236,75 @@ footer p {
   top: 99%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.categorySlider .slider {
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1500px;
+}
+.categorySlider ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: translateX(-20%);
+}
+.categorySlider li {
+  position: relative;
+  color: black;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300px;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.categorySlider li h3 {
+  font-size: 3rem;
+  margin-top: -40px;
+}
+.categorySlider li img {
+  transform: scale(0.8);
+}
+.categorySlider .slider-nav .prev,
+.categorySlider .slider-nav .next {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.categorySlider .slider-nav .prev {
+  left: 0;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right;
+}
+.categorySlider .slider-nav .next {
+  right: 0;
+  transform-origin: center;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left;
+}
+.categorySlider .transition {
+  transition: transform 0.5s ease;
+}
+.categorySlider .left {
+  transform: translateX(-100%);
+}
+.categorySlider .right {
+  transform: translateX(100%);
+}
+
 header {
   max-height: calc(100vh - 80px);
   overflow: hidden;
@@ -241,18 +318,18 @@ header img.hero {
 header img.hero a {
   color: #008e39;
 }
-header .leaf {
+header .headerLeaf {
   position: absolute;
   filter: blur(5px);
 }
-header .leaf:nth-of-type(1) {
+header .headerLeaf:nth-of-type(1) {
   top: 0;
 }
-header .leaf:nth-of-type(2) {
+header .headerLeaf:nth-of-type(2) {
   top: 20vh;
   left: 80vw;
 }
-header .leaf:nth-of-type(3) {
+header .headerLeaf:nth-of-type(3) {
   top: 40vh;
   left: 40vw;
 }
@@ -441,6 +518,10 @@ section {
   padding-top: 85px;
   width: 100%;
 }
+section h2,
+section h3 {
+  text-align: center;
+}
 section .logo {
   display: inline-block;
   vertical-align: middle;
@@ -555,6 +636,33 @@ section .bubble:nth-child(3) {
     bottom: 80px;
   }
 }
+section .value-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+section .value-wrapper .value-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 150px;
+  margin: 0px 30px;
+  width: 20%;
+}
+section .value-wrapper .value-block h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+section .value-wrapper .value-block p {
+  margin-top: 0;
+}
+section .value-wrapper + a {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px 0px 0px;
+}
 
 .textured {
   background: #fff4df url("../img/leaf_texture.png");
@@ -596,6 +704,45 @@ section .bubble:nth-child(3) {
 
 .color-green {
   background-color: #dce9cc;
+}
+
+/*Leaves*/
+#leaf {
+  position: absolute;
+  top: 0px;
+  transform: scale(0.8);
+}
+
+#leaf2 {
+  position: absolute;
+  top: 0px;
+  transform: translateY(-160px) rotate(-50deg) scale(0.6);
+  z-index: 2;
+  left: 200px;
+}
+
+#leaf3 {
+  position: absolute;
+  top: 350px;
+  transform: scale(0.6) rotate(-140deg);
+  z-index: 2;
+  left: 200;
+}
+
+#leaf4 {
+  position: absolute;
+  top: 0px;
+  transform: translateY(-160px) rotate(-50deg);
+  z-index: 2;
+  right: 200px;
+}
+
+#leaf5 {
+  position: absolute;
+  top: 852px;
+  transform: translateY(-160px);
+  z-index: 2;
+  right: 200px;
 }
 
 .search {
@@ -648,6 +795,7 @@ section .bubble:nth-child(3) {
   cursor: pointer;
   opacity: 80%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 .categoryContainer button:hover {
   transform: scale(1.1);

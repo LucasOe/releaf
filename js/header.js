@@ -9,13 +9,13 @@ $(document).ready(function () {
         var blurAmount =  5 + windowTop/50;
 
         $(".hero").css("transform", "translateY(" + heroVal + "px)");
-        $(".leaf")
+        $(".headerLeaf")
             .eq(0)
             .css(
                 "transform",
                 "translateY(" + leafTransl + "px) rotate(" + leafRot + "deg)"
             );
-        $(".leaf")
+        $(".headerLeaf")
             .eq(1)
             .css(
                 "transform",
@@ -27,7 +27,7 @@ $(document).ready(function () {
                     -leafRot / 2 +
                     "deg)"
             );
-        $(".leaf")
+        $(".headerLeaf")
             .eq(2)
             .css(
                 "transform",

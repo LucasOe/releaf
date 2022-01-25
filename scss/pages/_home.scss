@@ -13,7 +13,7 @@ header {
         }
     }
 
-    .leaf {
+    .headerLeaf {
         position: absolute;
         filter: blur(5px);
         &:nth-of-type(1) {
@@ -234,6 +234,11 @@ section {
     padding-top: 85px;
     width: 100%;
 
+    h2,
+    h3 {
+        text-align: center;
+    }
+
     .logo {
         display: inline-block;
         vertical-align: middle;
@@ -310,7 +315,7 @@ section {
                 font-size: 5rem;
                 text-align: center;
                 @include responsive_mobile() {
-                margin: 10px;
+                    margin: 10px;
                 }
             }
 
@@ -334,7 +339,6 @@ section {
                 right: 30vw;
                 bottom: 120px;
             }
-            
         }
         &:nth-child(3) {
             background-color: $soft-green;
@@ -345,6 +349,33 @@ section {
                 right: 13vw;
                 bottom: 80px;
             }
+        }
+    }
+    .value-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .value-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 150px;
+            margin: 0px 30px;
+            width: 20%;
+            h3 {
+                font-family: "Open Sans", sans-serif;
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 0;
+            }
+        }
+        & + a {
+            display: flex;
+            justify-content: center;
+            margin: 100px 0px 0px 0px;
         }
     }
 }
@@ -392,4 +423,40 @@ section {
 
 .color-green {
     background-color: $soft-green;
+}
+
+/*Leaves*/
+
+#leaf {
+    position: absolute;
+    top: 0px;
+    transform: scale(0.8);
+}
+#leaf2 {
+    position: absolute;
+    top: 0px;
+    transform: translateY(-160px) rotate(-50deg) scale(0.6);
+    z-index: 2;
+    left: 200px;
+}
+#leaf3 {
+    position: absolute;
+    top: 350px;
+    transform: scale(0.6) rotate(-140deg);
+    z-index: 2;
+    left: 200;
+}
+#leaf4 {
+    position: absolute;
+    top: 0px;
+    transform: translateY(-160px) rotate(-50deg);
+    z-index: 2;
+    right: 200px;
+}
+#leaf5 {
+    position: absolute;
+    top: 852px;
+    transform: translateY(-160px);
+    z-index: 2;
+    right: 200px;
 }
