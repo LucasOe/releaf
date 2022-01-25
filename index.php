@@ -142,7 +142,22 @@
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="texturedGreen">
-            <p>Der Grüne Tee war so lecker! Und endlich bin ich meine Magenschmerzen los! 5/5</p>
+            <div class="testimonial-wrapper">
+                <img src="img/testimonial.jpg" alt="Jennifer Hoffmann" class="roundedImage" id="imgJenniferHoffmann">
+                <div>
+                    <img src="img/icons/ic_star_full.svg">
+                    <img src="img/icons/ic_star_full.svg">
+                    <img src="img/icons/ic_star_full.svg">
+                    <img src="img/icons/ic_star_full.svg">
+                    <img src="img/icons/ic_star_full.svg">
+                    <h3>
+                        "Der Grüne Tee war so lecker! Und<br> endlich bin ich meine Magen-<br>schmerzen los!"
+                    </h3>
+                    <p>
+                        -Jennifer Hoffmann
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 

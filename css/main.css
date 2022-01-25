@@ -631,6 +631,13 @@ section .value-wrapper + a {
   justify-content: center;
   margin: 100px 0px 0px 0px;
 }
+section .testimonial-wrapper {
+  display: flex;
+  justify-content: center;
+}
+section .testimonial-wrapper div {
+  margin: 0px 0px 0px 200px;
+}
 
 .textured {
   background: #fff4df url("../img/leaf_texture.png");
