@@ -25,7 +25,10 @@ $visible-slides-mobile: 2;
         width: 100%;
         height: 100%;
         display: flex;
-        transform: translateX(calc(-100% / $visible-slides));
+
+        @include responsive_desktop() {
+            transform: translateX(calc(-100% / $visible-slides));
+        }
 
         @include responsive_tablet() {
             transform: translateX(calc(-100% / $visible-slides-tablet));
@@ -38,7 +41,6 @@ $visible-slides-mobile: 2;
 
     li {
         color: black;
-        width: calc(100% / $visible-slides);
         height: 100%;
         display: flex;
         justify-content: center;
@@ -46,6 +48,10 @@ $visible-slides-mobile: 2;
         font-size: 300px;
         flex-shrink: 0;
         flex-direction: column;
+
+        @include responsive_desktop() {
+            width: calc(100% / $visible-slides);
+        }
 
         @include responsive_tablet() {
             width: calc(100% / $visible-slides-tablet);
@@ -89,14 +95,56 @@ $visible-slides-mobile: 2;
     }
 
     .transition {
-        transition: transform 0.5s ease;
+        transition: all 0.5s ease;
     }
 
     .transition.left {
         transform: translateX(-100%);
+
+        @include responsive_desktop() {
+            &[style*="order: 2;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(-100%);
+            }
+        }
+
+        @include responsive_tablet() {
+            &[style*="order: 2;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(-100%);
+            }
+        }
+
+        @include responsive_mobile() {
+            &[style*="order: 2;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(-100%);
+            }
+        }
     }
 
     .transition.right {
         transform: translateX(100%);
+
+        @include responsive_desktop() {
+            &[style*="order: 6;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(100%);
+            }
+        }
+
+        @include responsive_tablet() {
+            &[style*="order: 4;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(100%);
+            }
+        }
+
+        @include responsive_mobile() {
+            &[style*="order: 3;"] {
+                opacity: 0%;
+                transform: scale(0.5) translateX(100%);
+            }
+        }
     }
 }

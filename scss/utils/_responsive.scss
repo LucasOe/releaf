@@ -10,6 +10,12 @@
     }
 }
 
+@mixin responsive_desktop() {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
 @mixin responsive_largeScreen() {
     @media only screen and (min-width: 2000px) {
         @content;
