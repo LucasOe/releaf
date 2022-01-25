@@ -28,7 +28,7 @@
                 <button type="submit" name="category" value="0">
                     <div class="category">
                         <div class="image-wrapper">
-                            <img class="image" src="img/products/tasse_000.jpg">
+                            <img class="image" src="img/products/tee_000.jpg">
                         </div>
                         <h3 class="amatic">Gesamtes Sortiment</h3>
                     </div>
