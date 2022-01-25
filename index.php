@@ -106,6 +106,7 @@
         </section>
         <section class="white">
             <h1>Entdecke deinen Lieblingstee</h1>
+    <?php include "components/slider.php"; ?>
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>
         <section class="texturedGreen">
@@ -120,6 +121,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/header.js"></script>
+
+    <!--Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 

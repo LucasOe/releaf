@@ -8,7 +8,7 @@
 </div>
 <ul class="navigation">
     <li>
-        <a class="amatic" href="/shop.php">Shop</a>
+        <a class="amatic" href="shop.php">Shop</a>
     </li>
     <li>
         <a class="amatic" href="/contact.php">Kontakt</a>
