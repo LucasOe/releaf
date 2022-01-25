@@ -20,12 +20,12 @@ $visible-slides: 5;
         width: 100%;
         height: 100%;
         display: flex;
-        transform: translateX(-100% / $visible-slides);
+        transform: translateX(calc(-100% / $visible-slides));
     }
     li {
         position: relative;
         color: black;
-        width: (100% / $visible-slides);
+        width: calc(100% / $visible-slides);
         height: 100%;
         display: flex;
         justify-content: center;
