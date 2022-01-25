@@ -1,3 +1,5 @@
+@import "slideshow_responsive.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -100,51 +102,9 @@ $visible-slides-mobile: 2;
 
     .transition.left {
         transform: translateX(-100%);
-
-        @include responsive_desktop() {
-            &[style*="order: 2;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(-100%);
-            }
-        }
-
-        @include responsive_tablet() {
-            &[style*="order: 2;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(-100%);
-            }
-        }
-
-        @include responsive_mobile() {
-            &[style*="order: 2;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(-100%);
-            }
-        }
     }
 
     .transition.right {
         transform: translateX(100%);
-
-        @include responsive_desktop() {
-            &[style*="order: 6;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(100%);
-            }
-        }
-
-        @include responsive_tablet() {
-            &[style*="order: 4;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(100%);
-            }
-        }
-
-        @include responsive_mobile() {
-            &[style*="order: 3;"] {
-                opacity: 0%;
-                transform: scale(0.5) translateX(100%);
-            }
-        }
     }
 }

@@ -1,0 +1,224 @@
+// Hilfe
+
+.categorySlider {
+    li {
+        @include responsive_desktop() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 0%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 6;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 7;"] {
+                img {
+                    width: 0%;
+                }
+            }
+        }
+
+        @include responsive_tablet() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 0%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 4;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 5;"] {
+                img {
+                    width: 0%;
+                }
+            }
+        }
+
+        @include responsive_mobile() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 0%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 4;"] {
+                img {
+                    width: 0%;
+                }
+            }
+        }
+    }
+
+    .transition {
+        img {
+            transition: width 0.5s ease;
+        }
+    }
+
+    .transition.left {
+        @include responsive_desktop() {
+            &[style*="order: 2;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 6;"] {
+                img {
+                    width: 80%;
+                }
+            }
+            &[style*="order: 7;"] {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+
+        @include responsive_tablet() {
+            &[style*="order: 2;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 4;"] {
+                img {
+                    width: 80%;
+                }
+            }
+            &[style*="order: 5;"] {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+
+        @include responsive_mobile() {
+            &[style*="order: 2;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 4;"] {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    .transition.right {
+        @include responsive_desktop() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 80%;
+                }
+            }
+            &[style*="order: 5;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 6;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+        }
+
+        @include responsive_tablet() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 80%;
+                }
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 4;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+        }
+
+        @include responsive_mobile() {
+            &[style*="order: 1;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 2;"] {
+                img {
+                    width: 60%;
+                }
+            }
+            &[style*="order: 3;"] {
+                img {
+                    width: 0%;
+                }
+
+                opacity: 0%;
+            }
+        }
+    }
+}
