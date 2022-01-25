@@ -102,6 +102,38 @@
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
             <h2>Unsere Werte</h2>
+            <div class="value-wrapper">
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                        Natürlich Bio
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                        Für deine Gesundheit
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="value-block">
+                    <img src="img/icons/ic_heart.svg" />
+                    <h3>
+                       Gib uns eine Bewertung 
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <a>
+                <button class="button">Mehr erfahren</button>
+            </a>
             <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
         <section class="white">
