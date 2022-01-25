@@ -35,6 +35,10 @@ h6 {
   font-weight: 700 !important;
 }
 
+h2, h3 {
+  font-size: 5.5rem;
+}
+
 .amatic {
   font-family: "Amatic SC", sans-serif !important;
   font-weight: 700 !important;
@@ -266,7 +270,6 @@ footer p {
 .categorySlider .slider-nav .prev,
 .categorySlider .slider-nav .next {
   position: absolute;
-  background: slategrey;
   height: 40px;
   width: 40px;
   top: 50%;
@@ -277,6 +280,8 @@ footer p {
 }
 .categorySlider .slider-nav .next {
   right: 0;
+  transform-origin: center;
+  transform: rotate(180deg);
 }
 .categorySlider .transition {
   transition: transform 0.5s ease;
@@ -500,6 +505,9 @@ section {
   background-color: white;
   padding-top: 85px;
   width: 100%;
+}
+section h2, section h3 {
+  text-align: center;
 }
 section .logo {
   display: inline-block;
