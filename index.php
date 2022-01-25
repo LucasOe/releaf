@@ -82,7 +82,7 @@
             <div class="circleWrap">
                 <div class="bubble"></div>
                 <div class="circle">
-                    <h3>Mehr als nur Tee</h3>
+                    <h2>Mehr als nur Tee</h2>
                     <p>
                         Unsere Tees sind nicht nur lecker, sondern auch gut für Körper und Seele. Ob Stress, Magenbeschwerden oder Halsschmerzen,
                         mit unseren Tees kannst du dir eine Auszeitgönnen.
@@ -101,7 +101,7 @@
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
-            <h1>Unsere Werte</h1>
+            <h2>Unsere Werte</h2>
             <div class="value-wrapper">
                 <div class="value-block">
                     <img src="img/icons/ic_heart.svg" />
@@ -137,7 +137,7 @@
             <img class="wave bottom" src="img/wave_bottom_green.svg" />
         </section>
         <section class="white">
-            <h1>Entdecke deinen Lieblingstee</h1>
+            <h2>Entdecke deinen Lieblingstee</h2>
     <?php include "components/slider.php"; ?>
             <img class="wave bottom" src="img/wave_bottom.svg" />
         </section>

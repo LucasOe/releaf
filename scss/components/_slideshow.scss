@@ -41,7 +41,6 @@ $visible-slides: 5;
         .prev,
         .next {
             position: absolute;
-            background: slategrey;
             height: 40px;
             width: 40px;
             top: 50%;
@@ -49,9 +48,14 @@ $visible-slides: 5;
         }
         .prev {
             left: 0;
+            transform: translateY(-50%) rotate(90deg);
+            transform-origin: right;
         }
         .next {
             right: 0;
+            transform-origin: center;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: left;
         }
     }
 
