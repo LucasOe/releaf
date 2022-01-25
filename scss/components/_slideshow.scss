@@ -15,7 +15,7 @@ $visible-slides-mobile: 2;
     .slider {
         height: 500px;
         overflow: hidden;
-        width: 1500px;
+        width: 60vw;
     }
 
     ul {
@@ -40,12 +40,10 @@ $visible-slides-mobile: 2;
     }
 
     li {
-        color: black;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 300px;
         flex-shrink: 0;
         flex-direction: column;
 
@@ -62,13 +60,15 @@ $visible-slides-mobile: 2;
         }
 
         h3 {
+            color: black;
             font-size: 3rem;
-            margin-top: -40px;
+            margin: 0px;
+            width: 100%;
+            overflow: hidden;
         }
 
         img {
-            transform: scale(0.8);
-            width: 100%;
+            width: 80%;
         }
     }
 
