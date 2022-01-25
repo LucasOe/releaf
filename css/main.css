@@ -509,6 +509,22 @@ section .bubble:nth-child(3) {
   transform: scale(2);
   bottom: 180px;
 }
+section .value-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+section .value-wrapper .value-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 150px;
+}
+section .value-wrapper + a {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px 0px 0px;
+}
 
 .textured {
   background: #fff4df url("../img/leaf_texture.png");
