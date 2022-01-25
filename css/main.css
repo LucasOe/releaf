@@ -398,7 +398,7 @@ header .product-wrapper {
 }
 header .textbox {
   width: 30vw;
-  height: 232px;
+  height: 265px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 20px;
@@ -476,8 +476,12 @@ header .scrollDown:hover {
   font-size: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 0px;
+  white-space: pre-wrap;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 60px;
 }
 .productContainer .product p {
   color: #ffffff;
