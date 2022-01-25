@@ -8,7 +8,7 @@ var timeoutId;
 $(".prev").on("click", function () {
     if (timeoutId) return;
 
-    $(".slider ul li").addClass("transition right");
+    $(".slider ul li").addClass("transition left");
 
     timeoutId = setTimeout(function () {
         prev();
@@ -19,7 +19,7 @@ $(".prev").on("click", function () {
 $(".next").on("click", function () {
     if (timeoutId) return;
 
-    $(".slider ul li").addClass("transition left");
+    $(".slider ul li").addClass("transition right");
 
     timeoutId = setTimeout(function () {
         next();
@@ -41,10 +41,10 @@ function prev() {
     $(".slider ul li").each(function () {
         var curPos = parseInt($(this).css("order"));
         var sliderLength = slider.find("ul li").length;
-        if (curPos < sliderLength) {
-            $(this).css("order", curPos + 1);
+        if (curPos > 1) {
+            $(this).css("order", curPos - 1);
         } else {
-            curPos = 1;
+            curPos = sliderLength;
             $(this).css("order", curPos);
         }
     });
@@ -57,10 +57,10 @@ function next() {
     $(".slider ul li").each(function () {
         var curPos = parseInt($(this).css("order"));
         var sliderLength = slider.find("ul li").length;
-        if (curPos > 1) {
-            $(this).css("order", curPos - 1);
+        if (curPos < sliderLength) {
+            $(this).css("order", curPos + 1);
         } else {
-            curPos = sliderLength;
+            curPos = 1;
             $(this).css("order", curPos);
         }
     });
