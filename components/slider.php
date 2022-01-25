@@ -1,4 +1,7 @@
 <div class='categorySlider'>
+    <div class='prev'>
+        <img src="img/icons/ic_arrow_grey.svg">
+    </div>
     <div class='slider'>
         <ul>
             <?php foreach (getCategories() as $key => $category) : ?>
@@ -15,13 +18,7 @@
             <?php endforeach; ?>
         </ul>
     </div>
-    <div class='slider-nav'>
-        <div class='prev'>
-            <img src="img/icons/ic_arrow_grey.svg">
-        </div>
-        <div class='next'>
-            <img src="img/icons/ic_arrow_grey.svg">
-        </div>
+    <div class='next'>
+        <img src="img/icons/ic_arrow_grey.svg">
     </div>
 </div>
-<?php include "components/svg_icons.php" ?>

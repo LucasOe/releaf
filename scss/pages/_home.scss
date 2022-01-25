@@ -286,6 +286,7 @@ section {
         margin: 0 auto;
         position: relative;
         width: 575px;
+
         @include responsive_mobile() {
             width: 450px;
         }
@@ -310,6 +311,7 @@ section {
             padding: 70px;
             position: relative;
             width: 575px;
+
             @include responsive_mobile() {
                 height: 450px;
                 width: 450px;
@@ -318,6 +320,7 @@ section {
             h3 {
                 font-size: 5rem;
                 text-align: center;
+
                 @include responsive_mobile() {
                     margin: 10px;
                 }
@@ -335,6 +338,7 @@ section {
         height: 50px;
         position: absolute;
         width: 50px;
+
         &:nth-child(2) {
             background-color: $soft-green;
             right: 30vw;
@@ -349,6 +353,7 @@ section {
             right: 26vw;
             transform: scale(2);
             bottom: 180px;
+
             @include responsive_tablet() {
                 right: 13vw;
                 bottom: 80px;
@@ -359,6 +364,7 @@ section {
         display: flex;
         width: 100%;
         justify-content: center;
+
         .value-block {
             display: flex;
             flex-direction: column;
@@ -366,16 +372,19 @@ section {
             margin: 0px 150px;
             margin: 0px 30px;
             width: 20%;
+
             h3 {
                 font-family: "Open Sans", sans-serif;
                 font-size: 1.8rem;
                 font-weight: 700;
                 margin-bottom: 0;
             }
+
             p {
                 margin-top: 0;
             }
         }
+
         & + a {
             display: flex;
             justify-content: center;
@@ -436,6 +445,7 @@ section {
     top: 0px;
     transform: scale(0.8);
 }
+
 #leaf2 {
     position: absolute;
     top: 0px;
@@ -443,6 +453,7 @@ section {
     z-index: 2;
     left: 200px;
 }
+
 #leaf3 {
     position: absolute;
     top: 350px;
@@ -450,6 +461,7 @@ section {
     z-index: 2;
     left: 200;
 }
+
 #leaf4 {
     position: absolute;
     top: 0px;
@@ -457,6 +469,7 @@ section {
     z-index: 2;
     right: 200px;
 }
+
 #leaf5 {
     position: absolute;
     top: 852px;

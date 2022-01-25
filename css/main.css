@@ -240,15 +240,18 @@ footer p {
   box-sizing: border-box;
 }
 
+.categorySlider {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
 .categorySlider .slider {
-  position: relative;
   height: 500px;
-  margin: 0 auto;
   overflow: hidden;
   width: 1500px;
 }
 .categorySlider ul {
-  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -257,8 +260,17 @@ footer p {
   display: flex;
   transform: translateX(-20%);
 }
+@media only screen and (max-width: 1024px) {
+  .categorySlider ul {
+    transform: translateX(-33.3333333333%);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .categorySlider ul {
+    transform: translateX(-50%);
+  }
+}
 .categorySlider li {
-  position: relative;
   color: black;
   width: 20%;
   height: 100%;
@@ -269,39 +281,50 @@ footer p {
   flex-shrink: 0;
   flex-direction: column;
 }
+@media only screen and (max-width: 1024px) {
+  .categorySlider li {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .categorySlider li {
+    width: 50%;
+  }
+}
 .categorySlider li h3 {
   font-size: 3rem;
   margin-top: -40px;
 }
 .categorySlider li img {
   transform: scale(0.8);
+  width: 100%;
 }
-.categorySlider .slider-nav .prev,
-.categorySlider .slider-nav .next {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+.categorySlider .prev,
+.categorySlider .next {
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  background-color: #008e39;
+  border-radius: 50%;
 }
-.categorySlider .slider-nav .prev {
-  left: 0;
-  transform: translateY(-50%) rotate(90deg);
-  transform-origin: right;
+.categorySlider .prev img,
+.categorySlider .next img {
+  width: 100%;
+  transform: translateY(3px);
 }
-.categorySlider .slider-nav .next {
-  right: 0;
-  transform-origin: center;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: left;
+.categorySlider .prev {
+  transform: rotate(90deg);
+}
+.categorySlider .next {
+  transform: rotate(-90deg);
 }
 .categorySlider .transition {
   transition: transform 0.5s ease;
 }
-.categorySlider .left {
+.categorySlider .transition.left {
   transform: translateX(-100%);
 }
-.categorySlider .right {
+.categorySlider .transition.right {
   transform: translateX(100%);
 }
 

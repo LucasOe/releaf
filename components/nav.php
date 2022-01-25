@@ -1,3 +1,4 @@
+<?php include "components/svg_icons.php" ?>
 <a href="index.php">
     <img class="logo" src="img/logo.png" title="Releaf">
 </a>
@@ -47,5 +48,3 @@
         </a>
     </li>
 </ul>
-
-<?php include "components/svg_icons.php" ?>
