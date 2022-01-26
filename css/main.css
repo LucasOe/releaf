@@ -475,6 +475,10 @@ footer p {
   width: 100%;
   overflow: hidden;
 }
+.categorySlider button {
+  background-color: transparent;
+  border: none;
+}
 .categorySlider .prev,
 .categorySlider .next {
   height: 60px;
