@@ -47,6 +47,7 @@
                 </form>
             <?php endforeach; ?>
         </div>
+        <h1 class="currentCategory">Unser <?php echo getCategory($_GET["category"] ?? null)->name ?></h1>
 
         <div class="productsContainer">
             <?php foreach (getProducts($_GET["category"] ?? null, $_GET["search"] ?? null) as $key => $product) : ?>

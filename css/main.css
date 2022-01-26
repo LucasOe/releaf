@@ -973,7 +973,6 @@ section .value-wrapper + a {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
 }
 .categoryContainer form {
   display: inline-block;
@@ -1004,6 +1003,8 @@ section .value-wrapper + a {
   font-size: 3rem;
   margin: 5px;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .categoryContainer .category .image-wrapper {
   width: 60px;
@@ -1021,8 +1022,14 @@ section .value-wrapper + a {
   transform: translateY(-50%);
 }
 
+.currentCategory {
+  text-align: center;
+  margin: 100px 0px;
+  font-size: 5rem;
+}
+
 .productsContainer {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 20vw);
@@ -1040,16 +1047,28 @@ section .value-wrapper + a {
   overflow: hidden;
 }
 .productsContainer .product h3 {
-  font-size: 3rem;
+  font-size: 3.4rem;
   margin: 0px;
-  padding: 20px;
+  padding: 10px;
+  height: 100px;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  margin-top: -40px;
+}
+.productsContainer .product p {
+  margin: 0px;
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 1.5rem;
 }
 .productsContainer .product .image-wrapper {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .productsContainer .product .image-wrapper .image {
   width: 100%;
-  transform: scale(0.8);
 }
 
 /*# sourceMappingURL=main.css.map */

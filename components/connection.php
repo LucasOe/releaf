@@ -26,6 +26,12 @@ class Category
     public $name;
     private $image;
 
+    public function __construct($var = null)
+    {
+        if ($var != null)
+            $this->name = $var;
+    }
+
     public function getImage()
     {
         return "img/products/" . $this->image . ".jpg";
@@ -59,8 +65,6 @@ function getProducts($category, $searchTerm)
     }
 }
 
-getProducts(0, "Tee");
-
 function getProduct($id)
 {
     global $con;
@@ -89,6 +93,24 @@ function getCategories()
             echo "Error: No results";
         }
         return $categories;
+    }
+}
+
+function getCategory($id)
+{
+    global $con;
+
+    if ($id == 0) return new Category("Gesamtes Sortiment");
+
+    $stmt = $con->prepare("SELECT * FROM category WHERE id = :id");
+    $stmt->bindParam(":id", $id);
+
+    if ($stmt->execute()) {
+        $category = $stmt->fetchAll(PDO::FETCH_CLASS, "Category");
+        if (count($category) <= 0) {
+            echo "Error: No results";
+        }
+        return $category[0];
     }
 }
 
