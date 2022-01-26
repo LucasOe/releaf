@@ -583,11 +583,6 @@ header .header .button {
 }
 @media only screen and (max-width: 1024px) {
   header .header {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  header .header {
     display: none;
   }
 }
@@ -710,16 +705,6 @@ header .scrollDown:hover {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-@media only screen and (max-width: 1024px) {
-  .productContainer .product:nth-child(3) {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .productContainer .product:nth-child(2) {
-    display: none;
-  }
 }
 
 section {

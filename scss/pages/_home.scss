@@ -80,10 +80,6 @@ header {
         }
 
         @include responsive_tablet() {
-            font-size: 3.5rem;
-        }
-
-        @include responsive_mobile() {
             display: none;
         }
     }
@@ -220,18 +216,6 @@ header {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-            }
-        }
-
-        @include responsive_tablet() {
-            &:nth-child(3) {
-                display: none;
-            }
-        }
-
-        @include responsive_mobile() {
-            &:nth-child(2) {
-                display: none;
             }
         }
     }
