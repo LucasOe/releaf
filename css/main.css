@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  user-select: none;
+}
+
 h1,
 h2,
 h3,
@@ -97,6 +101,7 @@ footer p {
   position: relative;
   width: 100%;
   z-index: 100;
+  user-select: none;
 }
 #nav #hamburger {
   align-items: center;
@@ -624,6 +629,7 @@ header .scrollDown:hover {
 
 .productContainer {
   width: fit-content;
+  user-select: none;
 }
 .productContainer form {
   display: inline-block;
@@ -655,11 +661,13 @@ header .scrollDown:hover {
   align-items: center;
   width: 150px;
   height: 60px;
+  user-select: text;
 }
 .productContainer .product p {
   color: #ffffff;
   font-size: 2.8rem;
   margin: 0;
+  user-select: text;
 }
 .productContainer .product .image-wrapper {
   width: 150px;
