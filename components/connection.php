@@ -10,6 +10,7 @@ class Product
     private $image;
     public $caregory;
     public $rating;
+    public $description;
 
     public function getPrice()
     {

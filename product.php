@@ -46,7 +46,7 @@
                     </div>
                     <div class="description">
                         <h3 clas="amatic">Beschreibung:</h3>
-                        <p class="opensans">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fugiat ad illo, placeat accusamus corrupti ipsa nisi adipisci, veniam voluptatum provident! Quae beatae facilis corporis esse ipsum quis veniam saepe!</p>
+                        <p class="opensans"><?php echo $product->description ?></p>
                     </div>
                     <div class="price">
                         <p class="amatic"><?php echo $product->getPrice(); ?></p>
