@@ -1210,7 +1210,11 @@ header .productContainer .product .image-wrapper .image {
 }
 @media only screen and (max-width: 1024px) {
   #main #leaf,
-#main #leaf3 {
+#main #leaf3,
+#main #leaf6,
+#main #leaf7,
+#main #leaf8,
+#main #leaf9 {
     display: none;
   }
 }
