@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="35.456" height="33.865" viewBox="0 0 35.456 33.865">
-  <g id="ic_star_hollow" transform="translate(1.5 1.5)">
-    <path id="Path" d="M21.978,5.75l5.015,10.159,11.213,1.639-8.114,7.9,1.915,11.165L21.978,31.341,11.949,36.615l1.915-11.165-8.114-7.9,11.213-1.639Z" transform="translate(-5.75 -5.75)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-  </g>
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="35.456"
+        height="33.865"
+        viewBox="0 0 35.456 33.865">
+    <g
+            id="ic_star_hollow"
+            transform="translate(1.5 1.5)">
+        <path
+                id="Path"
+                d="M21.978,5.75l5.015,10.159,11.213,1.639-8.114,7.9,1.915,11.165L21.978,31.341,11.949,36.615l1.915-11.165-8.114-7.9,11.213-1.639Z"
+                transform="translate(-5.75 -5.75)"
+                fill="none"
+                stroke="#008e39"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3" />
+    </g>
 </svg>

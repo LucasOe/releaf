@@ -92,6 +92,11 @@ header {
     .product-wrapper {
         right: 0;
         margin-right: 10vw;
+        @include responsive_tablet {
+            h2 {
+                display: none;
+            }
+        }
     }
 
     .textbox {
@@ -217,6 +222,24 @@ header {
                 top: 50%;
                 transform: translateY(-50%);
             }
+        }
+    }
+
+    @include responsive_tablet {
+        margin-top: 45%;
+    }
+    @include responsive_desktop {
+        form {
+            display: none;
+            &:first-of-type,
+            &:nth-of-type(2) {
+                display: inline-block;
+            }
+        }
+    }
+    @include responsive_largeScreen {
+        form {
+            display: inline-block;
         }
     }
 }
@@ -353,13 +376,13 @@ section {
         display: flex;
         width: 100%;
         justify-content: center;
-
         .value-block {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0px 150px;
             margin: 0px 30px;
+            text-align: center;
             width: 20%;
 
             h3 {
@@ -380,12 +403,24 @@ section {
             justify-content: center;
             margin: 100px 0px 0px 0px;
         }
+
+        @include responsive_tablet {
+            flex-direction: column;
+            align-items: center;
+            .value-block {
+                width: 100%;
+            }
+
+            & + a {
+                margin: 0px;
+            }
+        }
     }
-    .testimonial-wrapper{
+    .testimonial-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        div{
+        div {
             margin: 0px 0px 0px 200px;
             text-align: left;
             h3{
@@ -393,6 +428,15 @@ section {
             }
             p{
                 text-align: left;
+            }
+        }
+        @include responsive_tablet {
+            flex-direction: column;
+            div {
+                margin: 50px 0;
+            }
+            h3 {
+                font-size: 3rem;
             }
         }
     }
@@ -447,7 +491,7 @@ section {
 
 #leaf {
     position: absolute;
-    top: 0px;
+    top: -40px;
     transform: scale(0.8);
 }
 
@@ -472,7 +516,7 @@ section {
     top: 0px;
     transform: translateY(-160px) rotate(-50deg);
     z-index: 2;
-    right: 200px;
+    right: 15%;
 }
 
 #leaf5 {
@@ -481,4 +525,11 @@ section {
     transform: translateY(-160px);
     z-index: 2;
     right: 200px;
+}
+
+#leaf,
+#leaf3 {
+    @include responsive_tablet {
+        display: none;
+    }
 }

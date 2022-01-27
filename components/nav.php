@@ -12,15 +12,15 @@
         <a class="amatic" href="shop.php">Shop</a>
     </li>
     <li>
-        <a class="amatic" href="/contact.php">Kontakt</a>
+        <a class="amatic" href="contact.php">Kontakt</a>
     </li>
     <li>
-        <a class="amatic" href="/unsere-werte.php">Unsere Werte</a>
+        <a class="amatic" href="unsere-werte.php">Unsere Werte</a>
     </li>
 </ul>
 <ul class="icons">
     <li>
-        <a href="/search.php">
+        <a href="">
             <svg>
                 <use xlink:href="#search" />
             </svg>
@@ -34,7 +34,7 @@
         </a>
     </li>
     <li>
-        <a href="/shop.php">
+        <a href="">
             <svg>
                 <use xlink:href="#shopping_cart" />
             </svg>
@@ -48,3 +48,4 @@
         </a>
     </li>
 </ul>
+<img class="wave bottom" src="img/wave_bottom.svg" style="transform: scaleY(0.2)" />

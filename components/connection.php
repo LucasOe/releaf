@@ -8,6 +8,8 @@ class Product
     public $name;
     private $price;
     private $image;
+    public $caregory;
+    public $rating;
 
     public function getPrice()
     {
