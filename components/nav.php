@@ -12,10 +12,10 @@
         <a class="amatic" href="shop.php">Shop</a>
     </li>
     <li>
-        <a class="amatic" href="/contact.php">Kontakt</a>
+        <a class="amatic" href="contact.php">Kontakt</a>
     </li>
     <li>
-        <a class="amatic" href="/unsere-werte.php">Unsere Werte</a>
+        <a class="amatic" href="unsere-werte.php">Unsere Werte</a>
     </li>
 </ul>
 <ul class="icons">
@@ -48,3 +48,4 @@
         </a>
     </li>
 </ul>
+<img class="wave bottom" src="img/wave_bottom.svg" style="transform: scaleY(0.2)" />
