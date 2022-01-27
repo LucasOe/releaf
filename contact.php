@@ -8,7 +8,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
+
+    <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/small_page.js"></script>
     <script src="js/input_forms.js"></script>
 </head>
 
@@ -57,9 +60,9 @@
             </form>
         </div>
     </main>
-</body>
 
-<!--Footer-->
-<?php include "components/footer.php"; ?>
+    <!--Footer-->
+    <?php include "components/footer.php"; ?>
+</body>
 
 </html>

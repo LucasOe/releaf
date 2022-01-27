@@ -8,6 +8,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
+
+    <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/small_page.js"></script>
     <script src="js/input_forms.js"></script>
@@ -24,9 +26,9 @@
         <div class="registration-wrapper">
             <h2>Registieren</h2>
             <form class="contact-form">
-            <p>
-                Zuerst brauchen wir von Dir ein paar Infos.
-            </p>
+                <p>
+                    Zuerst brauchen wir von Dir ein paar Infos.
+                </p>
 
                 <!--Reverted input and label for adding styling to label depending on wether input is filled-->
                 <div class="input-group">
@@ -56,9 +58,9 @@
         </form>
         </div>
     </main>
-</body>
 
-<!--Footer-->
-<?php include "components/footer.php"; ?>
+    <!--Footer-->
+    <?php include "components/footer.php"; ?>
+</body>
 
 </html>
