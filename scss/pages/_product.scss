@@ -7,13 +7,16 @@
         display: flex;
         justify-content: center;
 
-        .productName {
+        .spacer {
             width: 100%;
+            height: 20vh;
+            margin: 20px 0px;
+        }
+
+        .productName {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            height: 20vh;
-            margin: 20px 0px;
             font-size: 5rem;
         }
 

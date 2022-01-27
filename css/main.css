@@ -1226,13 +1226,15 @@ header .productContainer .product .image-wrapper .image {
   display: flex;
   justify-content: center;
 }
-#product .product-wrapper .productName {
+#product .product-wrapper .spacer {
   width: 100%;
+  height: 20vh;
+  margin: 20px 0px;
+}
+#product .product-wrapper .productName {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 20vh;
-  margin: 20px 0px;
   font-size: 5rem;
 }
 #product .product-wrapper .image-wrapper {

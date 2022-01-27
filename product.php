@@ -24,13 +24,14 @@
     <main id="product">
         <div class="product-wrapper">
             <div class="productImage">
-                <h1 class="productName"> </h1>
+                <h1 class="spacer"> </h1>
                 <div class="image-wrapper">
                     <img class="image" src="<?php echo $product->getImage() ?>">
                 </div>
+                <h1 class="spacer"> </h1>
             </div>
             <div class="productDescription">
-                <h1 class="productName"> <?php echo $product->name; ?> </h1>
+                <h1 class="spacer productName"> <?php echo $product->name; ?> </h1>
                 <div class="productBody">
                     <div class="stars">
                         <hr>
@@ -61,6 +62,7 @@
                         </form>
                     </div>
                 </div>
+                <h1 class="spacer"> </h1>
             </div>
         </div>
     </main>
