@@ -1,0 +1,94 @@
+.productSite {
+    .product-wrapper {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .productName {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 20vh;
+            margin: 20px 0px;
+            font-size: 5rem;
+        }
+
+        .image-wrapper {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .productDescription {
+            margin-left: 5vw;
+
+            .productBody {
+                background-color: white;
+                border-radius: 20px;
+                padding: 40px 30px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                place-content: space-between;
+
+                .stars {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 0px;
+
+                    hr {
+                        margin: 0px;
+                        width: 100%;
+                        height: 1px;
+                        border-color: $primary-color;
+                        border-radius: 1px;
+                    }
+
+                    img {
+                        width: 2vw;
+                    }
+
+                    img:first-of-type {
+                        margin-left: 10px;
+                    }
+
+                    img:last-of-type {
+                        margin-right: 10px;
+                    }
+                }
+
+                .description {
+                    flex-grow: 1;
+
+                    h3 {
+                        margin: 0px;
+                        font-size: 4rem;
+                    }
+
+                    p {
+                        margin: 10px 0px;
+                        max-height: 190px;
+                        overflow: hidden;
+                    }
+                }
+
+                .price {
+                    text-align: center;
+
+                    p {
+                        font-size: 5rem;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

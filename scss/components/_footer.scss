@@ -1,6 +1,7 @@
 footer {
     display: block;
-    position: relative;
+    position: absolute;
+    width: 100%;
     font-size: 1.5rem;
     background-color: #ffffff;
 
@@ -32,4 +33,8 @@ footer {
         display: flex;
         align-items: center;
     }
+}
+
+main {
+    min-height: inherit;
 }
