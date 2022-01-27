@@ -1,4 +1,4 @@
-.productSite {
+#product {
     min-height: auto;
 
     .product-wrapper {
@@ -117,6 +117,7 @@
                         background-color: white;
                         text-align: center;
                         border: none;
+                        padding: 0px;
 
                         &:focus {
                             outline: none;

@@ -22,7 +22,7 @@
     </div>
 
     <!--Main Content-->
-    <main class="productSite">
+    <main id="product">
         <div class="product-wrapper">
             <div class="productImage">
                 <h1 class="productName"> </h1>
@@ -54,7 +54,7 @@
                     <div class="cart">
                         <form action="./cart.php" type="submit" method="post" onsubmit="addToCart(<?php echo ($_GET['id'] ?? null) ?>)">
                             <button type="button" class="plusminus" onclick="handleMinus()">-</button>
-                            <input type="number" id="num" value="0" min="0" max="99" required />
+                            <input id="num" value="0" min="0" max="99" required />
                             <button type="button" class="plusminus" onclick="handlePlus()">+</button>
                             <button class="cartButton">
                                 <img src="./img/icons/ic_shopping_cart.svg">
@@ -68,6 +68,8 @@
 
     <!--Footer-->
     <?php include "components/footer.php"; ?>
+
+    <script src="js/product.js"></script>
 </body>
 
 </html>
