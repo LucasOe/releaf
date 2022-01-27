@@ -210,6 +210,14 @@ main {
   position: sticky;
   top: 0px;
 }
+#nav.sticky .logo {
+  transform: scale(1.2);
+}
+#nav.sticky .logo,
+#nav.sticky .navigation,
+#nav.sticky .icons {
+  margin-top: 10px;
+}
 #nav.open .navigation {
   display: flex;
   justify-content: center;

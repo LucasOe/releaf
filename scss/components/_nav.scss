@@ -89,6 +89,16 @@
     &.sticky {
         position: sticky;
         top: 0px;
+
+        .logo {
+            transform: scale(1.2);
+        }
+
+        .logo,
+        .navigation,
+        .icons {
+            margin-top: 10px;
+        }
     }
 
     &.open {
