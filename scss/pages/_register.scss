@@ -16,6 +16,7 @@
         position: relative;
         transform: translateX(670px);
         transition-duration: 0.3s;
+
         form {
             margin-right: 30px;
         }
@@ -29,6 +30,12 @@
 
     .inputContainer {
         width: 100%;
+
+        input {
+            margin-bottom: 25px;
+            min-height: 60px;
+            border: 2px solid;
+        }
     }
 
     .button {
