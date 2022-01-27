@@ -38,7 +38,10 @@
             <h2 class="amatic text-shadow">Das sind wir</h2>
             <div class="textbox">
                 <p>
-                    Wir sind drei engagierte Studenten aus dem schönen Münsterland. In unserer Freizeit trinken wir leidenschaftlich Tee. Diese Leidenschaft möchten wir mit euch teilen. Wir haben uns das Ziel gesetzt, nachhaltig und biologisch erzeugte Produkte anzubieten. Und davon kannst du dich auf unserer Website überzeugen. Viel Spaß beim durchstöbern!
+                    Bei Releaf sind wir der Meinung, dass jeder sich mal eine Teepause verdient hat. Deswegen haben wir es uns zur Aufgabe gemacht dir Tee aus biologischen und nachhaltigen Anbau anzubieten. Wir arbeiten mit ausgewählten Händlern um eine faire Produktion und die beste Qualität zu gewährleisten. Bei einer Auswahl von über 15 Teesorten wird jeder fündig. <br>
+                    Wenn du noch fragen hast lass es uns einfach über das Kontaktformular wissen. <br>
+                    <br>
+                    Also gönn dir eine Auszeit und entdecke jetzt unser vielseitiges Angebot!
                 </p>
             </div>
             <form action="./unsere-werte.php">
@@ -122,7 +125,7 @@
                         Für deine Gesundheit!
                     </h3>
                     <p>
-                        Unsere Tee´s sind nicht nur super lecker, sonder helfen dir auch bei körperlichen Beschwerden.
+                        Unsere Tee´s sind nicht nur super lecker, sonder helfen dir auch bei körperlichen Beschwerden. Weil uns deine Gesundheit am Herzen liegt.
                     </p>
                 </div>
                 <div class="value-block">
@@ -131,7 +134,7 @@
                         Gib uns eine Bewertung!
                     </h3>
                     <p>
-                        Lass uns wissen was dir gefällt und lass uns eine Bewertung da.
+                        Uns ist Transparenz wichtig! Zeig was dir gefällt und lasse eine Bewertung da.
                     </p>
                 </div>
             </div>
