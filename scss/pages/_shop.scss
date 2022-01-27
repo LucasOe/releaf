@@ -100,9 +100,10 @@
         @include responsive_tablet() {
             align-items: center;
             flex-direction: column;
+
             button {
                 margin: 5px 0;
-                width: 90vw;
+                width: 50vw;
             }
         }
     }
