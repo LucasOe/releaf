@@ -89,26 +89,31 @@ footer {
   width: 100%;
   font-size: 1.5rem;
   background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 footer .footer-links {
-  grid-area: 1/2/2/5;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
 footer .footer-links a {
   color: black;
   padding: 20px 30px 0px 30px;
+  text-align: center;
+  width: 150px;
+}
+footer .footer-links a:hover {
+  font-weight: 700;
 }
 footer ul {
   grid-area: 1/5/2/6;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 footer li {
   padding: 0px 20px;
@@ -212,6 +217,9 @@ main {
   height: 85px;
   padding: 20px;
   padding-bottom: 30px;
+}
+#nav .wave.bottom {
+  z-index: -1;
 }
 @media only screen and (max-width: 1024px) {
   #nav {
@@ -524,6 +532,7 @@ main {
   min-width: 60px;
   background-color: #008e39;
   border-radius: 50%;
+  cursor: pointer;
 }
 .categorySlider .prev img,
 .categorySlider .next img {
@@ -940,12 +949,8 @@ section .testimonial-wrapper {
 }
 section .testimonial-wrapper div {
   margin: 0px 0px 0px 200px;
-  text-align: left;
 }
-section .testimonial-wrapper div h3 {
-  text-align: left;
-}
-section .testimonial-wrapper div p {
+section .testimonial-wrapper div h3, section .testimonial-wrapper div p {
   text-align: left;
 }
 @media only screen and (max-width: 1024px) {
@@ -968,7 +973,12 @@ section .testimonial-wrapper div p {
 
 .green {
   background-color: #dce9cc;
-  height: 800px;
+  height: 700px;
+}
+@media only screen and (max-width: 767px) {
+  .green {
+    height: 800px;
+  }
 }
 .green h1 {
   text-align: center;
@@ -1014,7 +1024,12 @@ section .testimonial-wrapper div p {
   top: 0px;
   transform: translateY(-160px) rotate(-50deg) scale(0.6);
   z-index: 2;
-  left: 200px;
+  left: 10%;
+}
+@media only screen and (max-width: 1024px) {
+  #leaf2 {
+    left: 0%;
+  }
 }
 
 #leaf3 {
@@ -1028,9 +1043,14 @@ section .testimonial-wrapper div p {
 #leaf4 {
   position: absolute;
   top: 0px;
-  transform: translateY(-160px) rotate(-50deg);
+  transform: translateY(-160px) rotate(-95deg);
   z-index: 2;
   right: 15%;
+}
+@media only screen and (max-width: 1024px) {
+  #leaf4 {
+    right: 0%;
+  }
 }
 
 #leaf5 {
@@ -1323,11 +1343,17 @@ section .testimonial-wrapper div p {
 }
 
 #contact {
+  align-items: center;
   display: flex;
   justify-content: center;
+  min-height: auto;
 }
 #contact .contact-wrapper {
+  display: block;
+  height: auto;
   max-width: 700px;
+  padding: 30px;
+  position: relative;
   width: 100%;
 }
 #contact .contact-form {
@@ -1353,6 +1379,7 @@ section .testimonial-wrapper div p {
 }
 #contact label {
   display: block;
+  font-size: 1.8rem;
   margin-bottom: 10px;
   position: relative;
   text-align: left;
