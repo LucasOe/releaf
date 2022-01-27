@@ -1,3 +1,25 @@
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 60px;
+    width: 100%;
+
+    .filled + label {
+        color: #bbb;
+        font-size: 1rem;
+        top: 5px;
+        left: 7px;
+    }
+
+    input + label {
+        font-size: 1.8rem;
+        position: absolute;
+        top: 11px;
+        left: 17px;
+        transition-duration: 0.3s;
+    }
+}
+
 label {
     display: block;
     font-size: 1.8rem;
@@ -8,14 +30,14 @@ label {
 }
 
 input {
-    position: relative;
-    width: 100%;
+    border: 2px solid;
     color: black;
     font-size: 1.8rem;
     padding: 15px;
+    width: 100%;
 
-    &:focus {
-        outline: none;
+    &.filled {
+        padding: 17px 15px 15px 5px;
     }
 }
 
@@ -58,6 +80,7 @@ textarea {
         display: inline-block;
         position: relative;
         transition-duration: 0.3s;
+
         &:hover {
             background-color: #ccc;
         }
