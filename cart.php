@@ -20,6 +20,7 @@
 
     <!--Main Content-->
     <main id="cart">
+        <!--Loading component/cart.php via ajax-->
     </main>
 </body>
 
