@@ -6,7 +6,6 @@ $(document).ready(function () {
         url: "components/cart.php",
         data: { data: products },
         success: function (data) {
-            console.log(data);
             $("#cart").html(data);
         },
     });
