@@ -1,0 +1,40 @@
+.productSite {
+    .productName {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 20vh;
+        margin: 20px 0px;
+        font-size: 5rem;
+    }
+
+    .product-wrapper {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .image-wrapper {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .productDescription {
+            margin-left: 5vw;
+
+            .productBody {
+                background-color: white;
+                border-radius: 20px;
+                padding: 20px;
+                height: 500px;
+            }
+        }
+    }
+}
