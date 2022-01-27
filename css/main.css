@@ -515,6 +515,7 @@ main {
 .categorySlider button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .categorySlider .prev,
 .categorySlider .next {
@@ -753,7 +754,7 @@ header .scrollDown:hover {
     margin-top: 45%;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+@media only screen and (min-width: 1024px) {
   .productContainer form {
     display: none;
   }
