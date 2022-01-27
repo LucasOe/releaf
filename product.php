@@ -22,7 +22,7 @@
     </div>
 
     <!--Main Content-->
-    <main class="productSite">
+    <main id="product">
         <div class="product-wrapper">
             <div class="productImage">
                 <h1 class="productName"> </h1>

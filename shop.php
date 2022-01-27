@@ -21,7 +21,7 @@
     </div>
 
     <!--Main Content-->
-    <main>
+    <main id="shop">
         <form class="search" action="./shop.php">
             <input class="opensans" id="search" name="search" type="text" placeholder="Suche...">
             <button class="button opensans">Suche</button>

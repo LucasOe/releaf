@@ -146,395 +146,398 @@ header {
             opacity: 50%;
         }
     }
-}
 
-.imageWrap {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    background: white;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.productContainer {
-    width: fit-content;
-    user-select: none;
-
-    form {
-        display: inline-block;
+    .imageWrap {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background: white;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
 
-    button {
-        height: fit-content;
-        padding: 0px;
-        background-color: transparent;
-        border: none;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
-    .product {
-        display: inline-block;
+    .productContainer {
         width: fit-content;
-        margin: 0px 15px;
-        cursor: pointer;
+        user-select: none;
 
-        h3 {
-            color: #ffffff;
-            font-size: 2rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: pre-wrap;
-            margin: 10px 0px;
-            display: flex;
-            align-items: center;
-            width: 150px;
-            height: 60px;
-            user-select: text;
+        form {
+            display: inline-block;
         }
 
-        p {
-            color: #ffffff;
-            font-size: 2.8rem;
-            margin: 0;
-            user-select: text;
-        }
+        button {
+            height: fit-content;
+            padding: 0px;
+            background-color: transparent;
+            border: none;
+            transition: all 0.2s ease-in-out;
 
-        .image-wrapper {
-            width: 150px;
-            height: 150px;
-            display: block;
-            border-radius: 50%;
-            background-color: #ffffff;
-            overflow: hidden;
-
-            .image {
-                width: 80%;
-                height: auto;
-                margin: auto;
-                display: block;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+            &:hover {
+                transform: scale(1.1);
             }
         }
-    }
 
-    @include responsive_tablet {
-        margin-top: 45%;
-    }
-    @include responsive_desktop {
-        form {
-            display: none;
-            &:first-of-type,
-            &:nth-of-type(2) {
+        .product {
+            display: inline-block;
+            width: fit-content;
+            margin: 0px 15px;
+            cursor: pointer;
+
+            h3 {
+                color: #ffffff;
+                font-size: 2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: pre-wrap;
+                margin: 10px 0px;
+                display: flex;
+                align-items: center;
+                width: 150px;
+                height: 60px;
+                user-select: text;
+            }
+
+            p {
+                color: #ffffff;
+                font-size: 2.8rem;
+                margin: 0;
+                user-select: text;
+            }
+
+            .image-wrapper {
+                width: 150px;
+                height: 150px;
+                display: block;
+                border-radius: 50%;
+                background-color: #ffffff;
+                overflow: hidden;
+
+                .image {
+                    width: 80%;
+                    height: auto;
+                    margin: auto;
+                    display: block;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        @include responsive_tablet {
+            margin-top: 45%;
+        }
+        @include responsive_desktop {
+            form {
+                display: none;
+                &:first-of-type,
+                &:nth-of-type(2) {
+                    display: inline-block;
+                }
+            }
+        }
+        @include responsive_largeScreen {
+            form {
                 display: inline-block;
             }
         }
     }
-    @include responsive_largeScreen {
-        form {
-            display: inline-block;
-        }
-    }
 }
 
-section {
-    position: relative;
-    background-color: white;
-    padding-top: 85px;
-    width: 100%;
-
-    h2,
-    h3 {
-        text-align: center;
-    }
-
-    .logo {
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: -35px;
-    }
-
-    ul.navigation {
-        display: inline-block;
-        font-family: "Amatic SC", sans-serif;
-        font-weight: 700;
-        justify-content: start;
-        margin: 0;
-        align-items: center;
-        flex-direction: row;
-
-        li {
-            display: inline-block;
-            font-size: 2.4rem;
-            list-style: none;
-            padding: 15px;
-        }
-    }
-
-    a {
-        color: black;
-    }
-
-    ul.icons {
-        float: right;
-        flex-direction: row;
-
-        li {
-            display: inline-block;
-            font-size: 2.4rem;
-            list-style: none;
-            padding: 15px;
-        }
-    }
-
-    .circleWrap {
-        margin: 0 auto;
+#main {
+    section {
         position: relative;
-        width: 575px;
+        background-color: white;
+        padding-top: 85px;
+        width: 100%;
 
-        @include responsive_mobile() {
-            width: 450px;
+        h2,
+        h3 {
+            text-align: center;
         }
 
-        #imgDrinkingTea {
-            position: absolute;
-            top: 10%;
-            right: 510px;
-            @include responsive_mobile() {
-                display: none;
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -35px;
+        }
+
+        ul.navigation {
+            display: inline-block;
+            font-family: "Amatic SC", sans-serif;
+            font-weight: 700;
+            justify-content: start;
+            margin: 0;
+            align-items: center;
+            flex-direction: row;
+
+            li {
+                display: inline-block;
+                font-size: 2.4rem;
+                list-style: none;
+                padding: 15px;
             }
         }
 
-        .circle {
-            align-items: center;
-            background-color: white;
-            border-radius: 100%;
-            display: flex;
-            flex-direction: column;
-            height: 575px;
-            justify-content: center;
-            padding: 70px;
+        a {
+            color: black;
+        }
+
+        ul.icons {
+            float: right;
+            flex-direction: row;
+
+            li {
+                display: inline-block;
+                font-size: 2.4rem;
+                list-style: none;
+                padding: 15px;
+            }
+        }
+
+        .circleWrap {
+            margin: 0 auto;
             position: relative;
             width: 575px;
 
             @include responsive_mobile() {
-                height: 450px;
                 width: 450px;
             }
 
-            h3 {
-                font-size: 5rem;
-                text-align: center;
-
+            #imgDrinkingTea {
+                position: absolute;
+                top: 10%;
+                right: 510px;
                 @include responsive_mobile() {
-                    margin: 10px;
+                    display: none;
                 }
             }
 
-            p {
-                font-size: 1.8rem;
-                text-align: center;
+            .circle {
+                align-items: center;
+                background-color: white;
+                border-radius: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 575px;
+                justify-content: center;
+                padding: 70px;
+                position: relative;
+                width: 575px;
+
+                @include responsive_mobile() {
+                    height: 450px;
+                    width: 450px;
+                }
+
+                h3 {
+                    font-size: 5rem;
+                    text-align: center;
+
+                    @include responsive_mobile() {
+                        margin: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
             }
         }
-    }
-    .bubble {
-        background: #ffffff;
-        border-radius: 100%;
-        height: 50px;
-        position: absolute;
-        width: 50px;
+        .bubble {
+            background: #ffffff;
+            border-radius: 100%;
+            height: 50px;
+            position: absolute;
+            width: 50px;
 
-        &:nth-child(2) {
-            background-color: $soft-green;
-            right: 30vw;
-            bottom: 250px;
-            @include responsive_tablet() {
+            &:nth-child(2) {
+                background-color: $soft-green;
                 right: 30vw;
-                bottom: 120px;
+                bottom: 250px;
+                @include responsive_tablet() {
+                    right: 30vw;
+                    bottom: 120px;
+                }
             }
-        }
-        &:nth-child(3) {
-            background-color: $soft-green;
-            right: 26vw;
-            transform: scale(2);
-            bottom: 180px;
+            &:nth-child(3) {
+                background-color: $soft-green;
+                right: 26vw;
+                transform: scale(2);
+                bottom: 180px;
 
-            @include responsive_tablet() {
-                right: 13vw;
-                bottom: 80px;
+                @include responsive_tablet() {
+                    right: 13vw;
+                    bottom: 80px;
+                }
             }
         }
-    }
-    .value-wrapper {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        .value-block {
+        .value-wrapper {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0px 150px;
-            margin: 0px 30px;
-            text-align: center;
-            width: 20%;
-
-            h3 {
-                font-family: "Open Sans", sans-serif;
-                font-size: 1.8rem;
-                font-weight: 700;
-                margin-bottom: 0;
-            }
-
-            p {
-                margin-top: 0;
-                text-align: center;
-            }
-        }
-
-        & + a {
-            display: flex;
+            width: 100%;
             justify-content: center;
-            margin: 100px 0px 0px 0px;
-        }
-
-        @include responsive_tablet {
-            flex-direction: column;
-            align-items: center;
             .value-block {
-                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 150px;
+                margin: 0px 30px;
+                text-align: center;
+                width: 20%;
+
+                h3 {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    text-align: center;
+                }
             }
 
             & + a {
-                margin: 0px;
+                display: flex;
+                justify-content: center;
+                margin: 100px 0px 0px 0px;
+            }
+
+            @include responsive_tablet {
+                flex-direction: column;
+                align-items: center;
+                .value-block {
+                    width: 100%;
+                }
+
+                & + a {
+                    margin: 0px;
+                }
+            }
+        }
+        .testimonial-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                margin: 0px 0px 0px 200px;
+                h3,
+                p {
+                    text-align: left;
+                }
+            }
+            @include responsive_tablet {
+                flex-direction: column;
+                div {
+                    margin: 50px 0;
+                }
+                h3 {
+                    font-size: 3rem;
+                }
             }
         }
     }
-    .testimonial-wrapper {
+
+    .textured {
+        background: $beige url("../img/leaf_texture.png");
+        height: 800px;
+        padding-top: 85px;
+    }
+
+    .green {
+        background-color: $soft-green;
+        height: 700px;
+        @include responsive_mobile {
+            height: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 5.5rem;
+        }
+    }
+
+    .white {
+        background-color: white;
+        height: 800px;
+        padding-top: 85px;
+
+        h1 {
+            text-align: center;
+            font-size: 5.5rem;
+            color: black;
+        }
+    }
+
+    .texturedGreen {
+        background: $soft-green url("../img/leaf_texture.png");
+        height: 800px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        div {
-            margin: 0px 0px 0px 200px;
-            h3, p {
-                text-align: left;
-            }
+        flex-flow: column;
+
+        p {
+            text-align: center;
+            font-size: 2.5rem;
         }
+    }
+
+    .color-green {
+        background-color: $soft-green;
+    }
+
+    /*Leaves*/
+
+    #leaf {
+        position: absolute;
+        top: -40px;
+        transform: scale(0.8);
+    }
+
+    #leaf2 {
+        position: absolute;
+        top: 0px;
+        transform: translateY(-160px) rotate(-50deg) scale(0.6);
+        z-index: 2;
+        left: 10%;
         @include responsive_tablet {
-            flex-direction: column;
-            div {
-                margin: 50px 0;
-            }
-            h3 {
-                font-size: 3rem;
-            }
+            left: 0%;
         }
     }
-}
 
-.textured {
-    background: $beige url("../img/leaf_texture.png");
-    height: 800px;
-    padding-top: 85px;
-}
-
-.green {
-    background-color: $soft-green;
-    height: 700px;
-    @include responsive_mobile {
-        height: 800px;
+    #leaf3 {
+        position: absolute;
+        top: 350px;
+        transform: scale(0.6) rotate(-140deg);
+        z-index: 2;
+        left: 200;
     }
 
-    h1 {
-        text-align: center;
-        font-size: 5.5rem;
+    #leaf4 {
+        position: absolute;
+        top: 0px;
+        transform: translateY(-160px) rotate(-95deg);
+        z-index: 2;
+        right: 15%;
+        @include responsive_tablet {
+            right: 0%;
+        }
     }
-}
 
-.white {
-    background-color: white;
-    height: 800px;
-    padding-top: 85px;
-
-    h1 {
-        text-align: center;
-        font-size: 5.5rem;
-        color: black;
+    #leaf5 {
+        position: absolute;
+        top: 852px;
+        transform: translateY(-160px);
+        z-index: 2;
+        right: 200px;
     }
-}
 
-.texturedGreen {
-    background: $soft-green url("../img/leaf_texture.png");
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-
-    p {
-        text-align: center;
-        font-size: 2.5rem;
-    }
-}
-
-.color-green {
-    background-color: $soft-green;
-}
-
-/*Leaves*/
-
-#leaf {
-    position: absolute;
-    top: -40px;
-    transform: scale(0.8);
-}
-
-#leaf2 {
-    position: absolute;
-    top: 0px;
-    transform: translateY(-160px) rotate(-50deg) scale(0.6);
-    z-index: 2;
-    left: 10%;
-    @include responsive_tablet {
-        left: 0%;
-    }
-}
-
-#leaf3 {
-    position: absolute;
-    top: 350px;
-    transform: scale(0.6) rotate(-140deg);
-    z-index: 2;
-    left: 200;
-}
-
-#leaf4 {
-    position: absolute;
-    top: 0px;
-    transform: translateY(-160px) rotate(-95deg);
-    z-index: 2;
-    right: 15%;
-    @include responsive_tablet {
-        right: 0%;
-    }
-}
-
-#leaf5 {
-    position: absolute;
-    top: 852px;
-    transform: translateY(-160px);
-    z-index: 2;
-    right: 200px;
-}
-
-#leaf,
-#leaf3 {
-    @include responsive_tablet {
-        display: none;
+    #leaf,
+    #leaf3 {
+        @include responsive_tablet {
+            display: none;
+        }
     }
 }
