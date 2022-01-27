@@ -422,11 +422,7 @@ section {
         align-items: center;
         div {
             margin: 0px 0px 0px 200px;
-            text-align: left;
-            h3{
-                text-align: left;
-            }
-            p{
+            h3, p {
                 text-align: left;
             }
         }
@@ -450,7 +446,10 @@ section {
 
 .green {
     background-color: $soft-green;
-    height: 800px;
+    height: 700px;
+    @include responsive_mobile {
+        height: 800px;
+    }
 
     h1 {
         text-align: center;
@@ -500,7 +499,10 @@ section {
     top: 0px;
     transform: translateY(-160px) rotate(-50deg) scale(0.6);
     z-index: 2;
-    left: 200px;
+    left: 10%;
+    @include responsive_tablet {
+        left: 0%;
+    }
 }
 
 #leaf3 {
@@ -514,9 +516,12 @@ section {
 #leaf4 {
     position: absolute;
     top: 0px;
-    transform: translateY(-160px) rotate(-50deg);
+    transform: translateY(-160px) rotate(-95deg);
     z-index: 2;
     right: 15%;
+    @include responsive_tablet {
+        right: 0%;
+    }
 }
 
 #leaf5 {

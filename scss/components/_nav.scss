@@ -106,6 +106,10 @@
         }
     }
 
+    .wave.bottom {
+        z-index: -1;
+    }
+
     @include responsive_tablet() {
         height: auto;
         display: block;

@@ -1,8 +1,14 @@
 #contact {
+    align-items: center;
     display: flex;
     justify-content: center;
+    min-height: auto;
     .contact-wrapper {
+        display: block;
+        height: auto;
         max-width: 700px;
+        padding: 30px;
+        position: relative;
         width: 100%;
     }
     .contact-form {
@@ -28,6 +34,7 @@
     }
     label {
         display: block;
+        font-size: 1.8rem;
         margin-bottom: 10px;
         position: relative;
         text-align: left;
@@ -54,4 +61,3 @@
         width: 100%;
     }
 }
-

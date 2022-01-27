@@ -59,4 +59,7 @@
     </main>
 </body>
 
+<!--Footer-->
+<?php include "components/footer.php"; ?>
+
 </html>
