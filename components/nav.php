@@ -15,7 +15,7 @@
         <a class="amatic" href="contact.php">Kontakt</a>
     </li>
     <li>
-        <a class="amatic" href="unsere-werte.php">Unsere Werte</a>
+        <a class="amatic" href="register.php">Registieren</a>
     </li>
 </ul>
 <ul class="icons">

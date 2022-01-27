@@ -963,36 +963,6 @@ header .productContainer .product .image-wrapper .image {
   font-size: 1.8rem;
   text-align: center;
 }
-#main section .bubble {
-  background: #ffffff;
-  border-radius: 100%;
-  height: 50px;
-  position: absolute;
-  width: 50px;
-}
-#main section .bubble:nth-child(2) {
-  background-color: #dce9cc;
-  right: 30vw;
-  bottom: 250px;
-}
-@media only screen and (max-width: 1024px) {
-  #main section .bubble:nth-child(2) {
-    right: 30vw;
-    bottom: 120px;
-  }
-}
-#main section .bubble:nth-child(3) {
-  background-color: #dce9cc;
-  right: 26vw;
-  transform: scale(2);
-  bottom: 180px;
-}
-@media only screen and (max-width: 1024px) {
-  #main section .bubble:nth-child(3) {
-    right: 13vw;
-    bottom: 80px;
-  }
-}
 #main section .value-wrapper {
   display: flex;
   width: 100%;
@@ -1018,42 +988,108 @@ header .productContainer .product .image-wrapper .image {
   text-align: center;
 }
 #main section .value-wrapper + a {
+  margin: 0px;
   display: flex;
   justify-content: center;
-  margin: 100px 0px 0px 0px;
+}
+#main #intro-wrapper .bubble {
+  background: #ffffff;
+  border-radius: 100%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+#main #intro-wrapper .bubble:nth-child(2) {
+  background-color: #dce9cc;
+  right: 30vw;
+  bottom: 250px;
 }
 @media only screen and (max-width: 1024px) {
-  #main section .value-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-  #main section .value-wrapper .value-block {
-    width: 100%;
-  }
-  #main section .value-wrapper + a {
-    margin: 0px;
+  #main #intro-wrapper .bubble:nth-child(2) {
+    right: 30vw;
+    bottom: 120px;
   }
 }
-#main section .testimonial-wrapper {
+#main #intro-wrapper .bubble:nth-child(3) {
+  background-color: #dce9cc;
+  right: 26vw;
+  transform: scale(2);
+  bottom: 180px;
+}
+@media only screen and (max-width: 1024px) {
+  #main #intro-wrapper .bubble:nth-child(3) {
+    right: 13vw;
+    bottom: 80px;
+  }
+}
+#main .testimonial-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#main section .testimonial-wrapper div {
-  margin: 0px 0px 0px 200px;
+#main .testimonial-wrapper .bubble {
+  background: #ffffff;
+  border-radius: 100%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
 }
-#main section .testimonial-wrapper div h3,
-#main section .testimonial-wrapper div p {
+#main .testimonial-wrapper .bubble:nth-child(1) {
+  left: 10vw;
+  bottom: 200px;
+}
+@media only screen and (max-width: 1024px) {
+  #main .testimonial-wrapper .bubble:nth-child(1) {
+    right: 30vw;
+    bottom: 120px;
+  }
+}
+#main .testimonial-wrapper .bubble:nth-child(2) {
+  left: 27vw;
+  transform: scale(2);
+  bottom: 520px;
+}
+@media only screen and (max-width: 1024px) {
+  #main .testimonial-wrapper .bubble:nth-child(2) {
+    right: 13vw;
+    left: auto;
+    bottom: 80px;
+  }
+}
+#main .testimonial-wrapper div {
+  margin: 0px 0px 0px 200px;
+  text-align: left;
+}
+#main .testimonial-wrapper div h3 {
   text-align: left;
 }
 @media only screen and (max-width: 1024px) {
-  #main section .testimonial-wrapper {
+  #main .testimonial-wrapper div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main .testimonial-wrapper div .value-block {
+    width: 100%;
+  }
+  #main .testimonial-wrapper div + a {
+    margin: 0px;
+  }
+}
+#main .testimonial-wrapper div {
+  margin: 0px 0px 0px 200px;
+}
+#main .testimonial-wrapper div h3,
+#main .testimonial-wrapper div p {
+  text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+  #main .testimonial-wrapper {
     flex-direction: column;
   }
-  #main section .testimonial-wrapper div {
+  #main .testimonial-wrapper div {
     margin: 50px 0;
   }
-  #main section .testimonial-wrapper h3 {
+  #main .testimonial-wrapper h3 {
     font-size: 3rem;
   }
 }
@@ -1142,9 +1178,41 @@ header .productContainer .product .image-wrapper .image {
   z-index: 2;
   right: 200px;
 }
+#main #leaf6 {
+  position: absolute;
+  top: 210%;
+  transform: translateY(-160px) rotate(180deg) scale(0.8);
+  z-index: 2;
+  left: 8%;
+}
+#main #leaf7 {
+  position: absolute;
+  top: 210%;
+  transform: translateY(-160px) rotate(300deg) scale(0.7);
+  z-index: 2;
+  left: 60%;
+}
+#main #leaf8 {
+  position: absolute;
+  top: 294%;
+  transform: translateY(-160px) rotate(-50deg) scale(0.6);
+  z-index: 2;
+  left: -5%;
+}
+#main #leaf9 {
+  position: absolute;
+  top: 275%;
+  transform: translateY(-160px) rotate(220deg) scale(0.7);
+  z-index: 2;
+  right: 4%;
+}
 @media only screen and (max-width: 1024px) {
   #main #leaf,
-#main #leaf3 {
+#main #leaf3,
+#main #leaf6,
+#main #leaf7,
+#main #leaf8,
+#main #leaf9 {
     display: none;
   }
 }
@@ -1350,6 +1418,16 @@ header .productContainer .product .image-wrapper .image {
   top: 50%;
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 1024px) {
+  #shop .categoryContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+  #shop .categoryContainer button {
+    margin: 5px 0;
+    width: 90vw;
+  }
+}
 #shop .currentCategory {
   text-align: center;
   margin: 100px 0px;
@@ -1420,6 +1498,17 @@ header .productContainer .product .image-wrapper .image {
 #shop .productsContainer .product .image-wrapper .image {
   width: 100%;
 }
+@media only screen and (max-width: 1024px) {
+  #shop .productsContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 45vw);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #shop .productsContainer {
+    grid-template-columns: repeat(auto-fill, 80vw);
+  }
+}
 
 #contact {
   align-items: center;
@@ -1446,19 +1535,44 @@ header .productContainer .product .image-wrapper .image {
   justify-content: center;
   min-height: auto;
   flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 #registration .registration-wrapper {
-  display: block;
+  display: flex;
   height: auto;
-  max-width: 700px;
+  width: 2040px;
   padding: 30px;
   position: relative;
-  width: 100%;
+  transform: translateX(670px);
+  transition-duration: 0.3s;
+}
+#registration .registration-wrapper form {
+  margin-right: 30px;
 }
 #registration .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#registration #registration-login {
+  width: 640px;
+  display: inline-block;
+}
+#registration #registration-adress {
+  width: 640px;
+  display: inline-block;
+}
+#registration #registration-complete {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 640px;
+}
+#registration #registration-complete p {
+  text-align: center;
 }
 
 #cart .cartContainer {

@@ -345,6 +345,40 @@ header {
                 }
             }
         }
+        .value-wrapper {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            .value-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 150px;
+                margin: 0px 30px;
+                text-align: center;
+                width: 20%;
+
+                h3 {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    text-align: center;
+                }
+            }
+
+            & + a {
+                margin: 0px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    #intro-wrapper {
         .bubble {
             background: #ffffff;
             border-radius: 100%;
@@ -373,36 +407,43 @@ header {
                 }
             }
         }
-        .value-wrapper {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            .value-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0px 150px;
-                margin: 0px 30px;
-                text-align: center;
-                width: 20%;
+    }
+    .testimonial-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bubble {
+            background: #ffffff;
+            border-radius: 100%;
+            height: 50px;
+            position: absolute;
+            width: 50px;
 
-                h3 {
-                    font-family: "Open Sans", sans-serif;
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    margin-bottom: 0;
-                }
-
-                p {
-                    margin-top: 0;
-                    text-align: center;
+            &:nth-child(1) {
+                left: 10vw;
+                bottom: 200px;
+                @include responsive_tablet() {
+                    right: 30vw;
+                    bottom: 120px;
                 }
             }
+            &:nth-child(2) {
+                left: 27vw;
+                transform: scale(2);
+                bottom: 520px;
 
-            & + a {
-                display: flex;
-                justify-content: center;
-                margin: 100px 0px 0px 0px;
+                @include responsive_tablet() {
+                    right: 13vw;
+                    left: auto;
+                    bottom: 80px;
+                }
+            }
+        }
+        div {
+            margin: 0px 0px 0px 200px;
+            text-align: left;
+            h3 {
+                text-align: left;
             }
 
             @include responsive_tablet {
@@ -417,25 +458,20 @@ header {
                 }
             }
         }
-        .testimonial-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            div {
-                margin: 0px 0px 0px 200px;
-                h3,
-                p {
-                    text-align: left;
-                }
+        div {
+            margin: 0px 0px 0px 200px;
+            h3,
+            p {
+                text-align: left;
             }
-            @include responsive_tablet {
-                flex-direction: column;
-                div {
-                    margin: 50px 0;
-                }
-                h3 {
-                    font-size: 3rem;
-                }
+        }
+        @include responsive_tablet {
+            flex-direction: column;
+            div {
+                margin: 50px 0;
+            }
+            h3 {
+                font-size: 3rem;
             }
         }
     }
@@ -534,8 +570,44 @@ header {
         right: 200px;
     }
 
+    #leaf6 {
+        position: absolute;
+        top: 210%;
+        transform: translateY(-160px) rotate(180deg) scale(0.8);
+        z-index: 2;
+        left: 8%;
+    }
+
+    #leaf7 {
+        position: absolute;
+        top: 210%;
+        transform: translateY(-160px) rotate(300deg) scale(0.7);
+        z-index: 2;
+        left: 60%;
+    }
+
+    #leaf8 {
+        position: absolute;
+        top: 294%;
+        transform: translateY(-160px) rotate(-50deg) scale(0.6);
+        z-index: 2;
+        left: -5%;
+    }
+
+    #leaf9 {
+        position: absolute;
+        top: 275%;
+        transform: translateY(-160px) rotate(220deg) scale(0.7);
+        z-index: 2;
+        right: 4%;
+    }
+
     #leaf,
-    #leaf3 {
+    #leaf3,
+    #leaf6,
+    #leaf7,
+    #leaf8,
+    #leaf9 {
         @include responsive_tablet {
             display: none;
         }
