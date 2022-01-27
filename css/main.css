@@ -1434,7 +1434,7 @@ header .productContainer .product .image-wrapper .image {
   }
   #shop .categoryContainer button {
     margin: 5px 0;
-    width: 90vw;
+    width: 50vw;
   }
 }
 #shop .currentCategory {
