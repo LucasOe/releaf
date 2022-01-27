@@ -564,19 +564,19 @@ header {
 
     #leaf5 {
         position: absolute;
-        top: 852px;
+        top: 110%;
         transform: translateY(-160px);
         z-index: 2;
         right: 200px;
     }
 
-    #leaf6 {
-        position: absolute;
-        top: 210%;
-        transform: translateY(-160px) rotate(180deg) scale(0.8);
-        z-index: 2;
-        left: 8%;
-    }
+#leaf6 {
+    position: absolute;
+    top: 230%;
+    transform: translateY(-160px) rotate(180deg) scale(0.8);
+    z-index: 2;
+    left: 8%;
+}
 
     #leaf7 {
         position: absolute;
@@ -586,21 +586,21 @@ header {
         left: 60%;
     }
 
-    #leaf8 {
-        position: absolute;
-        top: 294%;
-        transform: translateY(-160px) rotate(-50deg) scale(0.6);
-        z-index: 2;
-        left: -5%;
-    }
+#leaf8 {
+    position: absolute;
+    top: 325%;
+    transform: translateY(-160px) rotate(-50deg) scale(0.6);
+    z-index: 2;
+    left: -5%;
+}
 
-    #leaf9 {
-        position: absolute;
-        top: 275%;
-        transform: translateY(-160px) rotate(220deg) scale(0.7);
-        z-index: 2;
-        right: 4%;
-    }
+#leaf9 {
+    position: absolute;
+    top: 300%;
+    transform: translateY(-160px) rotate(220deg) scale(0.7);
+    z-index: 2;
+    right: 4%;
+}
 
     #leaf,
     #leaf3,
