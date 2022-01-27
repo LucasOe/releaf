@@ -762,6 +762,11 @@ header .scrollDown:hover {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 2000px) {
+  .productContainer form {
+    display: inline-block;
+  }
+}
 
 section {
   position: relative;
@@ -898,6 +903,7 @@ section .value-wrapper .value-block {
   align-items: center;
   margin: 0px 150px;
   margin: 0px 30px;
+  text-align: center;
   width: 20%;
 }
 section .value-wrapper .value-block h3 {
@@ -914,6 +920,18 @@ section .value-wrapper + a {
   justify-content: center;
   margin: 100px 0px 0px 0px;
 }
+@media only screen and (max-width: 1024px) {
+  section .value-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .value-wrapper .value-block {
+    width: 100%;
+  }
+  section .value-wrapper + a {
+    margin: 0px;
+  }
+}
 section .testimonial-wrapper {
   display: flex;
   justify-content: center;
@@ -921,6 +939,17 @@ section .testimonial-wrapper {
 }
 section .testimonial-wrapper div {
   margin: 0px 0px 0px 200px;
+}
+@media only screen and (max-width: 1024px) {
+  section .testimonial-wrapper {
+    flex-direction: column;
+  }
+  section .testimonial-wrapper div {
+    margin: 50px 0;
+  }
+  section .testimonial-wrapper h3 {
+    font-size: 3rem;
+  }
 }
 
 .textured {
@@ -1005,11 +1034,15 @@ section .testimonial-wrapper div {
 }
 
 @media only screen and (max-width: 1024px) {
-  #leaf, #leaf3 {
+  #leaf,
+#leaf3 {
     display: none;
   }
 }
 
+.productSite {
+  min-height: auto;
+}
 .productSite .product-wrapper {
   width: 60%;
   margin: auto;
