@@ -1458,19 +1458,44 @@ section .testimonial-wrapper div h3, section .testimonial-wrapper div p {
   justify-content: center;
   min-height: auto;
   flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 #registration .registration-wrapper {
-  display: block;
+  display: flex;
   height: auto;
-  max-width: 700px;
+  width: 2040px;
   padding: 30px;
   position: relative;
-  width: 100%;
+  transform: translateX(670px);
+  transition-duration: 0.3s;
+}
+#registration .registration-wrapper form {
+  margin-right: 30px;
 }
 #registration .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#registration #registration-login {
+  width: 640px;
+  display: inline-block;
+}
+#registration #registration-adress {
+  width: 640px;
+  display: inline-block;
+}
+#registration #registration-complete {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 640px;
+}
+#registration #registration-complete p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
