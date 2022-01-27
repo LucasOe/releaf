@@ -75,7 +75,7 @@
 
                     p {
                         margin: 10px 0px;
-                        max-height: 190px;
+                        max-height: 150px;
                         overflow: hidden;
                     }
                 }
@@ -85,7 +85,51 @@
 
                     p {
                         font-size: 5rem;
-                        margin: 0px;
+                        margin: 20px 0px;
+                    }
+                }
+
+                .cart {
+                    form {
+                        display: contents;
+                    }
+
+                    display: flex;
+                    margin: auto;
+                    height: 30px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    .plusminus {
+                        width: 30px;
+                        background-color: white;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .num {
+                        width: 30px;
+                        background-color: white;
+                        text-align: center;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .cartButton {
+                        height: inherit;
+                        width: 100px;
+                        background-color: $soft-green;
+                        border: none;
+                        border-left: 1px solid black;
+                        cursor: pointer;
+
+                        img {
+                            height: 60%;
+                        }
                     }
                 }
             }

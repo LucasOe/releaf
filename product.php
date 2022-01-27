@@ -47,6 +47,16 @@
                     <div class="price">
                         <p class="amatic"><?php echo $product->getPrice(); ?></p>
                     </div>
+                    <div class="cart">
+                        <form action="./cart.php">
+                            <button type="button" class=" plusminus" onclick="handleMinus()">-</button>
+                            <input type="number" class="num" value="0" />
+                            <button type="button" class=" plusminus" onclick="handlePlus()">+</button>
+                            <button class="cartButton">
+                                <img src="./img/icons/ic_shopping_cart.svg">
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

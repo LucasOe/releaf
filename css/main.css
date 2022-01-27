@@ -1077,7 +1077,7 @@ section .testimonial-wrapper div {
 }
 .productSite .product-wrapper .productDescription .productBody .description p {
   margin: 10px 0px;
-  max-height: 190px;
+  max-height: 150px;
   overflow: hidden;
 }
 .productSite .product-wrapper .productDescription .productBody .price {
@@ -1085,7 +1085,44 @@ section .testimonial-wrapper div {
 }
 .productSite .product-wrapper .productDescription .productBody .price p {
   font-size: 5rem;
-  margin: 0px;
+  margin: 20px 0px;
+}
+.productSite .product-wrapper .productDescription .productBody .cart {
+  display: flex;
+  margin: auto;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.productSite .product-wrapper .productDescription .productBody .cart form {
+  display: contents;
+}
+.productSite .product-wrapper .productDescription .productBody .cart .plusminus {
+  width: 30px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.productSite .product-wrapper .productDescription .productBody .cart .num {
+  width: 30px;
+  background-color: white;
+  text-align: center;
+  border: none;
+}
+.productSite .product-wrapper .productDescription .productBody .cart .num:focus {
+  outline: none;
+}
+.productSite .product-wrapper .productDescription .productBody .cart .cartButton {
+  height: inherit;
+  width: 100px;
+  background-color: #dce9cc;
+  border: none;
+  border-left: 1px solid black;
+  cursor: pointer;
+}
+.productSite .product-wrapper .productDescription .productBody .cart .cartButton img {
+  height: 60%;
 }
 
 .search {
