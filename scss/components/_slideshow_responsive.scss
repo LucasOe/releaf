@@ -38,6 +38,11 @@
                     width: 0%;
                 }
             }
+            &[style*="order: 8;"] {
+                img {
+                    width: 0%;
+                }
+            }
         }
 
         @include responsive_tablet() {
@@ -90,6 +95,11 @@
                 }
             }
             &[style*="order: 4;"] {
+                img {
+                    width: 0%;
+                }
+            }
+            &[style*="order: 5;"] {
                 img {
                     width: 0%;
                 }

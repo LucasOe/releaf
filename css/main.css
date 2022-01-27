@@ -290,6 +290,9 @@ main {
   .categorySlider li[style*="order: 7;"] img {
     width: 0%;
   }
+  .categorySlider li[style*="order: 8;"] img {
+    width: 0%;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .categorySlider li[style*="order: 1;"] img {
@@ -322,6 +325,9 @@ main {
     width: 60%;
   }
   .categorySlider li[style*="order: 4;"] img {
+    width: 0%;
+  }
+  .categorySlider li[style*="order: 5;"] img {
     width: 0%;
   }
 }
