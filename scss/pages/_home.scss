@@ -603,7 +603,11 @@ header {
     }
 
     #leaf,
-    #leaf3 {
+    #leaf3,
+    #leaf6,
+    #leaf7,
+    #leaf8,
+    #leaf9 {
         @include responsive_tablet {
             display: none;
         }
