@@ -177,6 +177,8 @@
     <script src="js/header.js"></script>
 
     <!--Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
     <script src="js/slider.js"></script>
 </body>
 
