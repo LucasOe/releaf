@@ -135,12 +135,16 @@
             <a>
                 <button class="button">Mehr erfahren</button>
             </a>
-            <!--Blätter-->
+            <!--Leaves-->
             <img src="img/leaf.png" id="leaf" width="auto" height="auto">
             <img src="img/leaf2.png" id="leaf2" width="auto" height="auto">
             <img src="img/leaf2.png" id="leaf3" width="auto" height="auto">
             <img src="img/leaf2.png" id="leaf4" width="auto" height="auto">
             <img src="img/leaf2.png" id="leaf5" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf6" width="auto" height="auto">
+            <img src="img/leaf.png" id="leaf7" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf8" width="auto" height="auto">
+            <img src="img/leaf2.png" id="leaf9" width="auto" height="auto">
 
 
             <img class="wave bottom" src="img/wave_bottom_green.svg" />
@@ -152,6 +156,8 @@
         </section>
         <section class="texturedGreen">
             <div class="testimonial-wrapper">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
                 <img src="img/testimonial.jpg" alt="Jennifer Hoffmann" class="roundedImage" id="imgJenniferHoffmann">
                 <div>
                     <img src="img/icons/ic_star_full.svg">
