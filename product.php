@@ -12,7 +12,7 @@
 
 <body>
     <!--Navigation-->
-    <div id="nav">
+    <div id="nav" class="sticky">
         <?php include "components/nav.php"; ?>
     </div>
 

@@ -26,6 +26,12 @@ class Category
     public $name;
     private $image;
 
+    public function __construct($var = null)
+    {
+        if ($var != null)
+            $this->name = $var;
+    }
+
     public function getImage()
     {
         return "img/products/" . $this->image . ".jpg";
@@ -41,13 +47,13 @@ function getProducts($category, $searchTerm)
 
     if ($searchTerm != null) {
         $searchTerm = "%" . $searchTerm . "%";
-        $stmt = $con->prepare("SELECT * FROM product WHERE name LIKE :search");
+        $stmt = $con->prepare("SELECT * FROM product WHERE name LIKE :search ORDER BY name ASC;");
         $stmt->bindParam(":search", $searchTerm, PDO::PARAM_STR);
     } elseif ($category != null and $category > 0 and $category < $categoriesAmount) {
-        $stmt = $con->prepare("SELECT * FROM product WHERE category = :category;");
+        $stmt = $con->prepare("SELECT * FROM product WHERE category = :category ORDER BY name ASC;");
         $stmt->bindParam(":category", $category);
     } else {
-        $stmt = $con->prepare("SELECT * FROM product;");
+        $stmt = $con->prepare("SELECT * FROM product ORDER BY name ASC;");
     }
 
     if ($stmt->execute()) {
@@ -58,8 +64,6 @@ function getProducts($category, $searchTerm)
         return $products;
     }
 }
-
-getProducts(0, "Tee");
 
 function getProduct($id)
 {
@@ -89,6 +93,24 @@ function getCategories()
             echo "Error: No results";
         }
         return $categories;
+    }
+}
+
+function getCategory($id)
+{
+    global $con;
+
+    if ($id == 0) return new Category("Gesamtes Sortiment");
+
+    $stmt = $con->prepare("SELECT * FROM category WHERE id = :id");
+    $stmt->bindParam(":id", $id);
+
+    if ($stmt->execute()) {
+        $category = $stmt->fetchAll(PDO::FETCH_CLASS, "Category");
+        if (count($category) <= 0) {
+            echo "Error: No results";
+        }
+        return $category[0];
     }
 }
 

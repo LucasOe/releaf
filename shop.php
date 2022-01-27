@@ -12,7 +12,7 @@
 
 <body>
     <!--Navigation-->
-    <div id="nav">
+    <div id="nav" class="sticky">
         <?php include "components/nav.php"; ?>
     </div>
 
@@ -28,7 +28,7 @@
                 <button type="submit" name="category" value="0">
                     <div class="category">
                         <div class="image-wrapper">
-                            <img class="image" src="img/products/tasse_000.jpg">
+                            <img class="image" src="img/products/tee_000.jpg">
                         </div>
                         <h3 class="amatic">Gesamtes Sortiment</h3>
                     </div>
@@ -47,6 +47,7 @@
                 </form>
             <?php endforeach; ?>
         </div>
+        <h1 class="currentCategory">Unser <?php echo getCategory($_GET["category"] ?? null)->name ?></h1>
 
         <div class="productsContainer">
             <?php foreach (getProducts($_GET["category"] ?? null, $_GET["search"] ?? null) as $key => $product) : ?>
