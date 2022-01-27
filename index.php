@@ -73,7 +73,6 @@
     <div id="nav">
         <img class="wave top" src="img/wave_top.svg" />
         <?php include "components/nav.php"; ?>
-        <img class="wave bottom" src="img/wave_bottom.svg" />
     </div>
 
     <!--Main Content-->
