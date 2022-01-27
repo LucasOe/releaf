@@ -975,7 +975,13 @@ section .testimonial-wrapper div {
   right: 200px;
 }
 
-.productSite .productName {
+.productSite .product-wrapper {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.productSite .product-wrapper .productName {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -983,12 +989,6 @@ section .testimonial-wrapper div {
   height: 20vh;
   margin: 20px 0px;
   font-size: 5rem;
-}
-.productSite .product-wrapper {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
 }
 .productSite .product-wrapper .image-wrapper {
   width: 500px;
@@ -1005,8 +1005,47 @@ section .testimonial-wrapper div {
 .productSite .product-wrapper .productDescription .productBody {
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 30px;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  place-content: space-between;
+}
+.productSite .product-wrapper .productDescription .productBody .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.productSite .product-wrapper .productDescription .productBody .stars hr {
+  margin: 0px;
+  width: 100%;
+  height: 1px;
+  border-color: #008e39;
+  border-radius: 1px;
+}
+.productSite .product-wrapper .productDescription .productBody .stars img:first-of-type {
+  margin-left: 10px;
+}
+.productSite .product-wrapper .productDescription .productBody .stars img:last-of-type {
+  margin-right: 10px;
+}
+.productSite .product-wrapper .productDescription .productBody .description {
+  flex-grow: 1;
+}
+.productSite .product-wrapper .productDescription .productBody .description h3 {
+  margin: 0px;
+  font-size: 4rem;
+}
+.productSite .product-wrapper .productDescription .productBody .description p {
+  margin: 10px 0px;
+}
+.productSite .product-wrapper .productDescription .productBody .price {
+  text-align: center;
+}
+.productSite .product-wrapper .productDescription .productBody .price p {
+  font-size: 5rem;
+  margin: 0px;
 }
 
 .search {

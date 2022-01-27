@@ -29,8 +29,22 @@
             <div class="productDescription">
                 <h1 class="productName"> <?php echo $product->name; ?> </h1>
                 <div class="productBody">
-                    <h3>Beschreibung:</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fugiat ad illo, placeat accusamus corrupti ipsa nisi adipisci, veniam voluptatum provident! Quae beatae facilis corporis esse ipsum quis veniam saepe!</p>
+                    <div class="stars">
+                        <hr>
+                        <img src="img/icons/ic_star_full.svg">
+                        <img src="img/icons/ic_star_full.svg">
+                        <img src="img/icons/ic_star_full.svg">
+                        <img src="img/icons/ic_star_full.svg">
+                        <img src="img/icons/ic_star_full.svg">
+                        <hr>
+                    </div>
+                    <div class="description">
+                        <h3 clas="amatic">Beschreibung:</h3>
+                        <p class="opensans">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fugiat ad illo, placeat accusamus corrupti ipsa nisi adipisci, veniam voluptatum provident! Quae beatae facilis corporis esse ipsum quis veniam saepe!</p>
+                    </div>
+                    <div class="price">
+                        <p class="amatic"><?php echo $product->getPrice(); ?></p>
+                    </div>
                 </div>
             </div>
         </div>
