@@ -34,7 +34,9 @@
         <div class="header about-wrapper">
             <h2 class="amatic text-shadow">Das sind wir</h2>
             <div class="textbox">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergre. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invid</p>
+                <p>
+                    Wir sind drei engagierte Studenten aus dem schönen Münsterland. In unserer Freizeit trinken wir leidenschaftlich Tee. Diese Leidenschaft möchten wir mit euch teilen. Wir haben uns das Ziel gesetzt, nachhaltig und biologisch erzeugte Produkte anzubieten. Und davon kannst du dich auf unserer Website überzeugen. Viel Spaß beim durchstöbern!
+                </p>
             </div>
             <form action="./unsere-werte.php">
                 <button class="button">Unsere Werte</button>
@@ -106,28 +108,28 @@
                 <div class="value-block">
                     <img src="img/icons/ic_heart.svg" />
                     <h3>
-                        Natürlich Bio
+                        Natürlich Bio!
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                        Alle unsere Produkte sind aus biologischem und nachhaltigem Anbau.
                     </p>
                 </div>
                 <div class="value-block">
                     <img src="img/icons/ic_heart.svg" />
                     <h3>
-                        Für deine Gesundheit
+                        Für deine Gesundheit!
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                        Unsere Tee´s sind nicht nur super lecker, sonder helfen dir auch bei körperlichen Beschwerden.
                     </p>
                 </div>
                 <div class="value-block">
                     <img src="img/icons/ic_heart.svg" />
                     <h3>
-                        Gib uns eine Bewertung
+                        Gib uns eine Bewertung!
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                        Lass uns wissen was dir gefällt und lass uns eine Bewertung da.
                     </p>
                 </div>
             </div>

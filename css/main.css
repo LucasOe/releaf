@@ -871,6 +871,7 @@ section .value-wrapper .value-block h3 {
 }
 section .value-wrapper .value-block p {
   margin-top: 0;
+  text-align: center;
 }
 section .value-wrapper + a {
   display: flex;
@@ -884,6 +885,13 @@ section .testimonial-wrapper {
 }
 section .testimonial-wrapper div {
   margin: 0px 0px 0px 200px;
+  text-align: left;
+}
+section .testimonial-wrapper div h3 {
+  text-align: left;
+}
+section .testimonial-wrapper div p {
+  text-align: left;
 }
 
 .textured {
