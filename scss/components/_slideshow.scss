@@ -28,7 +28,7 @@ $visible-slides-mobile: 2;
         height: 100%;
         display: flex;
 
-        @include responsiveMin(1920px) {
+        @include responsiveMin(1024px) {
             transform: translateX(calc(-100% / $visible-slides));
         }
 
@@ -48,8 +48,9 @@ $visible-slides-mobile: 2;
         align-items: center;
         flex-shrink: 0;
         flex-direction: column;
+        overflow: hidden;
 
-        @include responsiveMin(1920px) {
+        @include responsiveMin(1024px) {
             width: calc(100% / $visible-slides);
         }
 
