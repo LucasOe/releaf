@@ -1,6 +1,7 @@
 footer {
     display: block;
-    position: relative;
+    position: absolute;
+    width: 100%;
     font-size: 1.5rem;
     background-color: #ffffff;
 
@@ -8,4 +9,8 @@ footer {
         margin: 0px;
         padding: 10px;
     }
+}
+
+main {
+    min-height: inherit;
 }
