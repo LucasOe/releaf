@@ -959,9 +959,9 @@ header .productContainer .product .image-wrapper .image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 150px;
-  margin: 0px 30px;
+  margin: 30px;
   text-align: center;
+  height: 100%;
   width: 20%;
 }
 #main section .value-wrapper .value-block h3 {
