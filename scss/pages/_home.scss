@@ -92,6 +92,11 @@ header {
     .product-wrapper {
         right: 0;
         margin-right: 10vw;
+        @include responsive_tablet {
+            h2 {
+                display: none;
+            }
+        }
     }
 
     .textbox {
@@ -216,6 +221,18 @@ header {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+        }
+    }
+
+    @include responsive_tablet {
+        margin-top: 45%;
+    }
+    @include responsive_desktop {
+        form {
+            display: none;
+            &:first-of-type, &:nth-of-type(2) {
+                display: inline-block;
             }
         }
     }
@@ -380,11 +397,11 @@ section {
             margin: 100px 0px 0px 0px;
         }
     }
-    .testimonial-wrapper{
+    .testimonial-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        div{
+        div {
             margin: 0px 0px 0px 200px;
         }
     }
@@ -439,7 +456,7 @@ section {
 
 #leaf {
     position: absolute;
-    top: 0px;
+    top: -40px;
     transform: scale(0.8);
 }
 
@@ -464,7 +481,7 @@ section {
     top: 0px;
     transform: translateY(-160px) rotate(-50deg);
     z-index: 2;
-    right: 200px;
+    right: 15%;
 }
 
 #leaf5 {
@@ -473,4 +490,10 @@ section {
     transform: translateY(-160px);
     z-index: 2;
     right: 200px;
+}
+
+#leaf, #leaf3 {
+    @include responsive_tablet {
+        display: none;
+    }
 }
