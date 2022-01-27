@@ -133,11 +133,34 @@
             margin-top: -40px;
         }
 
+        .stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px 10px;
+
+            hr {
+                margin: 0px;
+                width: 100%;
+                height: 1px;
+                border-color: $primary-color;
+                border-radius: 1px;
+            }
+
+            img:first-of-type {
+                margin-left: 10px;
+            }
+
+            img:last-of-type {
+                margin-right: 10px;
+            }
+        }
+
         p {
             margin: 0px;
             padding: 10px;
-            padding-top: 0px;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
 
         .image-wrapper {

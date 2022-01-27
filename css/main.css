@@ -1166,11 +1166,30 @@ section .testimonial-wrapper div {
   place-content: center;
   margin-top: -40px;
 }
+.productsContainer .product .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px 10px;
+}
+.productsContainer .product .stars hr {
+  margin: 0px;
+  width: 100%;
+  height: 1px;
+  border-color: #008e39;
+  border-radius: 1px;
+}
+.productsContainer .product .stars img:first-of-type {
+  margin-left: 10px;
+}
+.productsContainer .product .stars img:last-of-type {
+  margin-right: 10px;
+}
 .productsContainer .product p {
   margin: 0px;
   padding: 10px;
-  padding-top: 0px;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .productsContainer .product .image-wrapper {
   width: 80%;

@@ -58,6 +58,17 @@
                                 <img class="image" src="<?php echo $product->getImage() ?>">
                             </div>
                             <h3 class="amatic"><?php echo $product->name; ?></h3>
+                            <div class="stars">
+                                <hr>
+                                <?php for ($i = 1; $i <= 5; $i++) : ?>
+                                    <?php if ($product->rating >= $i) : ?>
+                                        <img src="img/icons/ic_star_full.svg">
+                                    <?php else : ?>
+                                        <img src="img/icons/ic_star_hollow.svg">
+                                    <?php endif ?>
+                                <?php endfor; ?>
+                                <hr>
+                            </div>
                             <p class="amatic"><?php echo $product->getPrice(); ?></p>
                         </div>
                     </button>
