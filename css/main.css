@@ -578,11 +578,17 @@ select {
   padding: 15px;
   width: 100%;
 }
+select:focus {
+  outline: none;
+}
 
 textarea {
   border: 2px solid;
   padding: 15px;
   width: 100%;
+}
+textarea:focus {
+  outline: none;
 }
 
 .checkbox-container {
@@ -1505,6 +1511,16 @@ header .productContainer .product .image-wrapper .image {
   padding: 30px;
   position: relative;
   width: 100%;
+}
+#contact .contact-wrapper select {
+  width: 100%;
+}
+#contact .contact-wrapper input,
+#contact .contact-wrapper textarea,
+#contact .contact-wrapper select {
+  margin-bottom: 25px;
+  min-height: 60px;
+  border: 2px solid;
 }
 #contact .contact-form {
   display: flex;
