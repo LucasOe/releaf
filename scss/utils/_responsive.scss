@@ -27,3 +27,9 @@
         @content;
     }
 }
+
+@mixin responsiveMin($minWidth) {
+    @media only screen and (min-width: $minWidth) {
+        @content;
+    }
+}
