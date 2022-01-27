@@ -49,7 +49,7 @@
                     <label for="confirm_password">Passwort wiederholen</label>
                 </div>
                 <label class="checkbox-container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="box"></span>
                     <span>Ich habe die <a href="" title="Allgemeine Geschäftsbedingungen">AGB und den Datenschutz</a> gelesen und bin einverstanden. </span>
                 </label>
