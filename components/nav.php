@@ -41,7 +41,7 @@
         </a>
     </li>
     <li>
-        <a href="">
+        <a href="register.php">
             <svg>
                 <use xlink:href="#head" />
             </svg>

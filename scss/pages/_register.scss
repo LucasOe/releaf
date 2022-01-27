@@ -1,8 +1,10 @@
-#contact {
+#registration {
     align-items: center;
     display: flex;
     justify-content: center;
-    .contact-wrapper {
+    min-height: auto;
+    flex-direction: column;
+    .registration-wrapper {
         display: block;
         height: auto;
         max-width: 700px;

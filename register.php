@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/small_page.js"></script>
     <script src="js/input_forms.js"></script>
 </head>
 
@@ -19,42 +20,40 @@
     </div>
 
     <!--Main Content-->
-    <main id="contact">
-        <div class="contact-wrapper">
-            <h2>Kontakt</h2>
-            <p>
-                Du hast eine Frage?
-                Wir helfen Dir gerne!
-            </p>
+    <main id="registration">
+        <div class="registration-wrapper">
+            <h2>Registieren</h2>
             <form class="contact-form">
+            <p>
+                Zuerst brauchen wir von Dir ein paar Infos.
+            </p>
 
                 <!--Reverted input and label for adding styling to label depending on wether input is filled-->
                 <div class="input-group">
                     <input type="text" id="name" name="firstname">
-                    <label for="name">Name</label>
+                    <label for="name">Nutzername</label>
                 </div>
                 <div class="input-group">
                     <input type="email" id="email" name="email">
                     <label for="email">E-Mail-Adresse</label>
                 </div>
-
                 <div class="input-group">
-                    <label for="country">Art der Anfrage</label>
-                    <select id="enquiry" name="type_of_enquiry">
-                        <option value="order_question">Frage zur Bestellung</option>
-                        <option value="product_range_question">Frage zum Sortiment</option>
-                        <option value="bug_report">Darstellungsfehler</option>
-                        <option value="other">Sonstiges</option>
-                    </select>
+                    <input type="password" id="password" name="password">
+                    <label for="password">Passwort</label>
                 </div>
-
                 <div class="input-group">
-                    <label for="subject">Betreff</label>
-                    <textarea class="opensans" id="subject" name="subject" placeholder="Was möchtest du uns mitteilen?" style="height:200px"></textarea>
+                    <input type="confirm_password" id="confirm_password" name="confirm_password">
+                    <label for="confirm_password">Passwort wiederholen</label>
                 </div>
-                <button class="button" type="submit" value="Submit">Abschicken</button>
+                <label class="checkbox-container">
+                    <input type="checkbox" checked="checked">
+                    <span class="box"></span>
+                    <span>Ich habe die <a href="" title="Allgemeine Geschäftsbedingungen">AGB und den Datenschutz</a> gelesen und bin einverstanden. </span>
+                </label>
+        </div>
+        <button class="button" type="submit" value="Submit">Weiter</button>
 
-            </form>
+        </form>
         </div>
     </main>
 </body>

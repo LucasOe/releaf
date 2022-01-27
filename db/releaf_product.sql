@@ -25,7 +25,7 @@ INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (11
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (12, 'Jasmin White Dragon', 20.99, 'tee_003', 3, 5);
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (13, 'Bai Hao Yin Zhen', 19.99, 'tee_004', 3, 0);
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (14, 'Basilikum Orange Ingwer', 21.99, 'tee_005', 4, 5);
-INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (15, 'Aloe Vera Beeryfrucht', 9.99, 'tee_006', 4, 4);
+INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (15, 'Aloe Vera Berryfrucht', 9.99, 'tee_006', 4, 4);
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (16, 'Birnen Mango Physalis', 15.99, 'tee_007', 4, 4);
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (17, 'Winterglitzern', 9.99, 'tee_008', 4, 3);
 INSERT INTO releaf.product (id, name, price, image, category, rating) VALUES (18, 'Glühweinmischung Weihnachtsmarkt', 7.99, 'tee_001', 4, 2);

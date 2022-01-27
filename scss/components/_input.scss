@@ -1,0 +1,91 @@
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 60px;
+    width: 100%;
+    .filled + label {
+        color: #bbb;
+        font-size: 1rem;
+        top: 5px;
+        left: 7px;
+    }
+    input + label {
+        font-size: 1.8rem;
+        position: absolute;
+        top: 11px;
+        left: 17px;
+        transition-duration: 0.3s;
+    }
+}
+label {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+input {
+    border: 2px solid;
+    color: black;
+    font-size: 1.8rem;
+    padding: 15px;
+    width: 100%;
+    &.filled {
+        padding: 17px 15px 15px 5px;
+    }
+}
+
+select {
+    border: 2px solid;
+    font-size: 1.8rem;
+    padding: 15px;
+    width: 100%;
+}
+
+textarea {
+    border: 2px solid;
+    padding: 15px;
+    width: 100%;
+}
+
+.checkbox-container {
+    align-items: center;
+    display: flex;
+
+    input {
+        display: none;
+    }
+
+    // Styling of custom checkbox
+    .box {
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border: 2px solid black;
+        background: #eee;
+        display: inline-block;
+        position: relative;
+        transition-duration: .3s;
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    span {
+        padding-left: 20px;
+    }
+
+    // Styling of custom checkmark
+    [type="checkbox"]:checked + span:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        width: 7px;
+        height: 15px;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
