@@ -66,6 +66,11 @@
                     width: 0%;
                 }
             }
+            &[style*="order: 6;"] {
+                img {
+                    width: 0%;
+                }
+            }
         }
 
         @include responsive_mobile() {
