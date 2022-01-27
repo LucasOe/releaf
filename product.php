@@ -54,7 +54,7 @@
                     <div class="cart">
                         <form action="./cart.php" type="submit" method="post" onsubmit="addToCart(<?php echo ($_GET['id'] ?? null) ?>)">
                             <button type="button" class="plusminus" onclick="handleMinus()">-</button>
-                            <input type="number" id="num" value="0" min="0" max="99" required />
+                            <input id="num" value="0" min="0" max="99" required />
                             <button type="button" class="plusminus" onclick="handlePlus()">+</button>
                             <button class="cartButton">
                                 <img src="./img/icons/ic_shopping_cart.svg">

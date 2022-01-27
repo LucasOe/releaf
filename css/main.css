@@ -1253,6 +1253,7 @@ header .productContainer .product .image-wrapper .image {
   background-color: white;
   text-align: center;
   border: none;
+  padding: 0px;
 }
 #product .product-wrapper .productDescription .productBody .cart #num:focus {
   outline: none;
