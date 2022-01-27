@@ -26,7 +26,7 @@
     <main id="registration">
         <div class="registration-wrapper">
             <form id="registration-login" class="contact-form">
-                <h2>Registieren</h2>
+                <h2>Registrieren</h2>
                 <p>
                     Zuerst brauchen wir von Dir ein paar Infos.
                 </p>
