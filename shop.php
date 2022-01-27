@@ -58,6 +58,7 @@
                                 <img class="image" src="<?php echo $product->getImage() ?>">
                             </div>
                             <h3 class="amatic"><?php echo $product->name; ?></h3>
+                            <p class="amatic"><?php echo $product->getPrice(); ?></p>
                         </div>
                     </button>
                 </form>
