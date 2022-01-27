@@ -8,6 +8,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/small_page.js"></script>
 </head>
 
 <body>
@@ -189,6 +193,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
     <script src="js/slider.js"></script>
 </body>
-
 
 </html>

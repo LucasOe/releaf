@@ -8,8 +8,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
+
+    <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/small_page.js"></script>
+    <script src="js/input_forms.js"></script>
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                 Du hast eine Frage?
                 Wir helfen Dir gerne!
             </p>
-            <form class="contact-form" action="action_page.php">
+            <form class="contact-form">
 
                 <!--Reverted input and label for adding styling to label depending on wether input is filled-->
                 <div class="input-group">
@@ -57,6 +60,9 @@
             </form>
         </div>
     </main>
+
+    <!--Footer-->
+    <?php include "components/footer.php"; ?>
 </body>
 
 </html>

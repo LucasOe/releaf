@@ -1,0 +1,45 @@
+#registration {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: auto;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    .registration-wrapper {    
+        display: flex;
+        height: auto;
+        width: 2040px;
+        padding: 30px;
+        position: relative;
+        transform: translateX(670px);
+        transition-duration: .3s;
+        form {
+            margin-right: 30px;
+        }
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #registration-login {
+        width: 640px;
+        display: inline-block;
+    }
+    #registration-adress {
+        width: 640px;
+        display: inline-block;
+    }
+    #registration-complete {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 640px;
+         p {
+             text-align: center;
+         }
+    }
+}

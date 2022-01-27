@@ -8,10 +8,10 @@ var timeoutId;
 $(".prev").on("click", function () {
     if (timeoutId) return;
 
-    $(".slider ul li").addClass("transition left");
+    $(".slider ul li").addClass("transition right");
 
     timeoutId = setTimeout(function () {
-        prev();
+        next();
         resetPos();
     }, 500);
 });
@@ -19,10 +19,10 @@ $(".prev").on("click", function () {
 $(".next").on("click", function () {
     if (timeoutId) return;
 
-    $(".slider ul li").addClass("transition right");
+    $(".slider ul li").addClass("transition left");
 
     timeoutId = setTimeout(function () {
-        next();
+        prev();
         resetPos();
     }, 500);
 });

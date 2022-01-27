@@ -1,4 +1,4 @@
-.productSite {
+#product {
     min-height: auto;
 
     .product-wrapper {
@@ -112,11 +112,12 @@
                         cursor: pointer;
                     }
 
-                    .num {
+                    #num {
                         width: 30px;
                         background-color: white;
                         text-align: center;
                         border: none;
+                        padding: 0px;
 
                         &:focus {
                             outline: none;

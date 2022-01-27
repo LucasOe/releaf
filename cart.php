@@ -12,6 +12,7 @@
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/small_page.js"></script>
+    <script src="js/cart.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
     </div>
 
     <!--Main Content-->
-    <main>
-        Unsere Werte
+    <main id="cart">
+        <!--Loading component/cart.php via ajax-->
     </main>
 
     <!--Footer-->

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124">
+  <g id="heart_circle" transform="translate(-1052.157 -661.157)">
+    <g id="Circle_Button" data-name="Circle Button" transform="translate(1052 661)">
+      <rect id="Area" width="124" height="124" rx="62" transform="translate(0.157 0.157)" fill="#3c3c3c"/>
+      <g id="Icon" transform="translate(36.258 36.258)">
+        <rect id="Area-2" data-name="Area" width="52" height="52" transform="translate(-0.101 -0.101)" fill="#fcfcfc" opacity="0"/>
+        <g id="Icon-2" data-name="Icon" transform="translate(8.632 12.949)">
+          <path id="Path" d="M45.153,9.988a11.917,11.917,0,0,0-16.856,0l-2.3,2.3-2.3-2.3A11.919,11.919,0,0,0,6.847,26.845l2.3,2.3L26,46,42.857,29.142l2.3-2.3A11.916,11.916,0,0,0,45.153,9.988Z" transform="translate(-8.632 -12.949)" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.333"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

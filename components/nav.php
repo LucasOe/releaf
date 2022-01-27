@@ -15,12 +15,12 @@
         <a class="amatic" href="contact.php">Kontakt</a>
     </li>
     <li>
-        <a class="amatic" href="unsere-werte.php">Unsere Werte</a>
+        <a class="amatic" href="register.php">Registieren</a>
     </li>
 </ul>
 <ul class="icons">
     <li>
-        <a href="">
+        <a href="shop.php">
             <svg>
                 <use xlink:href="#search" />
             </svg>
@@ -34,14 +34,14 @@
         </a>
     </li>
     <li>
-        <a href="">
+        <a href="cart.php">
             <svg>
                 <use xlink:href="#shopping_cart" />
             </svg>
         </a>
     </li>
     <li>
-        <a href="">
+        <a href="register.php">
             <svg>
                 <use xlink:href="#head" />
             </svg>
