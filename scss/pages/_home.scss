@@ -237,6 +237,11 @@ header {
             }
         }
     }
+    @include responsive_largeScreen {
+        form {
+            display: inline-block;
+        }
+    }
 }
 
 section {

@@ -762,6 +762,11 @@ header .scrollDown:hover {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 2000px) {
+  .productContainer form {
+    display: inline-block;
+  }
+}
 
 section {
   position: relative;
@@ -1035,6 +1040,9 @@ section .testimonial-wrapper div {
   }
 }
 
+.productSite {
+  min-height: auto;
+}
 .productSite .product-wrapper {
   width: 60%;
   margin: auto;
