@@ -11,7 +11,6 @@
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/small_page.js"></script>
     <script src="js/input_forms.js"></script>
     <script src="js/register.js"></script>
 </head>
@@ -84,7 +83,7 @@
             </form>
 
             <div id="registration-complete">
-                <img src="img/heart_circle.svg" alt="Herz Kreis"/>
+                <img src="img/heart_circle.svg" alt="Herz Kreis" />
                 <h3> Fast geschafft! </h3>
                 <p>Wir haben Dir eine E-Mail geschickt. Bitte schaue in Deinem Postfach nach, um deine E-Mail-Adresse zu verifizieren.</p>
             </div>

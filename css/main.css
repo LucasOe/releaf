@@ -87,18 +87,18 @@ p {
 }
 
 footer {
-  display: block;
-  position: absolute;
+  position: relative;
+  bottom: 0px;
   width: 100%;
   font-size: 1.5rem;
   background-color: #ffffff;
   align-items: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
 }
 footer .footer-links {
-  margin-bottom: 30px;
+  height: 60px;
   display: flex;
   justify-content: center;
 }
@@ -112,11 +112,11 @@ footer .footer-links a:hover {
   font-weight: 700;
 }
 footer ul {
-  grid-area: 1/5/2/6;
-  list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
 }
 footer li {
   padding: 0px 20px;
@@ -125,7 +125,7 @@ footer li {
 }
 
 main {
-  min-height: inherit;
+  min-height: calc(100vh - 170px) !important;
 }
 
 #nav {
