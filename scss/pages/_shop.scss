@@ -92,6 +92,15 @@
                 }
             }
         }
+
+        @include responsive_tablet() {
+            align-items: center;
+            flex-direction: column;
+            button {
+                margin: 5px 0;
+                width: 90vw;
+            }
+        }
     }
 
     .currentCategory {
@@ -176,6 +185,14 @@
                     width: 100%;
                 }
             }
+        }
+
+        @include responsive_tablet() {
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, 45vw);
+        }
+        @include responsive_mobile() {
+            grid-template-columns: repeat(auto-fill, 80vw);
         }
     }
 }

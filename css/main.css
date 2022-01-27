@@ -1350,6 +1350,16 @@ header .productContainer .product .image-wrapper .image {
   top: 50%;
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 1024px) {
+  #shop .categoryContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+  #shop .categoryContainer button {
+    margin: 5px 0;
+    width: 90vw;
+  }
+}
 #shop .currentCategory {
   text-align: center;
   margin: 100px 0px;
@@ -1419,6 +1429,17 @@ header .productContainer .product .image-wrapper .image {
 }
 #shop .productsContainer .product .image-wrapper .image {
   width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  #shop .productsContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 45vw);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #shop .productsContainer {
+    grid-template-columns: repeat(auto-fill, 80vw);
+  }
 }
 
 #contact {
