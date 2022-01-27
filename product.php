@@ -31,11 +31,13 @@
                 <div class="productBody">
                     <div class="stars">
                         <hr>
-                        <img src="img/icons/ic_star_full.svg">
-                        <img src="img/icons/ic_star_full.svg">
-                        <img src="img/icons/ic_star_full.svg">
-                        <img src="img/icons/ic_star_full.svg">
-                        <img src="img/icons/ic_star_full.svg">
+                        <?php for ($i = 1; $i <= 5; $i++) : ?>
+                            <?php if ($product->rating >= $i) : ?>
+                                <img src="img/icons/ic_star_full.svg">
+                            <?php else : ?>
+                                <img src="img/icons/ic_star_hollow.svg">
+                            <?php endif ?>
+                        <?php endfor; ?>
                         <hr>
                     </div>
                     <div class="description">
