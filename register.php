@@ -31,27 +31,17 @@
                 </p>
 
                 <!--Reverted input and label for adding styling to label depending on wether input is filled-->
-                <div class="input-group">
-                    <input type="text" id="username" name="username">
-                    <label for="name">Nutzername</label>
+                <div class="inputContainer">
+                    <input type="text" id="username" name="username" placeholder="Nutzername">
+                    <input type="email" id="email" name="email" placeholder="E-Mail-Adresse">
+                    <input type="password" id="password" name="password" placeholder="Passwort">
+                    <input type="confirm_password" id="confirm_password" name="confirm_password" placeholder="Passwort wiederholen">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="box"></span>
+                        <span>Ich habe die <a href="" title="Allgemeine Geschäftsbedingungen">AGB und den Datenschutz</a> gelesen und bin einverstanden. </span>
+                    </label>
                 </div>
-                <div class="input-group">
-                    <input type="email" id="email" name="email">
-                    <label for="email">E-Mail-Adresse</label>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="password" name="password">
-                    <label for="password">Passwort</label>
-                </div>
-                <div class="input-group">
-                    <input type="confirm_password" id="confirm_password" name="confirm_password">
-                    <label for="confirm_password">Passwort wiederholen</label>
-                </div>
-                <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="box"></span>
-                    <span>Ich habe die <a href="" title="Allgemeine Geschäftsbedingungen">AGB und den Datenschutz</a> gelesen und bin einverstanden. </span>
-                </label>
                 <a class="button next" type="next">Weiter</a>
             </form>
 
@@ -63,21 +53,11 @@
                     Bitte gib eine Lieferadresse an.
                 </p>
                 <!--Reverted input and label for adding styling to label depending on wether input is filled-->
-                <div class="input-group">
-                    <input type="text" id="lastname" name="lastname">
-                    <label for="lastname">Nachname</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="firstname">Vorname</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="street" name="street">
-                    <label for="street">Straße inkl. Hausnummer</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="plz" name="plz">
-                    <label for="plz">PLZ</label>
+                <div class="inputContainer">
+                    <input type="text" id="lastname" name="lastname" placeholder="Nachname">
+                    <input type="text" id="firstname" name="firstname" placeholder="Vorname">
+                    <input type="text" id="street" name="street" placeholder="Straße inkl. Hausnummer">
+                    <input type="text" id="plz" name="plz" placeholder="PLZ">
                 </div>
                 <a class="button next" type="next">Registieren</a>
             </form>
