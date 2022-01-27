@@ -2,7 +2,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-
     .contact-wrapper {
         display: block;
         height: auto;
@@ -10,20 +9,7 @@
         padding: 30px;
         position: relative;
         width: 100%;
-
-        select {
-            width: 100%;
-        }
-
-        input,
-        textarea,
-        select {
-            margin-bottom: 25px;
-            min-height: 60px;
-            border: 2px solid;
-        }
     }
-
     .contact-form {
         display: flex;
         flex-direction: column;
