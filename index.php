@@ -83,7 +83,7 @@
 
     <!--Main Content-->
     <main id="main">
-        <section class="textured">
+        <section id="intro-wrapper" class="textured">
             <div class="circleWrap">
                 <div class="bubble"></div>
                 <div class="circle">
@@ -101,8 +101,8 @@
                 </div>
                 <img src="img/woman_drinking_tea.jpg" alt="Frau trinkt Tee" class="roundedImage" id="imgDrinkingTea" />
             </div>
-            <div class="bubble green"></div>
-            <div class="bubble green"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
         </section>
         <section class="green">
             <img class="wave top" src="img/wave_top_green.svg" />
