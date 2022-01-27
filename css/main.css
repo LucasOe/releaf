@@ -1384,6 +1384,9 @@ header .productContainer .product .image-wrapper .image {
 #shop .categoryContainer form.selected button {
   opacity: 100%;
 }
+#shop .categoryContainer form:hover {
+  transform: scale(1.01);
+}
 #shop .categoryContainer button {
   width: 10vw;
   border: none;
@@ -1449,6 +1452,10 @@ header .productContainer .product .image-wrapper .image {
 }
 #shop .productsContainer form {
   margin: 10px;
+  transition: 0.3s;
+}
+#shop .productsContainer form:hover {
+  transform: scale(1.01);
 }
 #shop .productsContainer button {
   background-color: #ffffff;

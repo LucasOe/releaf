@@ -45,6 +45,10 @@
                     opacity: 100%;
                 }
             }
+
+            &:hover {
+                transform: scale(1.01);
+            }
         }
 
         button {
@@ -119,6 +123,11 @@
 
         form {
             margin: 10px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.01);
+            }
         }
 
         button {
