@@ -87,10 +87,29 @@ footer {
   position: relative;
   font-size: 1.5rem;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-footer p {
-  margin: 0px;
-  padding: 10px;
+footer .footer-links {
+  grid-area: 1/2/2/5;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-links a {
+  color: black;
+  padding: 20px 30px 0px 30px;
+}
+footer ul {
+  grid-area: 1/5/2/6;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  padding: 0px 20px;
 }
 
 #nav {
@@ -861,6 +880,7 @@ section .value-wrapper + a {
 section .testimonial-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 section .testimonial-wrapper div {
   margin: 0px 0px 0px 200px;
