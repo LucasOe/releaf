@@ -516,6 +516,10 @@ main {
     width: 50%;
   }
 }
+.categorySlider li form,
+.categorySlider li button {
+  width: 100%;
+}
 .categorySlider li h3 {
   color: black;
   font-size: 3rem;

@@ -62,6 +62,11 @@ $visible-slides-mobile: 2;
             width: calc(100% / $visible-slides-mobile);
         }
 
+        form,
+        button {
+            width: 100%;
+        }
+
         h3 {
             color: black;
             font-size: 3rem;
