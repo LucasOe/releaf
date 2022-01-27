@@ -20,7 +20,7 @@
 </ul>
 <ul class="icons">
     <li>
-        <a href="">
+        <a href="shop.php">
             <svg>
                 <use xlink:href="#search" />
             </svg>
@@ -34,7 +34,7 @@
         </a>
     </li>
     <li>
-        <a href="">
+        <a href="cart.php">
             <svg>
                 <use xlink:href="#shopping_cart" />
             </svg>

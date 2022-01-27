@@ -1167,13 +1167,13 @@ section .testimonial-wrapper div h3, section .testimonial-wrapper div p {
   border: none;
   cursor: pointer;
 }
-.productSite .product-wrapper .productDescription .productBody .cart .num {
+.productSite .product-wrapper .productDescription .productBody .cart #num {
   width: 30px;
   background-color: white;
   text-align: center;
   border: none;
 }
-.productSite .product-wrapper .productDescription .productBody .cart .num:focus {
+.productSite .product-wrapper .productDescription .productBody .cart #num:focus {
   outline: none;
 }
 .productSite .product-wrapper .productDescription .productBody .cart .cartButton {
