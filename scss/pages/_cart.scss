@@ -15,6 +15,7 @@
 
     .fullCart {
         margin-top: 130px;
+        text-align: center;
 
         .product {
             width: 500px;
@@ -100,6 +101,10 @@
                     text-align: center;
                 }
             }
+        }
+
+        .order {
+            width: 200px;
         }
     }
 

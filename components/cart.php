@@ -27,6 +27,7 @@
                 </div>
             </div>
         <?php endforeach; ?>
+        <a class="button order" href="./shop.php">Bestellen</a>
     </div>
 <?php else : ?>
     <div class="emptyCart">

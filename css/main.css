@@ -1605,6 +1605,7 @@ header .productContainer .product .image-wrapper .image {
 }
 #cart .fullCart {
   margin-top: 130px;
+  text-align: center;
 }
 #cart .fullCart .product {
   width: 500px;
@@ -1678,6 +1679,9 @@ header .productContainer .product .image-wrapper .image {
 #cart .fullCart .product .remove p {
   margin: 0px;
   text-align: center;
+}
+#cart .fullCart .order {
+  width: 200px;
 }
 #cart .emptyCart {
   display: flex;
