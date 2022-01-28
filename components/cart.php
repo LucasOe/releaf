@@ -13,10 +13,17 @@
                     </div>
                     <h1 class="name"><?php echo $product->name ?></h1>
                 </div>
-                <div class="amount">
-                    <button type="button" class="plusminus" onclick="handleMinus(<?php echo $key ?>)">-</button>
-                    <input class="num" id="<?php echo $key ?>" value="<?php echo $amount ?>" min="0" max="99" required />
-                    <button type="button" class="plusminus" onclick="handlePlus(<?php echo $key ?>)">+</button>
+                <div class="right">
+                    <form action="./cart.php" type="submit">
+                        <div class="amount">
+                            <button type="button" class="plusminus" onclick="handleMinus(<?php echo $key ?>)">-</button>
+                            <input class="num" id="<?php echo $key ?>" value="<?php echo $amount ?>" min="0" max="99" required />
+                            <button type="button" class="plusminus" onclick="handlePlus(<?php echo $key ?>)">+</button>
+                        </div>
+                        <button class="remove opensans" title="Entfernen" onclick="handleRemove(<?php echo $key ?>)">
+                            <p>-</p>
+                        </button>
+                    </form>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -26,7 +33,7 @@
         <div class="text-wrapper">
             <p class="opensans">Du hast noch keine Produkte in deinem Warenkorb.</p>
             <p class="opensans">Entdecke jetzt unser vielseitiges Angebot:</p>
-            <button class="button">Shop</button>
+            <a class="button" href="./shop.php">Shop</a>
         </div>
     </div>
 <?php endif; ?>

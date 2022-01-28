@@ -27,6 +27,12 @@ function handlePlus(index) {
     }
 }
 
+function handleRemove(index) {
+    var products = JSON.parse(localStorage.getItem("products"));
+    products.splice(index, 1);
+    localStorage.setItem("products", JSON.stringify(products));
+}
+
 function updateAmount(index, amount) {
     var products = JSON.parse(localStorage.getItem("products"));
     products[index].amount = amount;

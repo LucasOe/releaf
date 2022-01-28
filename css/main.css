@@ -1619,18 +1619,22 @@ header .productContainer .product .image-wrapper .image {
   padding: 20px;
   margin-bottom: 20px;
 }
-#cart .fullCart .product .left {
+#cart .fullCart .product form {
+  display: contents;
+}
+#cart .fullCart .product .left,
+#cart .fullCart .product .right {
   height: 100%;
   display: flex;
   align-items: center;
 }
-#cart .fullCart .product .left .image-wrapper {
+#cart .fullCart .product .image-wrapper {
   height: 100%;
 }
-#cart .fullCart .product .left .image-wrapper img {
+#cart .fullCart .product .image-wrapper img {
   height: 100%;
 }
-#cart .fullCart .product .left .name {
+#cart .fullCart .product .name {
   font-size: 3rem;
   margin: 0px 10px;
 }
@@ -1659,6 +1663,22 @@ header .productContainer .product .image-wrapper .image {
 #cart .fullCart .product .amount .num:focus {
   outline: none;
 }
+#cart .fullCart .product .remove {
+  background-color: #ccc;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#cart .fullCart .product .remove:focus {
+  outline: none;
+}
+#cart .fullCart .product .remove p {
+  margin: 0px;
+  text-align: center;
+}
 #cart .emptyCart {
   display: flex;
   flex-grow: 1;
@@ -1678,7 +1698,7 @@ header .productContainer .product .image-wrapper .image {
 #cart .emptyCart .text-wrapper p {
   margin: 0px;
 }
-#cart .emptyCart .text-wrapper button {
+#cart .emptyCart .text-wrapper .button {
   margin-top: 20px;
   width: 100px;
 }
