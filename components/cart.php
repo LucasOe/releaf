@@ -21,7 +21,7 @@
                             <button type="button" class="plusminus" onclick="handlePlus(<?php echo $key ?>)">+</button>
                         </div>
                         <button class="remove opensans" title="Entfernen" onclick="handleRemove(<?php echo $key ?>)">
-                            <p>-</p>
+                            <p>X</p>
                         </button>
                     </form>
                 </div>

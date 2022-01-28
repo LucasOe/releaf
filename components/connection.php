@@ -13,8 +13,10 @@ try {
 }
 
 // Initialize Database if it doesn't exist
-$init = file_get_contents("db/init.sql");
-$query = $con->exec($init);
+if (file_exists("db/init.sql")) {
+    $init = file_get_contents("db/init.sql");
+    $query = $con->exec($init);
+}
 $con->query("USE releaf;");
 
 class Product
