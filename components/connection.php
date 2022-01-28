@@ -1,6 +1,21 @@
 <?php
 
-$con = new PDO("mysql:host=localhost;dbname=releaf", "root", "");
+$dsn = "mysql:host=localhost;";
+$user = "root";
+$password = "";
+
+// Try to connect to database
+try {
+    $con = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+} catch (PDOException $e) {
+    echo 'Verbindung fehlgeschlagen: ' . $e->getMessage();
+    exit;
+}
+
+// Initialize Database if it doesn't exist
+$init = file_get_contents("db/init.sql");
+$query = $con->exec($init);
+$con->query("USE releaf;");
 
 class Product
 {
