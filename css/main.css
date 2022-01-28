@@ -197,6 +197,7 @@ main {
   padding: 0px 15px;
 }
 #nav ul.icons li svg {
+  height: 34px;
   width: 50px;
   transition-duration: 0.3s;
 }
@@ -255,10 +256,9 @@ main {
 }
 
 .wave {
-  content: " ";
   left: 0;
   position: absolute;
-  width: 100%;
+  width: 101%;
   transform-origin: top;
   z-index: 1;
 }
