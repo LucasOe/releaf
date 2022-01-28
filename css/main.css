@@ -1603,6 +1603,62 @@ header .productContainer .product .image-wrapper .image {
   font-size: 5rem;
   position: absolute;
 }
+#cart .fullCart {
+  margin-top: 130px;
+}
+#cart .fullCart .product {
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#cart .fullCart .product .left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#cart .fullCart .product .left .image-wrapper {
+  height: 100%;
+}
+#cart .fullCart .product .left .image-wrapper img {
+  height: 100%;
+}
+#cart .fullCart .product .left .name {
+  font-size: 3rem;
+  margin: 0px 10px;
+}
+#cart .fullCart .product .amount {
+  display: flex;
+  margin: auto;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0px;
+}
+#cart .fullCart .product .amount .plusminus {
+  width: 30px;
+  background-color: #dce9cc;
+  border: none;
+  cursor: pointer;
+}
+#cart .fullCart .product .amount .num {
+  width: 30px;
+  background-color: #dce9cc;
+  text-align: center;
+  border: none;
+  padding: 0px;
+}
+#cart .fullCart .product .amount .num:focus {
+  outline: none;
+}
 #cart .emptyCart {
   display: flex;
   flex-grow: 1;

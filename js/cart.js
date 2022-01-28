@@ -10,3 +10,25 @@ $(document).ready(function () {
         },
     });
 });
+
+function handleMinus(index) {
+    var currentVal = parseInt($("#" + index).val());
+    if (currentVal > 0) {
+        $("#" + index).val(currentVal - 1);
+        updateAmount(index, currentVal - 1);
+    }
+}
+
+function handlePlus(index) {
+    var currentVal = parseInt($("#" + index).val());
+    if (currentVal < 99) {
+        $("#" + index).val(currentVal + 1);
+        updateAmount(index, currentVal + 1);
+    }
+}
+
+function updateAmount(index, amount) {
+    var products = JSON.parse(localStorage.getItem("products"));
+    products[index].amount = amount;
+    localStorage.setItem("products", JSON.stringify(products));
+}

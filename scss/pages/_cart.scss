@@ -13,6 +13,72 @@
         position: absolute;
     }
 
+    .fullCart {
+        margin-top: 130px;
+
+        .product {
+            width: 500px;
+            height: 100px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            .left {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .image-wrapper {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .name {
+                    font-size: 3rem;
+                    margin: 0px 10px;
+                }
+            }
+
+            .amount {
+                display: flex;
+                margin: auto;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0px;
+
+                .plusminus {
+                    width: 30px;
+                    background-color: $soft-green;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .num {
+                    width: 30px;
+                    background-color: $soft-green;
+                    text-align: center;
+                    border: none;
+                    padding: 0px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
     .emptyCart {
         display: flex;
         flex-grow: 1;
