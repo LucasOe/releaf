@@ -1589,13 +1589,42 @@ header .productContainer .product .image-wrapper .image {
   text-align: center;
 }
 
-#cart .cartContainer {
-  margin: auto;
+#cart {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
 }
-#cart .cartContainer .title {
+#cart .title {
   text-align: center;
   font-size: 5rem;
+  position: absolute;
+}
+#cart .emptyCart {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+#cart .emptyCart .text-wrapper {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#cart .emptyCart .text-wrapper p {
+  margin: 0px;
+}
+#cart .emptyCart .text-wrapper button {
+  margin-top: 20px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
