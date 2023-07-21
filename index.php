@@ -44,9 +44,7 @@
                     Also gönn dir eine Auszeit und entdecke jetzt unser vielseitiges Angebot!
                 </p>
             </div>
-            <form action="./unsere-werte.php">
-                <button class="button">Unsere Werte</button>
-            </form>
+            <button class="button">Unsere Werte</button>
         </div>
 
         <!--Products Preview-->
