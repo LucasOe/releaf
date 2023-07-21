@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/TUZyzwprpvBS1izr_vO0DQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/TUZ3zwprpvBS1izr_vOMscG6eQ.ttf) format('truetype');
+}

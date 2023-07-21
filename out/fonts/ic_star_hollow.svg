@@ -1,0 +1,9 @@
+<svg id="ic_star_hollow" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Area" fill="#fff" stroke="#000" stroke-width="3" opacity="0">
+    <rect width="38" height="38" stroke="none"/>
+    <rect x="1.5" y="1.5" width="35" height="35" fill="none"/>
+  </g>
+  <g id="Icon" transform="translate(2.741 3.128)">
+    <path id="Path" d="M21.978,5.75l5.015,10.159,11.213,1.639-8.114,7.9,1.915,11.165L21.978,31.341,11.949,36.615l1.915-11.165-8.114-7.9,11.213-1.639Z" transform="translate(-5.75 -5.75)" fill="#dce9cc" stroke="#008e39" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
