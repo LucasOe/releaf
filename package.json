@@ -1,12 +1,16 @@
 {
   "name": "releaf",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "php -S 127.0.0.1:8000",
     "build": "sass scss:css",
-    "watch": "sass --watch scss:css"
+    "watch": "sass --watch scss:css",
+    "static": "rimraf ./out && node scrape.js"
   },
   "dependencies": {
-    "sass": "^1.64.0"
+    "rimraf": "^5.0.1",
+    "sass": "^1.64.0",
+    "website-scraper": "^5.3.1"
   }
 }
