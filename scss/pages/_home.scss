@@ -483,9 +483,24 @@ header {
     }
 
     .textured {
-        background: $beige url("../img/leaf_texture.png");
+        background: $beige;
         height: 800px;
         padding-top: 85px;
+        * {
+            z-index: 1;
+        }
+    }
+    .textured::after {
+        content:"";
+        width: 100%;
+        height: 100%;
+        background: $beige url("../img/leaf_texture.jpg");
+        position: absolute;
+        top: 0%;
+        z-index: 0;
+        mix-blend-mode: luminosity;
+        opacity: .5;
+        background-size: 100%;
     }
 
     .green {
@@ -514,16 +529,30 @@ header {
     }
 
     .texturedGreen {
-        background: $soft-green url("../img/leaf_texture.png");
+        background: $soft-green;
         height: 800px;
         display: flex;
         justify-content: center;
         flex-flow: column;
-
+        * {
+            z-index: 1;
+        }
         p {
             text-align: center;
             font-size: 2.5rem;
         }
+    }
+    .texturedGreen::after {
+        content:"";
+        width: 100%;
+        height: 100%;
+        background: $beige url("../img/leaf_texture.jpg");
+        position: absolute;
+        top: 0%;
+        z-index: 0;
+        mix-blend-mode: luminosity;
+        opacity: .2;
+        background-size: 100%;
     }
 
     .color-green {

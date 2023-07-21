@@ -1088,9 +1088,24 @@ header .productContainer .product .image-wrapper .image {
   }
 }
 #main .textured {
-  background: #fff4df url("../img/leaf_texture.png");
+  background: #fff4df;
   height: 800px;
   padding-top: 85px;
+}
+#main .textured * {
+  z-index: 1;
+}
+#main .textured::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff4df url("../img/leaf_texture.jpg");
+  position: absolute;
+  top: 0%;
+  z-index: 0;
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
+  background-size: 100%;
 }
 #main .green {
   background-color: #dce9cc;
@@ -1116,15 +1131,30 @@ header .productContainer .product .image-wrapper .image {
   color: black;
 }
 #main .texturedGreen {
-  background: #dce9cc url("../img/leaf_texture.png");
+  background: #dce9cc;
   height: 800px;
   display: flex;
   justify-content: center;
   flex-flow: column;
 }
+#main .texturedGreen * {
+  z-index: 1;
+}
 #main .texturedGreen p {
   text-align: center;
   font-size: 2.5rem;
+}
+#main .texturedGreen::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff4df url("../img/leaf_texture.jpg");
+  position: absolute;
+  top: 0%;
+  z-index: 0;
+  mix-blend-mode: luminosity;
+  opacity: 0.2;
+  background-size: 100%;
 }
 #main .color-green {
   background-color: #dce9cc;
