@@ -8,9 +8,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="img/icons/favicon.ico" />
-
-    <!--Scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -187,8 +184,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/header.js"></script>
-
-    <!--Slider-->
     <script src="js/slider.js"></script>
 </body>
 
